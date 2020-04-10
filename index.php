@@ -7,8 +7,9 @@
 
 
     <link rel="stylesheet" href="fontawesome-free-5.12.0-web/css/all.css">
-<!--    <link rel="stylesheet" href="css/bootstrap.min.css">-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--    <link rel="stylesheet" href="css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
 
 
@@ -29,112 +30,135 @@
     </script>
     <!--vk END-->
 
-    <title>MyMagic.by</title>
+    <title>MyStudy.by</title>
 
 
 </head>
 <body>
-<header class="header navbar fixed-top px-lg-5 px-2 py-1" id="header">
 
 
+<!--<nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">-->
+<!--    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--        <span class="navbar-toggler-icon"></span>-->
+<!--    </button>-->
+<!--    <a class="navbar-brand" href="#">Navbar</a>-->
+<!---->
+<!--    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">-->
+<!--        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">-->
+<!--            <li class="nav-item active">-->
+<!--                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>-->
+<!--            </li>-->
+<!--            <li class="nav-item">-->
+<!--                <a class="nav-link" href="#">Link</a>-->
+<!--            </li>-->
+<!--            <li class="nav-item">-->
+<!--                <a class="nav-link disabled" href="#">Disabled</a>-->
+<!--            </li>-->
+<!--        </ul>-->
+<!--        <form class="form-inline my-2 my-lg-0">-->
+<!--            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
+<!--            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
+<!--        </form>-->
+<!--    </div>-->
+<!--</nav>-->
 
-    <div class="col-sm-3 h-100 p-0">
-        <a href="/">
-            <img src="img/icon/logo.svg" alt="Логотип" height="100%">
+
+<nav class="header navbar navbar-expand-lg navbar-light fixed-top px-lg-5 py-lg-1 m-0" id="header">
+
+    <div class="navbar-brand">
+        <a href="/" class="d-block">
+            <img src="img/icon/logo.svg" alt="Логотип" class="logo">
             <img src="img/icon/logo_title.png" alt="Заголовок логотипа" class="logo-title">
         </a>
+        <a class="number nav-link p-0 navbar-toggler" href="tel:+375447405583">+375 44
+            7405583</a>
     </div>
 
+    <button class="navbar-toggler button mx-3 m-lg-0" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-
-    <div class="col col-xl-8 h-100 d-flex flex-column p-0">
-
-
-
-        <ul class="first-row nav justify-content-md-end justify-content-xl-end">
-            <li class="nav-item">
-                <a class="nav-link px-sm-0 pr-md-1 px-xl-2" href="#block-about">Кто я?</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link px-sm-0 px-md-1 px-xl-2" href="#block-about-profession">Чем я занимаюсь?</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link px-sm-0 px-md-1 px-xl-2" href="#block-why-me">Почему я?</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link px-sm-0 px-md-1 px-xl-2" href="#block-photo">Фото</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link px-sm-0 px-md-1 px-xl-2" href="#block-video">Видео</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link px-sm-0 px-md-1 px-xl-2" href="#block-how-I-work">Как я работаю?</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link px-sm-0 px-md-1 px-xl-2" href="#block-clients">Мои клиенты</a>
-            </li>
-        </ul>
-
-
-
-        <ul class="nav second-row col justify-content-end align-items-center p-0">
-            <li class="nav-item">
-                <a class="phone nav-link py-md-0 px-0 px-lg-1 ml-lg-3" href="tel:+375447405583">
-                    <i class="fas fa-phone-alt m-0"></i>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="number nav-link py-md-0 px-1 px-lg-2 mr-lg-2 mr-xl-3" href="tel:+375447405583">+375 44
-                    7405583</a>
-            </li>
-            <li class="nav-item">
-                <div class="border-ver mx-lg-2 mx-xl-3"></div>
-            </li>
-            <li class="nav-item">
-                <a class="order-call nav-link text-uppercase mx-md-1 mx-lg-2 mx-xl-3" href="#">заказать звонок</a>
-            </li>
-
-            <ul class="nav justify-content-md-end flex-nowrap p-0">
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <div class="col h-100 d-flex flex-column p-0 m-0">
+            <ul class="first-row navbar-nav justify-content-end p-0 m-0">
                 <li class="nav-item">
-                    <a class="social nav-link rounded-circle mr-0 mr-lg-1"
-                       href="#">
-                        <i class="fab fa-instagram"></i>
-                    </a>
+                    <a class="nav-link px-1 px-xl-2" href="#block-about">Кто я?</a>
                 </li>
                 <li class="nav-item">
-                    <a class="social nav-link rounded-circle mx-0 mx-lg-1"
-                       href="#">
-                        <i class="fab fa-vk"></i>
-                    </a>
+                    <a class="nav-link px-1 px-xl-2" href="#block-about-profession">Чем я занимаюсь?</a>
                 </li>
                 <li class="nav-item">
-                    <a class="social nav-link rounded-circle mx-0 mx-lg-1"
-                       href="#">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
+                    <a class="nav-link px-1 px-xl-2" href="#block-why-me">Почему я?</a>
                 </li>
                 <li class="nav-item">
-                    <a class="social nav-link rounded-circle mx-0 mx-lg-1"
-                       href="#">
-                        <i class="fab fa-youtube"></i>
-                    </a>
+                    <a class="nav-link px-1 px-xl-2" href="#block-photo">Фото</a>
                 </li>
                 <li class="nav-item">
-                    <a class="social nav-link rounded-circle ml-0 ml-lg-1"
-                       href="#">
-                        <i class="fab fa-odnoklassniki"></i>
-                    </a>
+                    <a class="nav-link px-1 px-xl-2" href="#block-video">Видео</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-1 px-xl-2" href="#block-how-I-work">Как я работаю?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-1 px-xl-2" href="#block-clients">Мои клиенты</a>
                 </li>
             </ul>
-        </ul>
 
+            <ul class="navbar-nav second-row col justify-content-end align-items-center p-0 d-none d-lg-flex p-0 m-0">
+                <li class="nav-item">
+                    <a class="phone nav-link py-md-0 px-0 px-lg-1 ml-lg-3" href="tel:+375447405583">
+                        <i class="fas fa-phone-alt m-0"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="number nav-link py-md-0 px-1 px-lg-2 mr-lg-2 mr-xl-3" href="tel:+375447405583">+375 44
+                        7405583</a>
+                </li>
+                <li class="nav-item">
+                    <div class="border-ver mx-lg-2 mx-xl-3"></div>
+                </li>
+                <li class="nav-item">
+                    <a class="order-call nav-link text-uppercase mx-md-1 mx-lg-2 mx-xl-3" href="#">заказать звонок</a>
+                </li>
 
+                <ul class="nav justify-content-md-end flex-nowrap p-0 m-0">
+                    <li class="nav-item">
+                        <a class="social nav-link rounded-circle mr-0 mr-lg-1"
+                           href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="social nav-link rounded-circle mx-0 mx-lg-1"
+                           href="#">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="social nav-link rounded-circle mx-0 mx-lg-1"
+                           href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="social nav-link rounded-circle mx-0 mx-lg-1"
+                           href="#">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="social nav-link rounded-circle ml-0 ml-lg-1"
+                           href="#">
+                            <i class="fab fa-odnoklassniki"></i>
+                        </a>
+                    </li>
+                </ul>
+            </ul>
+
+        </div>
     </div>
-
-
-
-    
-</header>
+</nav>
 
 <section class="first-block" id="first-block">
     <img src="/img/photo/bg-photo-first-block.jpg" alt="" width="100%">
@@ -273,7 +297,7 @@
         </div>
     </div>
 </section>
-<section class="block-about-profession" id="block-about-profession">
+<section class="block-about-profession d-none" id="block-about-profession">
 
     <div class="container-fluid p-0">
 
@@ -467,7 +491,7 @@
     </div>
 
 </section>
-<section class="block-why-me" id="block-why-me">
+<section class="block-why-me d-none" id="block-why-me">
     <div class="container-fluid px-lg-3 p-xl-5">
 
         <div class="row">
@@ -521,7 +545,7 @@
 
     </div>
 </section>
-<section class="block-sale" id="block-sale">
+<section class="block-sale d-none" id="block-sale">
     <div class="container-fluid h-100 d-flex">
         <div class="col-5 d-flex flex-column justify-content-center">
             <div class="bg-sale-title d-flex justify-content-center mb-lg-5">
@@ -540,7 +564,7 @@
         </div>
     </div>
 </section>
-<section class="block-photo" id="block-photo">
+<section class="block-photo d-none" id="block-photo">
 
     <div class="container-fluid p-3 p-lg-5">
 
@@ -749,7 +773,7 @@
         </div>
     </div>
 </section>
-<section class="block-video" id="block-video">
+<section class="block-video d-none" id="block-video">
 
     <div class="container-fluid py-3 py-lg-5">
 
@@ -892,7 +916,7 @@
         </div>
     </div>
 </section>
-<section class="block-how-I-work" id="block-how-I-work">
+<section class="block-how-I-work d-none" id="block-how-I-work">
     <div class="container-fluid py-3 py-lg-5">
 
         <div class="row my-xl-3">
@@ -959,7 +983,7 @@
         </div>
     </div>
 </section>
-<section class="block-clients" id="block-clients">
+<section class="block-clients d-none" id="block-clients">
 
     <div class="container-fluid py-3 py-lg-5">
 
@@ -1032,7 +1056,7 @@
 
         </div>
 </section>
-<section class="block-review" id="block-review">
+<section class="block-review d-none" id="block-review">
 
     <div class="container py-5">
 
@@ -1062,7 +1086,7 @@
         </div>
 
 </section>
-<section class="block-footer" id="block-footer">
+<section class="block-footer d-none" id="block-footer">
     <div class="container-fluid p-4">
         <div class="row">
             <div class="col-7 col-lg-6">
@@ -1157,38 +1181,62 @@
 
 
 <!--Сжимание меню START-->
-<script>
-
-
-    function asd(a, callback) {
-        document.getElementById("header").style.height = a;
-        callback()
-    }
-
-
-    $(document).ready(function () {
-
-        if ($(window).width() >= '768') {
-
-            $(window).scroll(function () {
-                    if ($(this).scrollTop() > 1) {
-                        // Скрыть
-                        $('.second-row').fadeOut('fast', function () {
-                            document.getElementById("header").style.height = '50px';
-                        });
-                    } else {
-                        // Показать
-                        asd('100px', function () {
-                            $('.second-row').fadeIn('slow');
-                        });
-
-                    }
-                }
-            );
-        }
-    });
-
-</script>
+<!--<script>-->
+<!---->
+<!---->
+<!--    function asd(a, callback) {-->
+<!--        document.getElementById("header").style.height = a;-->
+<!--        callback()-->
+<!--    }-->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!--    if ($(window).width() > 992) {     squeeze_menu(); }-->
+<!---->
+<!--    $(window).resize(function() {-->
+<!--        if ($(window).width() > 992) {-->
+<!--            squeeze_menu();-->
+<!--        }-->
+<!--    });-->
+<!---->
+<!---->
+<!--    // При ресайзе и при обновлении старницы выполнялось сжатие меню с шириной более 768, а при размере менее не было второй строчки, по идее....-->
+<!--    // Или сначала верстка, а потом добавить сжатие, тем самым подстроиться под правила Bootstrap???-->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!--    function squeeze_menu() {-->
+<!---->
+<!--        $(document).ready(function () {-->
+<!--            $(window).scroll(function () {-->
+<!--                    if ($(this).scrollTop() > 1) {-->
+<!--                        // Скрыть-->
+<!--                        $('.second-row').fadeOut('fast', function () {-->
+<!--                            document.getElementById("header").style.height = '50px';-->
+<!--                        });-->
+<!--                    } else {-->
+<!--                        // Показать-->
+<!--                        asd('100px', function () {-->
+<!--                            $('.second-row').fadeIn('slow');-->
+<!--                        });-->
+<!---->
+<!--                    }-->
+<!--                }-->
+<!--            );-->
+<!---->
+<!--        });-->
+<!---->
+<!--    }-->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!--</script>-->
 <!--Сжимание меню END-->
 
 <!--Увеличение фото START-->
@@ -1207,7 +1255,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"

@@ -13,7 +13,6 @@ a {
 }
 
 a:hover, a:active {
-    color: #d7463f;
     text-decoration: none;
 }
 
@@ -69,9 +68,13 @@ input::placeholder {
 /*Specification END*/
 
 
-
-
 /*general classes START */
+
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #d7463f;
+}
+
 
 .black-title {
     color: black;
@@ -98,7 +101,8 @@ a.social {
     align-items: center;
 }
 
-a.social:hover, a.social:active {
+
+.navbar-light .navbar-nav .nav-link.social:hover, .navbar-light .navbar-nav .nav-link.social:active {
     color: #564fd3;
 }
 
@@ -108,7 +112,7 @@ a.social:hover, a.social:active {
     display: block;
 }
 
-.carousel-indicators li{
+.carousel-indicators li {
     cursor: pointer;
     text-indent: 0;
 }
@@ -126,6 +130,10 @@ a.social:hover, a.social:active {
     transition: 0.3s;
 }
 
+.navbar-light .navbar-toggler {
+    color: white;
+    border: none;
+}
 
 /*general classes START */
 
@@ -133,14 +141,18 @@ a.social:hover, a.social:active {
 /*Header*/
 
 
+.navbar-toggler.button {
+    background-color: #ffffff;
+}
+
+
 #header {
     background: linear-gradient(100grad, rgba(86, 79, 211, 0.6), rgba(221, 84, 70, 0.6));
-    height: 100px;
     transition: 0.3s;
 }
 
 #header .first-row {
-    font-size: 14.82px;
+    font-size: 15.82px;
 }
 
 #header .fa-phone-alt {
@@ -150,11 +162,16 @@ a.social:hover, a.social:active {
     margin-top: 14px;
 }
 
-#header .number {
+.header .number {
     font-family: 'Lato Black', sans-serif;
     font-size: 20px;
     text-shadow: 0 2px 11.64px rgba(0, 0, 0, 0.7);
 }
+
+.number:hover, .number:active {
+    color: #d7463f;
+}
+
 
 #header .border-ver {
     border-right: 1px solid #925172;
@@ -174,9 +191,19 @@ a.social:hover, a.social:active {
     border-color: #d7463f;
 }
 
+
+.logo {
+    height: 50px;
+}
+
 .logo-title {
     height: 39px;
 }
+
+.navbar-light .navbar-nav .nav-link {
+    color: #ffffff;
+}
+
 
 /*First-block START*/
 
@@ -385,9 +412,8 @@ a.social:hover, a.social:active {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    min-height: 100vh;
-    height: 900px;
-    max-height: 100vh;
+    min-height: 900px;
+    height: 100vh;
 
     display: flex;
 
@@ -406,7 +432,6 @@ svg:hover #slider-button {
     line-height: 25px;
     border: 2px white solid;
 }
-
 
 
 .block-about-profession .carousel-indicators li {
@@ -739,13 +764,8 @@ svg:hover #ico-to-top {
 }
 
 
-
-
 /* Средние девайсы (MD «таблетки», >= 768px)*/
 @media (min-width: 768px) {
-
-
-
 
 
     .sale-button {
@@ -766,17 +786,20 @@ svg:hover #ico-to-top {
 @media (min-width: 992px) {
 
     /*header START*/
-
-    #header .first-row {
-        font-size: 15.82px;
+    #header {
+        height: 100px;
     }
 
-    /*header END*/
+
+    .logo {
+        height: 100%;
+    }
 
     .logo-title {
         height: 45px;
     }
 
+    /*header END*/
     .sale-button {
         left: 10%;
     }
