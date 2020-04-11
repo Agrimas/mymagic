@@ -192,7 +192,7 @@ a.social {
 }
 
 
-.logo {
+#logo {
     height: 50px;
 }
 
@@ -760,6 +760,9 @@ svg:hover #ico-to-top {
 /* Малые девайсы ( SM «ландшафтные телефоны», >= 576px)*/
 @media (max-width: 767px) {
 
+    .second-row {
+        display: none;
+    }
 
 }
 
@@ -785,15 +788,20 @@ svg:hover #ico-to-top {
 /* Большие девайсы (LG десктопы, >= 992px)*/
 @media (min-width: 992px) {
 
-    /*header START*/
-    #header {
-        height: 100px;
+    /*!*header START*!*/
+    /*#header {*/
+    /*    height: 100px;*/
+    /*}*/
+
+    .navbar-collapse {
+        height: 100%;
+        align-items: end;
     }
 
-
-    .logo {
+    #logo {
         height: 100%;
     }
+
 
     .logo-title {
         height: 45px;

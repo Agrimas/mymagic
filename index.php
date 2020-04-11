@@ -3,7 +3,7 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no ">
 
 
     <link rel="stylesheet" href="fontawesome-free-5.12.0-web/css/all.css">
@@ -63,11 +63,11 @@
 <!--</nav>-->
 
 
-<nav class="header navbar navbar-expand-lg navbar-light fixed-top px-lg-5 py-lg-1 m-0" id="header">
+<nav class="header navbar navbar-expand-lg navbar-light fixed-top p-0 px-lg-5 py-lg-1 m-0" id="header">
 
-    <div class="navbar-brand">
-        <a href="/" class="d-block">
-            <img src="img/icon/logo.svg" alt="Логотип" class="logo">
+    <div class="navbar-brand h-100 p-0">
+        <a href="/">
+            <img src="img/icon/logo.svg" alt="Логотип" height="100%" id="logo">
             <img src="img/icon/logo_title.png" alt="Заголовок логотипа" class="logo-title">
         </a>
         <a class="number nav-link p-0 navbar-toggler" href="tel:+375447405583">+375 44
@@ -79,8 +79,8 @@
         <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-        <div class="col h-100 d-flex flex-column p-0 m-0">
+
+        <div class="col d-lg-flex flex-column p-0 m-0 collapse navbar-collapse" id="navbarTogglerDemo03" >
             <ul class="first-row navbar-nav justify-content-end p-0 m-0">
                 <li class="nav-item">
                     <a class="nav-link px-1 px-xl-2" href="#block-about">Кто я?</a>
@@ -105,7 +105,8 @@
                 </li>
             </ul>
 
-            <ul class="navbar-nav second-row col justify-content-end align-items-center p-0 d-none d-lg-flex p-0 m-0">
+
+            <ul class="navbar-nav second-row col justify-content-end align-items-center p-0">
                 <li class="nav-item">
                     <a class="phone nav-link py-md-0 px-0 px-lg-1 ml-lg-3" href="tel:+375447405583">
                         <i class="fas fa-phone-alt m-0"></i>
@@ -156,7 +157,7 @@
                 </ul>
             </ul>
 
-        </div>
+
     </div>
 </nav>
 
@@ -1181,62 +1182,44 @@
 
 
 <!--Сжимание меню START-->
-<!--<script>-->
-<!---->
-<!---->
-<!--    function asd(a, callback) {-->
-<!--        document.getElementById("header").style.height = a;-->
-<!--        callback()-->
-<!--    }-->
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
-<!--    if ($(window).width() > 992) {     squeeze_menu(); }-->
-<!---->
-<!--    $(window).resize(function() {-->
-<!--        if ($(window).width() > 992) {-->
-<!--            squeeze_menu();-->
-<!--        }-->
-<!--    });-->
-<!---->
-<!---->
-<!--    // При ресайзе и при обновлении старницы выполнялось сжатие меню с шириной более 768, а при размере менее не было второй строчки, по идее....-->
-<!--    // Или сначала верстка, а потом добавить сжатие, тем самым подстроиться под правила Bootstrap???-->
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
-<!--    function squeeze_menu() {-->
-<!---->
-<!--        $(document).ready(function () {-->
-<!--            $(window).scroll(function () {-->
-<!--                    if ($(this).scrollTop() > 1) {-->
-<!--                        // Скрыть-->
-<!--                        $('.second-row').fadeOut('fast', function () {-->
-<!--                            document.getElementById("header").style.height = '50px';-->
-<!--                        });-->
-<!--                    } else {-->
-<!--                        // Показать-->
-<!--                        asd('100px', function () {-->
-<!--                            $('.second-row').fadeIn('slow');-->
-<!--                        });-->
-<!---->
-<!--                    }-->
-<!--                }-->
-<!--            );-->
-<!---->
-<!--        });-->
-<!---->
-<!--    }-->
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
-<!--</script>-->
+<script>
+
+    function asd(a, callback) {
+        document.getElementById("header").style.height = a;
+        callback()
+    }
+
+    // if ($(window).width() > 992) {     squeeze_menu(); }
+    //
+    // $(window).resize(function() {
+    //     if ($(window).width() > 992) {
+    //         squeeze_menu();
+    //     }
+    // });
+
+    // При ресайзе и при обновлении старницы выполнялось сжатие меню с шириной более 768, а при размере менее не было второй строчки, по идее....
+    // Или сначала верстка, а потом добавить сжатие, тем самым подстроиться под правила Bootstrap???
+
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                    if ($(this).scrollTop() > 1) {
+                        // Скрыть
+                        $('.second-row').fadeOut('fast', function () {
+                            document.getElementById("header").style.height = '50px';
+                        });
+                    } else {
+                        // Показать
+                        asd('100px', function () {
+                            $('.second-row').fadeIn('slow');
+                        });
+
+                    }
+                }
+            );
+
+        });
+
+</script>
 <!--Сжимание меню END-->
 
 <!--Увеличение фото START-->
