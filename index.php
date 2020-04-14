@@ -37,14 +37,16 @@
 <body>
 <nav class="header navbar navbar-expand-lg navbar-light fixed-top p-0 px-lg-5 py-lg-1 m-0" id="header">
 
-    <div class="navbar-brand h-100 p-0">
+    <div class="navbar-brand col h-100 p-0">
         <a href="/">
             <img src="img/icon/logo.svg" alt="Логотип" height="100%" class="logo" id="logo">
+
             <img src="img/icon/logo_title.png" alt="Заголовок логотипа" class="logo-title" id="logo-title">
         </a>
         <a class="number nav-link p-0 navbar-toggler" href="tel:+375447405583">+375 44
             7405583</a>
     </div>
+
 
     <button class="navbar-toggler button mx-3 m-lg-0" type="button" data-toggle="collapse"
             data-target="#navbarTogglerDemo03"
@@ -54,7 +56,7 @@
 
 
     <div class="col d-lg-flex flex-column p-0 m-0 collapse navbar-collapse" id="navbarTogglerDemo03">
-        <ul class="first-row navbar-nav justify-content-end p-0 m-0">
+        <ul class="first-row navbar-nav col justify-content-end  p-0 m-0">
             <li class="nav-item" id="menu_phone">
                 <a class="phone nav-link" href="tel:+375447405583">
                     <i class="fas fa-phone-alt m-0"></i>
@@ -139,9 +141,13 @@
     </div>
 </nav>
 <section class="first-block" id="first-block">
-    <img src="/img/photo/bg-photo-first-block.jpg" alt="" class="background-first-block">
-    <div class="px-md-3 px-xl-5 ">
-        <div class="first-block-title col-md-8 text-center py-md-2 py-lg-4 py-xl-5">
+
+    <img src="/img/photo/bg-photo-first-block.jpg" alt="" class="background-first-block d-none d-md-inline w-100">
+
+
+    <div class="px-md-3 px-xl-5">
+
+        <div class="first-block-title col-lg-8 text-center py-md-2 py-lg-4 py-xl-5">
             <h1 class="text-uppercase m-0">выступление иллюзиониста <br> <span
                         id="first-block-title__item1">на вашем</span> <span
                         id="first-block-title__item2">празднике</span>
@@ -156,19 +162,21 @@
             <p class="text-uppercase m-0" id="first-block-title__item3">по всей беларуси и за
                 рубежом</p>
         </div>
-        <div class="bg-sale-title col-md-6 col-lg-5 d-flex justify-content-center ml-lg-5 ml-xl-0">
-            <div class="sale-title col-lg-10 col-xl-8 justify-content-center py-md-2 py-lg-3">
+
+        <div class="bg-sale-title col-6 col-lg-5 d-flex justify-content-center ml-lg-5 ml-xl-0 d-none d-md-block">
+            <div class="sale-title col-10 col-xl-8 justify-content-center py-md-2 py-lg-3 d-none d-md-flex">
                 <p class="m-0">Закажите выступление <br> сейчас и получите <br> <span
                             style="font-family: 'Lato Black', sans-serif">скидку 30%</span>
                 </p>
             </div>
         </div>
-        <div class="sale-button">
+
+        <div class="sale-button d-none d-md-block">
             <button class="text-uppercase">получить скидку</button>
         </div>
 
 
-        <div class="slider-first-block">
+        <div class="slider-first-block d-none d-md-block">
             <div id="slider-first-block" class="carousel vert slide" data-ride="carousel" data-interval="3000">
                 <div class="row flex-nowrap">
                     <div class="carousel-inner col-11 p-2 p-lg-3">
@@ -200,32 +208,33 @@
 <section class="block-about" id="block-about">
     <div class="row h-100 px-md-5 m-0 align-items-lg-center">
         <div class="col-lg-6 px-3">
-            <div class="ml-5">
+            <div class="d-flex justify-content-center d-md-block ml-lg-5">
                 <h2>Кто я?</h2>
             </div>
-            <p class="mb-0 mt-4" id="illusionist">Иллюзионист <br>
+
+            <p class="text-center text-md-left mb-0 mt-md-4" id="illusionist">Иллюзионист <br>
                 <span class="text-uppercase m-0">Антон Ермоленко</span>
             </p>
-            <div class="block-about-list col my-4 px-3 px-xl-4 py-4 py-xl-5">
+            <div class="block-about-list col my-4 p-1 px-md-3 px-xl-4 py-md-4 py-xl-5">
                 <ul class="m-0 p-0 text-right ">
-                    <li class="mb-3 pr-5">Профессионально занимаюсь фокусами более 8 лет</li>
-                    <li class="mb-3 pr-5">Представитель Российской Ассоциации Иллюзионистов (РАИ)</li>
-                    <li class="pr-5">Представитель Международного Сообщества Иллюзионистов (ISM)</li>
+                    <li class="mb-3 pr-4 pr-md-5">Профессионально занимаюсь фокусами более 8 лет</li>
+                    <li class="mb-3 pr-4 pr-md-5">Представитель Российской Ассоциации Иллюзионистов (РАИ)</li>
+                    <li class="pr-4 pr-md-5">Представитель Международного Сообщества Иллюзионистов (ISM)</li>
                 </ul>
             </div>
-            <div class="row justify-content-center">
+            <div class="row justify-content-center d-none d-md-flex">
                 <div class="col-6 mb-lg-3">
                     <img class="img-fluid" src="img/photo/certificate.jpg" alt="">
                 </div>
             </div>
         </div>
-        <div class="col-lg-6 d-flex justify-content-center align-self-end">
+        <div class="col-lg-6 justify-content-center align-self-end d-none d-md-flex">
             <img src="/img/photo/anton-ermolenko-block-about-me.png" alt=""
                  id="anton-ermolenko-block-about-me">
         </div>
     </div>
 </section>
-<section class="block-form" id="block-form">
+<section class="block-form d-none d-md-block" id="block-form">
     <div class="container py-3">
         <div class="row">
             <div class="col d-flex justify-content-center">
@@ -264,7 +273,7 @@
                 </div>
                 <div class="row justify-content-center">
                     <div class="col col-lg-7">
-                        <form action="" method="post">
+                        <form action="" method="POST">
                             <input class="my-2 px-4 py-3" type="text" placeholder="Ваш телефон">
                             <button class="text-uppercase my-2 px-4 py-3" type="submit">Отправить заявку</button>
                         </form>
@@ -275,14 +284,14 @@
         </div>
     </div>
 </section>
-<section class="block-about-profession d-none" id="block-about-profession">
+<section class="block-about-profession" id="block-about-profession">
 
     <div class="container-fluid p-0">
 
         <div class="row m-0 p-0 h-100 align-items-center">
             <div class="col">
 
-                <div class="row mt-5">
+                <div class="row mt-md-5">
                     <div class="col text-center">
                         <h2>Чем я занимаюсь?</h2>
                     </div>
@@ -295,7 +304,7 @@
                              class="row justify-content-center mb-4 carousel slide d-flex"
                              data-ride="carousel">
 
-                            <div class="col-2 d-flex justify-content-end align-items-center">
+                            <div class="col-2 d-none d-md-flex justify-content-end align-items-center">
                                 <a href="#slider-block-about-profession" role="button"
                                    data-slide="prev">
                                     <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
@@ -318,7 +327,7 @@
                             </div>
 
 
-                            <div class="col-8">
+                            <div class="col-md-8">
                                 <div class="carousel-inner" data-ride="false" data-touch="false">
                                     <div class="carousel-item active" data-ride="false" data-touch="false">
                                         <div class="row d-flex justify-content-center m-0">
@@ -397,7 +406,7 @@
                             </div>
 
 
-                            <div class="col-2 d-flex align-items-center">
+                            <div class="col-2 d-none d-md-flex align-items-center">
                                 <a class="" href="#slider-block-about-profession" role="button"
                                    data-slide="next">
                                     <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
@@ -423,7 +432,7 @@
                             <div class="container-fluid">
                                 <div class="row mt-3 mt-lg-5 justify-content-center">
                                     <div class="col col-xl-12">
-                                        <ol class="carousel-indicators d-flex flex-wrap flex-lg-nowrap justify-content-around m-0"
+                                        <ol class="carousel-indicators d-flex flex-wrap flex-lg-nowrap justify-content-md-around m-0"
                                             data-ride="false" data-touch="false">
                                             <li data-target="#slider-block-about-profession" data-slide-to="0"
                                                 data-ride="false"
@@ -469,10 +478,10 @@
     </div>
 
 </section>
-<section class="block-why-me d-none" id="block-why-me">
+<section class="block-why-me " id="block-why-me">
     <div class="container-fluid px-lg-3 p-xl-5">
 
-        <div class="row">
+        <div class="row d-none d-md-flex">
             <div class="col-6 d-flex flex-column align-items-center">
                 <h2 class="black-title">Почему я?</h2>
                 <div class="mb-1">
@@ -487,11 +496,14 @@
             </div>
         </div>
 
-        <div class="row d-flex justify-content-center mb-2">
+        <div class="row d-flex justify-content-center mb-md-2">
             <div class="list-why-me col col-lg-10">
                 <div class="row p-lg-2">
 
-                    <div class="col-6">
+                    <div class="col-12 col-md-6">
+                        <div class="col p-0 d-block d-md-none">
+                            <h2 class="text-center">Почему я?</h2>
+                        </div>
                         <ul class="positive">
                             <li class="pl-5 my-3">Профессионально занимаюсь фокусами более 8 лет</li>
                             <li class="pl-5 my-3">Оригинальная программа</li>
@@ -503,7 +515,10 @@
                         </ul>
                     </div>
 
-                    <div class="col-6">
+                    <div class="col-12 col-md-6">
+                        <div class="col p-0 d-block d-md-none">
+                            <h2 class="text-center">А не другие</h2>
+                        </div>
                         <ul class="negative">
                             <li class="pl-5 my-3">Вам может попасться начинающий или неопытный фокусник</li>
                             <li class="pl-5 my-3">Зрители будут скучать</li>
@@ -523,7 +538,7 @@
 
     </div>
 </section>
-<section class="block-sale d-none" id="block-sale">
+<section class="block-sale d-none d-md-block" id="block-sale">
     <div class="container-fluid h-100 d-flex">
         <div class="col-5 d-flex flex-column justify-content-center">
             <div class="bg-sale-title d-flex justify-content-center mb-lg-5">
@@ -542,9 +557,9 @@
         </div>
     </div>
 </section>
-<section class="block-photo d-none" id="block-photo">
+<section class="block-photo" id="block-photo">
 
-    <div class="container-fluid p-3 p-lg-5">
+    <div class="container-fluid p-md-3 p-lg-5">
 
         <div class="row my-lg-3">
             <div class="col text-center my-3">
@@ -553,7 +568,7 @@
         </div>
 
         <div id="carouselBlockPhoto" class="carousel slide " data-ride="false" data-interval="false">
-            <div class="carousel-inner border-slider p-2">
+            <div class="carousel-inner border-slider p-md-2 my-3 my-xl-4">
                 <div class="carousel-item active ">
                     <div class="row m-0">
                         <div class="col-6 col-lg-3 p-0">
@@ -743,15 +758,17 @@
                     </div>
                 </div>
             </div>
-            <ol class="carousel-indicators magic_indicators d-flex">
-                <li data-target="#carouselBlockPhoto" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselBlockPhoto" data-slide-to="1"></li>
-                <li data-target="#carouselBlockPhoto" data-slide-to="2"></li>
-            </ol>
+            <div class="row justify-content-center">
+                <ol class="carousel-indicators magic_indicators d-flex">
+                    <li data-target="#carouselBlockPhoto" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselBlockPhoto" data-slide-to="1"></li>
+                    <li data-target="#carouselBlockPhoto" data-slide-to="2"></li>
+                </ol>
+            </div>
         </div>
     </div>
 </section>
-<section class="block-video d-none" id="block-video">
+<section class="block-video" id="block-video">
 
     <div class="container-fluid py-3 py-lg-5">
 
@@ -766,7 +783,7 @@
                  data-ride="carousel">
 
 
-                <div class="col-2 d-flex justify-content-center align-items-center">
+                <div class="col-2 d-none d-md-flex justify-content-center align-items-center">
                     <a class="" href="#slider-block-video" role="button"
                        data-slide="prev">
                         <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
@@ -789,7 +806,7 @@
                 </div>
 
 
-                <div class="col-8 col-lg-6">
+                <div class="col col-md-8 col-lg-6 p-0 px-md-3">
                     <div class="carousel-inner border-slider p-2" data-ride="false" data-touch="false">
 
 
@@ -858,7 +875,7 @@
                     </div>
                 </div>
 
-                <div class="col-2 d-flex justify-content-center align-items-center">
+                <div class="col-2 d-none d-md-flex justify-content-center align-items-center">
                     <a class="" href="#slider-block-video" role="button"
                        data-slide="next">
                         <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
@@ -894,18 +911,18 @@
         </div>
     </div>
 </section>
-<section class="block-how-I-work d-none" id="block-how-I-work">
+<section class="block-how-I-work d-none d-md-block" id="block-how-I-work">
     <div class="container-fluid py-3 py-lg-5">
 
-        <div class="row my-xl-3">
-            <div class="col text-center my-3">
+        <div class="row m-0 my-xl-3">
+            <div class="col text-center p-0 my-3">
                 <h2>Как я работаю?
                 </h2>
             </div>
         </div>
 
 
-        <div class="row justify-content-center">
+        <div class="row m-0 justify-content-center">
             <div class="col col-lg-10 p-0 process-diagram">
 
                 <div class="ico-how-i-work-1 text-center">
@@ -961,7 +978,7 @@
         </div>
     </div>
 </section>
-<section class="block-clients d-none" id="block-clients">
+<section class="block-clients" id="block-clients">
 
     <div class="container-fluid py-3 py-lg-5">
 
@@ -970,7 +987,7 @@
                 <h2>Мои довольные клиенты</h2>
             </div>
         </div>
-        <div class="row justify-content-center px-5 px-xl-0">
+        <div class="row justify-content-center px-md-5 px-xl-0">
 
             <div class="clients col-4 col-lg-3 col-xl-2 mx-xl-2 my-3">
                 <img src="img/logo/logo-mts.png" alt="" class="img-fluid">
@@ -1034,46 +1051,46 @@
 
         </div>
 </section>
-<section class="block-review d-none" id="block-review">
+<section class="block-review" id="block-review">
 
-    <div class="container py-5">
+    <div class="container py-3 py-md-5">
 
-        <!--        <div class="row">-->
-        <!--            <div class="col d-flex justify-content-center">-->
-        <!--                <svg-->
-        <!--                        xmlns="http://www.w3.org/2000/svg"-->
-        <!--                        xmlns:xlink="http://www.w3.org/1999/xlink"-->
-        <!--                        width="220px" height="37px">-->
-        <!--                    <image x="0px" y="0px" width="220px" height="37px"-->
-        <!--                           xlink:href="data:img/png;base64,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"/>-->
-        <!--                </svg>-->
-        <!--            </div>-->
-        <!--        </div>-->
-        <!---->
-        <!--        <div class="row">-->
-        <!--            <div class="col d-flex justify-content-center">-->
-        <!--                <h2 class="black-title">Отзывы клиентов</h2>-->
-        <!--            </div>-->
-        <!--        </div>-->
-        <!---->
-        <!--        <div class="form row my-5 p-3">-->
-        <!--            <div id="vk_comments"></div>-->
-        <!--            <script type="text/javascript">-->
-        <!--                VK.Widgets.Comments("vk_comments", {limit: 10, attach: "*"});-->
-        <!--            </script>-->
-        <!--        </div>-->
+                <div class="row m-0">
+                    <div class="col d-flex justify-content-center">
+                        <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="220px" height="37px">
+                            <image x="0px" y="0px" width="220px" height="37px"
+                                   xlink:href="data:img/png;base64,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"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col d-flex justify-content-center">
+                        <h2 class="black-title text-center">Отзывы клиентов</h2>
+                    </div>
+                </div>
+
+                <div class="form row my-2 my-md-5 p-md-3">
+                    <div id="vk_comments"></div>
+                    <script type="text/javascript">
+                        VK.Widgets.Comments("vk_comments", {limit: 10, attach: "*"});
+                    </script>
+                </div>
 
 </section>
-<section class="block-footer d-none" id="block-footer">
+<section class="block-footer" id="block-footer">
     <div class="container-fluid p-4">
         <div class="row">
-            <div class="col-7 col-lg-6">
+            <div class="col-md-7 col-lg-6">
                 <div class="row justify-content-center">
                     <div class="col-10 col-xl-8">
 
                         <div class="row">
                             <h3>Оставьте свою заявку</h3>
-                            <img src="img/icon/magic.svg" alt="" width="30px" height="30px" class="offset-1">
+                            <img src="img/icon/magic.svg" alt="" width="30px" height="30px" class="offset-md-1">
                         </div>
 
                         <div class="row">
@@ -1132,7 +1149,7 @@
             </div>
         </div>
         <div class="row mt-5">
-            <div class="col-4">
+            <div class="col-4 p-0 px-md-4">
                 <p>Дизайн сайта: <img src="/img/icon/zorka.png" alt="" class="img-fluid"></p>
             </div>
             <div class="col-4 text-center">

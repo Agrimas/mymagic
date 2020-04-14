@@ -26,7 +26,7 @@ p, button, li, span {
 }
 
 h2 {
-    font-size: 60px;
+    font-size: 50px;
     text-shadow: 0 2px 11.64px rgba(0, 0, 0, 1);
 }
 
@@ -195,7 +195,7 @@ a.social {
     color: #ffffff;
 }
 
-#menu_phone{
+#menu_phone {
     display: none;
 }
 
@@ -205,15 +205,14 @@ a.social {
 /*First-block START*/
 
 .first-block {
+    display: flex;
+    align-items: center;
+    height: 100vh;
     position: relative;
-}
-
-.first-block > div {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    background-image: url("/img/photo/bg-photo-first-block.jpg");
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: cover;
 }
 
 .first-block h1 {
@@ -221,8 +220,6 @@ a.social {
 }
 
 .first-block-title {
-    position: absolute;
-    top: 20%;
     line-height: 40px;
     background: rgba(0, 0, 0, 0) linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 45%, rgb(0, 0, 0) 50%, rgb(0, 0, 0) 55%, rgb(0, 0, 0) 55%, rgba(0, 0, 0, 0) 100%);
 }
@@ -240,86 +237,6 @@ a.social {
 #first-block-title__item3 {
     font-size: 16px;
     line-height: 26px
-}
-
-.bg-sale-title {
-    position: absolute;
-    top: 50%;
-    background-blend-mode: darken;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 20%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.8) 60%, rgba(0, 0, 0, 0) 100%);
-}
-
-.sale-title p {
-    font-size: 26px;
-    line-height: 26px;
-}
-
-.sale-title p span {
-    font-size: 36px;
-    line-height: 50px;
-}
-
-.sale-button {
-    position: absolute;
-    top: 75%;
-    left: 10%;
-}
-
-.sale-button button {
-    font-family: 'Lato Black', sans-serif;
-    font-size: 20px;
-    background-color: #d7463f;
-    border: none;
-    border-radius: 33px;
-}
-
-.sale-button button:hover {
-    background-color: #564fd3;
-}
-
-.slider-first-block {
-    position: absolute;
-    bottom: 15%;
-    right: 5%;
-    width: 35%;
-}
-
-#slider-first-block .carousel-inner {
-    border: 4px white solid;
-    border-radius: 10px;
-
-}
-
-.vert .carousel-item-next.carousel-item-left,
-.vert .carousel-item-prev.carousel-item-right {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-}
-
-.vert .carousel-item-next,
-.vert .active.carousel-item-right {
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-}
-
-.vert .carousel-item-prev,
-.vert .active.carousel-item-left {
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-}
-
-#slider-first-block .carousel-indicators li {
-    width: 1em;
-    border-radius: 50%;
-    height: 1em;
-    margin: 15px 0;
-    opacity: 1;
-    background-color: white;
-}
-
-#slider-first-block .carousel-indicators li:hover, #slider-first-block .carousel-indicators .active {
-    background-color: #564fd3;
-    transition: 0.3s;
 }
 
 
@@ -347,7 +264,6 @@ a.social {
 
 .block-about span {
     font-family: 'Lato Black', sans-serif;
-    font-size: 38px;
     text-shadow: 0 6px 6.44px rgba(0, 0, 0, 1);
 }
 
@@ -358,7 +274,7 @@ a.social {
 }
 
 .block-about li {
-    font-size: 23.95px;
+    font-size: 18px;
     text-shadow: 0 6px 6.44px rgba(0, 0, 0, 1);
     list-style: none;
     background: url('/img/icon/point-white.svg') no-repeat right center;
@@ -371,9 +287,7 @@ a.social {
 
 /*block-about END*/
 
-
 /*block-form START*/
-
 .block-form .form {
     background-image: url("/img/photo/bg-photo-block-forma.jpg");
     background-repeat: no-repeat;
@@ -389,7 +303,6 @@ a.social {
 
 /*block-form END*/
 
-
 /*block-about-profession START*/
 
 .block-about-profession {
@@ -397,11 +310,8 @@ a.social {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    min-height: 900px;
-    height: 100vh;
-
+    min-height: 100vh;
     display: flex;
-
 }
 
 svg:hover #slider-button {
@@ -426,8 +336,8 @@ svg:hover #slider-button {
     font-family: "Lato Light", sans-serif;
     border-radius: 10px;
     opacity: 0.6;
-    width: 160px;
-    height: 120px;
+    width: 130px;
+    height: auto;
     border: 2px transparent solid;
 }
 
@@ -445,7 +355,11 @@ svg:hover #slider-button {
     background-image: url("/img/photo/bg-photo-block-why-me.jpg");
     background-size: cover;
     background-position: center;
-    border-radius: 30px;
+    font-size: 18px;
+}
+
+.list-why-me ul {
+    padding: 0;
 }
 
 .list-why-me li {
@@ -463,27 +377,6 @@ svg:hover #slider-button {
 /*block-why-me END*/
 
 
-/*block-sale START*/
-
-.block-sale {
-    background-image: url("/img/photo/bg-photo-block-sale.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
-.block-sale .bg-sale-title {
-    position: static;
-    background-blend-mode: darken;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0) 100%);
-}
-
-.block-sale .sale-button {
-    position: static;
-}
-
-/*block-sale END*/
-
-
 /*block-photo START*/
 
 .block-photo {
@@ -492,14 +385,10 @@ svg:hover #slider-button {
     background-position: center;
 }
 
-.border-slider {
-    border: 2px white solid;
-    border-radius: 10px;
-}
 
 .block-photo .zoom {
     width: 100%;
-    height: 200px;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -592,75 +481,6 @@ svg:hover #slider-button {
 /*block-video END*/
 
 
-/*block-how-I-work START*/
-
-.block-how-I-work {
-    background-image: url("/img/photo/bg-photo-block-how-I-work.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
-.block-how-I-work p {
-    font-size: 18px;
-    text-shadow: 0 2px 6.72px rgba(0, 0, 0, 1);
-}
-
-.block-how-I-work p span {
-    font-size: 22px;
-}
-
-.process-diagram {
-    display: grid;
-    grid-template-columns: 2fr 1fr 2fr 1fr 2fr;
-    grid-template-rows: auto;
-    grid-template-areas: 'ico-how-i-work-1 arrow-1 ico-how-i-work-2 arrow-2 ico-how-i-work-3' 'ico-how-i-work-5 arrow-4 ico-how-i-work-4 arrow-3 ico-how-i-work-3';
-    /*grid-gap: 10px;*/
-    align-items: center;
-}
-
-.ico-how-i-work-1 {
-    grid-area: ico-how-i-work-1;
-    margin-bottom: 40%;
-}
-
-.ico-how-i-work-2 {
-    grid-area: ico-how-i-work-2;
-}
-
-.ico-how-i-work-3 {
-    grid-area: ico-how-i-work-3;
-}
-
-.ico-how-i-work-4 {
-    grid-area: ico-how-i-work-4;
-}
-
-.ico-how-i-work-5 {
-    grid-area: ico-how-i-work-5;
-    margin-top: 40%;
-}
-
-.arrow-1 {
-    grid-area: arrow-1;
-}
-
-.arrow-2 {
-    grid-area: arrow-2;
-    margin-top: 50%;
-}
-
-.arrow-3 {
-    grid-area: arrow-3;
-    margin-bottom: 50%;
-}
-
-.arrow-4 {
-    grid-area: arrow-4;
-}
-
-/*block-how-I-work END*/
-
-
 /*block-clients START*/
 
 .block-clients {
@@ -682,28 +502,12 @@ svg:hover #slider-button {
 /*block-clients END*/
 
 
-/*block-review START*/
-
-.block-review .form {
-    background: #5650D3;
-    background: -webkit-linear-gradient(top left, #5650D3, #EC5344);
-    background: -moz-linear-gradient(top left, #5650D3, #EC5344);
-    background: linear-gradient(to bottom right, #5650D3, #EC5344);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    border-radius: 11px;
-}
-
-/*block-review END*/
-
-
 /*block-footer START*/
 
 .block-footer {
     background-image: url("/img/photo/bg-photo-footer.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: 75%;
 }
 
 .block-footer .container-fluid {
@@ -732,6 +536,14 @@ svg:hover #ico-to-top {
     color: #564fd3;
 }
 
+.block-footer .number{
+    font-size: 18px;
+}
+
+.block-footer .fa-phone-alt{
+    font-size: 26px;
+}
+
 /*block-footer END*/
 
 
@@ -739,28 +551,294 @@ svg:hover #ico-to-top {
 
 /* Средние девайсы (MD «таблетки», >= 768px)*/
 @media (min-width: 768px) {
+
+    h2 {
+        font-size: 60px;
+    }
+
+
     /*first-block START*/
-    .background-first-block {
+    .first-block {
+        display: block;
+        height: auto;
+    }
+
+    .first-block > div {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
+        height: 100%;
+    }
+
+    .first-block-title {
+        position: absolute;
+        top: 20%;
+    }
+
+    .bg-sale-title {
+        position: absolute;
+        top: 50%;
+        background-blend-mode: darken;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 20%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.8) 60%, rgba(0, 0, 0, 0) 100%);
+    }
+
+    .sale-title p {
+        font-size: 26px;
+        line-height: 26px;
+    }
+
+    .sale-title p span {
+        font-size: 36px;
+        line-height: 50px;
     }
 
     .sale-button {
-        left: 3%;
+        position: absolute;
+        top: 75%;
+        left: 10%;
     }
 
     .sale-button button {
+        font-family: 'Lato Black', sans-serif;
+        font-size: 20px;
+        background-color: #d7463f;
+        border: none;
+        border-radius: 33px;
         padding: 20px 40px;
     }
 
+    .sale-button button:hover {
+        background-color: #564fd3;
+    }
+
+    .slider-first-block {
+        position: absolute;
+        bottom: 15%;
+        right: 5%;
+        width: 35%;
+    }
+
+    #slider-first-block .carousel-inner {
+        border: 4px white solid;
+        border-radius: 10px;
+
+    }
+
+    .vert .carousel-item-next.carousel-item-left,
+    .vert .carousel-item-prev.carousel-item-right {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    .vert .carousel-item-next,
+    .vert .active.carousel-item-right {
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+
+    .vert .carousel-item-prev,
+    .vert .active.carousel-item-left {
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    #slider-first-block .carousel-indicators li {
+        width: 1em;
+        border-radius: 50%;
+        height: 1em;
+        margin: 15px 0;
+        opacity: 1;
+        background-color: white;
+    }
+
+    #slider-first-block .carousel-indicators li:hover, #slider-first-block .carousel-indicators .active {
+        background-color: #564fd3;
+        transition: 0.3s;
+    }
+
     /*first-block END*/
+    /*block-about START*/
+    .block-about li {
+        font-size: 23.95px;
+    }
+
+    .block-about span {
+        font-size: 38px;
+    }
+
+    /*block-about END*/
+
+
+    /*block-about-profession START*/
+    .block-about-profession .carousel-indicators li {
+        width: 160px;
+        height: 120px;
+    }
+
+    /*block-about-profession END*/
+
+
+    /*block-why-me START*/
+    .list-why-me {
+        border-radius: 30px;
+    }
+
+
+    .list-why-me ul {
+        padding-left: 40px;
+    }
+
+    /*block-why-me END*/
+
+
+    /*block-sale START*/
+
+    .block-sale {
+        background-image: url("/img/photo/bg-photo-block-sale.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .block-sale .bg-sale-title {
+        position: static;
+        background-blend-mode: darken;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0) 100%);
+    }
+
+    .block-sale .sale-button {
+        position: static;
+    }
+
     .block-sale .sale-button button {
         padding: 10px 20px;
     }
+
+    /*block-sale END*/
+
+
+    /*block-photo START*/
+
+    .border-slider {
+        border: 2px white solid;
+        border-radius: 10px;
+    }
+
+    /*block-photo END*/
+
+
+    /*block-how-I-work START*/
+
+    .block-how-I-work {
+        background-image: url("/img/photo/bg-photo-block-how-I-work.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .block-how-I-work p {
+        font-size: 18px;
+        text-shadow: 0 2px 6.72px rgba(0, 0, 0, 1);
+    }
+
+    .block-how-I-work p span {
+        font-size: 22px;
+    }
+
+    .process-diagram {
+        display: grid;
+        grid-template-columns: 2fr 1fr 2fr 1fr 2fr;
+        grid-template-rows: auto;
+        grid-template-areas: 'ico-how-i-work-1 arrow-1 ico-how-i-work-2 arrow-2 ico-how-i-work-3' 'ico-how-i-work-5 arrow-4 ico-how-i-work-4 arrow-3 ico-how-i-work-3';
+        /*grid-gap: 10px;*/
+        align-items: center;
+    }
+
+    .ico-how-i-work-1 {
+        grid-area: ico-how-i-work-1;
+        margin-bottom: 40%;
+    }
+
+    .ico-how-i-work-2 {
+        grid-area: ico-how-i-work-2;
+    }
+
+    .ico-how-i-work-3 {
+        grid-area: ico-how-i-work-3;
+    }
+
+    .ico-how-i-work-4 {
+        grid-area: ico-how-i-work-4;
+    }
+
+    .ico-how-i-work-5 {
+        grid-area: ico-how-i-work-5;
+        margin-top: 40%;
+    }
+
+    .arrow-1 {
+        grid-area: arrow-1;
+    }
+
+    .arrow-2 {
+        grid-area: arrow-2;
+        margin-top: 50%;
+    }
+
+    .arrow-3 {
+        grid-area: arrow-3;
+        margin-bottom: 50%;
+    }
+
+    .arrow-4 {
+        grid-area: arrow-4;
+    }
+
+    /*block-how-I-work END*/
+
+
+    /*block-review START*/
+
+    .block-review .form {
+        background: #5650D3;
+        background: -webkit-linear-gradient(top left, #5650D3, #EC5344);
+        background: -moz-linear-gradient(top left, #5650D3, #EC5344);
+        background: linear-gradient(to bottom right, #5650D3, #EC5344);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        border-radius: 11px;
+    }
+
+    /*block-review END*/
+
+
+    /*block-footer START*/
+
+    .block-footer .number{
+        font-size: 28px;
+    }
+
+    .block-footer .fa-phone-alt{
+        font-size: 36px;
+    }
+
+    .block-footer {
+        background-position: center;
+    }
+
+    /*block-footer END*/
 
 }
 
 /* Большие девайсы (LG десктопы, >= 992px)*/
 @media (min-width: 992px) {
+
+
+    .number {
+        font-family: 'Lato Black', sans-serif;
+        font-size: 30px;
+    }
+
 
     /*header START*/
     .navbar-collapse {
@@ -770,6 +848,7 @@ svg:hover #ico-to-top {
 
     #logo {
         height: 100%;
+        width: auto;
     }
 
     .logo-title {
@@ -777,31 +856,48 @@ svg:hover #ico-to-top {
     }
 
     /*header END*/
+
+
+    /*first-block START*/
+
     .sale-button {
         left: 10%;
     }
 
-    .sale-button button {
-        padding: 30px 70px;
-    }
+    /*first-block END*/
 
-    .block-sale .sale-button button {
-        padding: 30px 70px;
-    }
+
+    /*block-about-me START*/
 
     #anton-ermolenko-block-about-me {
         width: 100%;
     }
 
+    /*block-about-me END*/
 
-    .number {
-        font-family: 'Lato Black', sans-serif;
-        font-size: 30px;
+
+    /*block-sale START*/
+
+    .block-sale .sale-button button {
+        padding: 30px 70px;
     }
+
+    /*block-sale END*/
 }
+
 
 /* Экстрабольшие девайсы (XL большие десктопы, >= 1200px)*/
 @media (min-width: 1200px) {
+
+    /*first-block START*/
+
+    .sale-button button {
+        padding: 30px 70px;
+    }
+
+    /*first-block END*/
+
+
     #anton-ermolenko-block-about-me {
         width: 75%;
     }
