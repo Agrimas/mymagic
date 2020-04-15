@@ -5,13 +5,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no ">
 
-
+    <!-- Fontawesome-free-->
     <link rel="stylesheet" href="fontawesome-free-5.12.0-web/css/all.css">
-    <!--    <link rel="stylesheet" href="css/bootstrap.min.css">-->
+
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- My CSS -->
     <link rel="stylesheet" href="css/main.css">
 
+    <!-- Sweet Alert-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -20,7 +25,6 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
           media="screen">
     <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-
 
     <!--vk START-->
     <script type="text/javascript" src="https://vk.com/js/api/openapi.js?167"></script>
@@ -31,7 +35,6 @@
     <!--vk END-->
 
     <title>MyStudy.by</title>
-
 
 </head>
 <body>
@@ -273,9 +276,9 @@
                 </div>
                 <div class="row justify-content-center">
                     <div class="col col-lg-7">
-                        <form action="php/telegram.php" method="POST">
-                            <input name="user_name" class="my-2 px-4 py-3" type="text" placeholder="Ваш телефон">
-                            <button class="text-uppercase my-2 px-4 py-3" type="submit">Отправить заявку</button>
+                        <form action="" method="post" id="ajax_form_1">
+                            <input name="phone_number" class="phone_input my-2 px-4 py-3" type="text" placeholder="Ваш телефон">
+                            <button class="text-uppercase my-2 px-4 py-3" id="btn_tel_1" type="submit">Отправить заявку</button>
                         </form>
                     </div>
                 </div>
@@ -1095,10 +1098,10 @@
 
                         <div class="row">
                             <div class="col-lg-8 mt-3 p-0">
-                                <form action="" method="post">
-                                    <input name="user_name" class="my-2 px-4 py-3" type="text" placeholder="Ваше имя">
-                                    <input name="user_phone" class="my-2 px-4 py-3" type="text" placeholder="Ваш телефон">
-                                    <button class="text-uppercase mt-4 mb-2 px-4 py-3" type="submit">Отправить заявку
+                                <form action="" method="post" id="ajax_form_2">
+                                    <input name="name" class="my-2 px-4 py-3" placeholder="Ваше имя">
+                                    <input name="phone_number" class="phone_input my-2 px-4 py-3 " type="text" placeholder="Ваш телефон">
+                                    <button class="text-uppercase mt-4 mb-2 px-4 py-3" id="btn_tel_2" type="submit">Отправить заявку
                                     </button>
                                 </form>
                             </div>
@@ -1195,10 +1198,19 @@
         crossorigin="anonymous"></script>
 <!--Bootstrap js END-->
 
+<script src="js/jquery.maskedinput.min.js"></script>
+
+
+<script>
+    $( document ).ready(function() {
+       $(".phone_input").mask("+375 (99) 999-99-99");
+    });
+</script>
+
 <!--My javascript START-->
 <script src="js/compression_menu.js"></script>
 <script src="js/video.js"></script>
+<script src="js/ajax.js"></script>
 <!--My javascript END-->
-
 </body>
 </html>
