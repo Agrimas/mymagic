@@ -273,8 +273,8 @@
                 </div>
                 <div class="row justify-content-center">
                     <div class="col col-lg-7">
-                        <form action="" method="POST">
-                            <input class="my-2 px-4 py-3" type="text" placeholder="Ваш телефон">
+                        <form action="php/telegram.php" method="POST">
+                            <input name="user_name" class="my-2 px-4 py-3" type="text" placeholder="Ваш телефон">
                             <button class="text-uppercase my-2 px-4 py-3" type="submit">Отправить заявку</button>
                         </form>
                     </div>
@@ -1096,8 +1096,8 @@
                         <div class="row">
                             <div class="col-lg-8 mt-3 p-0">
                                 <form action="" method="post">
-                                    <input class="my-2 px-4 py-3" type="text" placeholder="Ваше имя">
-                                    <input class="my-2 px-4 py-3" type="text" placeholder="Ваш телефон">
+                                    <input name="user_name" class="my-2 px-4 py-3" type="text" placeholder="Ваше имя">
+                                    <input name="user_phone" class="my-2 px-4 py-3" type="text" placeholder="Ваш телефон">
                                     <button class="text-uppercase mt-4 mb-2 px-4 py-3" type="submit">Отправить заявку
                                     </button>
                                 </form>
