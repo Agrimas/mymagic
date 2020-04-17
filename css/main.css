@@ -686,12 +686,15 @@ svg:hover #ico-to-top {
 
     /*block-about-profession START*/
 
-    .block-about-profession .carousel-indicators li, #indicator_meetings, .title_meetings_tematic {
+    .block-about-profession .carousel-indicators li {
         width: 160px;
         height: 120px;
         font-size: 1em;
     }
 
+    #indicator_meetings, .title_meetings_tematic{
+        font-size: 1em;
+    }
 
     /*block-about-profession END*/
 
@@ -840,7 +843,7 @@ svg:hover #ico-to-top {
     }
 
     .block-footer .container-fluid {
-        background-image: url("/img/icon/logo-grad.svg");
+        background-image: url("/img/logo/logo_footer_my_magic.svg");
         background-repeat: no-repeat;
         background-position: 90% 90%;
         background-size: 20%;

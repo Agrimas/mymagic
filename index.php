@@ -42,9 +42,9 @@
 
     <div class="navbar-brand col h-100 p-0">
         <a href="#first-block" class="logo-link">
-            <img src="img/icon/logo.svg" alt="Логотип" height="100%" class="logo" id="logo">
+            <img src="img/logo/logo_my_magic.svg" alt="Логотип" height="100%" class="logo" id="logo">
 
-            <img src="img/icon/logo_title.png" alt="Заголовок логотипа" class="logo-title" id="logo-title">
+            <img src="img/logo/logo_title_my_magic.png" alt="Заголовок логотипа" class="logo-title" id="logo-title">
         </a>
         <a class="number d-block d-lg-none pl-3 p-0 navbar-toggler" href="tel:+375447405583">+375 44
             7405583</a>
@@ -185,15 +185,15 @@
                 <div class="row flex-nowrap">
                     <div class="carousel-inner col-11 p-2 p-lg-3">
                         <div class="carousel-item active">
-                            <img class="img-fluid" src="img/photo/photo-1.jpg"
+                            <img class="img-fluid" src="img/photo/slider_first_block/photo-1.jpg"
                                  alt="First slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="img-fluid" src="img/photo/photo-1.jpg"
+                            <img class="img-fluid" src="img/photo/slider_first_block/photo-2.jpg"
                                  alt="Second slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="img-fluid" src="img/photo/photo-1.jpg"
+                            <img class="img-fluid" src="img/photo/slider_first_block/photo-3.jpg"
                                  alt="Third slide">
                         </div>
                     </div>
@@ -341,7 +341,7 @@
                                     <div class="carousel-item active" data-ride="false" data-touch="false">
                                         <div class="row d-flex justify-content-center m-0">
                                             <div class="col col-lg-10 col-xl-8">
-                                                <img class="d-block w-100" src="img/photo/photo-1.jpg"
+                                                <img class="d-block w-100" src="img/photo/slider_about_profession/photo-1.jpg"
                                                      alt="Первый слайд">
                                             </div>
                                             <div class="slide-title active col-12 d-md-block mt-3 mt-lg-4 p-0 py-3 px-md-3"">
@@ -352,7 +352,7 @@
                                     <div class="carousel-item" data-ride="false" data-touch="false">
                                         <div class="row d-flex justify-content-center m-0">
                                             <div class="col col-lg-10 col-xl-8">
-                                                <img class="d-block w-100" src="img/photo/photo-1.jpg"
+                                                <img class="d-block w-100" src="img/photo/slider_about_profession/photo-2.jpg"
                                                      alt="Первый слайд">
                                             </div>
                                             <div class="slide-title active col-12 d-md-block mt-3 mt-lg-4 p-0 py-3 px-md-3">
@@ -363,7 +363,7 @@
                                     <div class="carousel-item" data-ride="false" data-touch="false">
                                         <div class="row d-flex justify-content-center m-0">
                                             <div class="col col-lg-10 col-xl-8">
-                                                <img class="d-block w-100" src="img/photo/photo-1.jpg"
+                                                <img class="d-block w-100" src="img/photo/slider_about_profession/photo-3.jpg"
                                                      alt="Первый слайд">
                                             </div>
                                             <div class="slide-title active col-12 d-md-block mt-3 mt-lg-4 p-0 py-3 px-md-3"">
@@ -374,7 +374,7 @@
                                     <div class="carousel-item" data-ride="false" data-touch="false">
                                         <div class="row d-flex justify-content-center m-0">
                                             <div class="col col-lg-10 col-xl-8">
-                                                <img class="d-block w-100" src="img/photo/photo-1.jpg"
+                                                <img class="d-block w-100" src="img/photo/slider_about_profession/photo-4.jpg"
                                                      alt="Первый слайд">
                                             </div>
                                             <div class="slide-title active col-12 d-md-block mt-3 mt-lg-4 p-0 py-3 px-md-3"">
@@ -385,7 +385,7 @@
                                     <div class="carousel-item" data-ride="false" data-touch="false">
                                         <div class="row d-flex justify-content-center m-0">
                                             <div class="col col-lg-10 col-xl-8">
-                                                <img class="d-block w-100" src="img/photo/photo-1.jpg"
+                                                <img class="d-block w-100" src="img/photo/slider_about_profession/photo-5.jpg"
                                                      alt="Первый слайд">
                                             </div>
                                             <div class="slide-title active col-12 d-md-block mt-3 mt-lg-4 p-0 py-3 px-md-3">
@@ -397,7 +397,7 @@
                                     <div class="carousel-item" data-ride="false" data-touch="false">
                                         <div class="row d-flex justify-content-center m-0">
                                             <div class="col col-lg-10 col-xl-8">
-                                                <img class="d-block w-100" src="img/photo/photo-1.jpg"
+                                                <img class="d-block w-100" src="img/photo/slider_about_profession/photo-6.jpg"
                                                      alt="Первый слайд">
                                             </div>
                                             <div class="slide-title active col-12 d-md-block mt-3 mt-lg-4 p-0 py-3 px-md-3"">
@@ -590,60 +590,60 @@
                     <div class="row m-0">
                         <!--Слайд 1 START-->
                         <div class="col-6 col-lg-3 p-0">
-                            <a href="img/photo/photo-1.jpg"
+                            <a href="img/photo/slider_photo_block/slide-1/photo-1.jpg"
                                class="fancybox" rel="ligthbox">
-                                <img src="img/photo/photo-1.jpg"
+                                <img src="img/photo/slider_photo_block/slide-1/photo-1.jpg"
                                      class="zoom img-fluid" alt="Описание">
                             </a>
                         </div>
 
                         <div class="col-6 col-lg-3 p-0">
-                            <a href="img/photo/photo-2.jpg"
+                            <<a href="img/photo/slider_photo_block/slide-1/photo-2.jpg"
                                class="fancybox" rel="ligthbox">
-                                <img src="img/photo/photo-2.jpg"
+                                <img src="img/photo/slider_photo_block/slide-1/photo-2.jpg"
                                      class="zoom img-fluid" alt="">
                             </a>
                         </div>
 
                         <div class="col-6 col-lg-3 p-0">
-                            <a href="img/photo/photo-3.jpg"
+                            <a href="img/photo/slider_photo_block/slide-1/photo-3.jpg"
                                class="fancybox" rel="ligthbox">
-                                <img src="img/photo/photo-3.jpg"
+                                <img src="img/photo/slider_photo_block/slide-1/photo-3.jpg"
                                      class="zoom img-fluid" alt="">
                             </a>
                         </div>
                         <div class="col-6 col-lg-3 p-0">
-                            <a href="img/photo/photo-4.jpg"
+                            <a href="img/photo/slider_photo_block/slide-1/photo-4.jpg"
                                class="fancybox" rel="ligthbox">
-                                <img src="img/photo/photo-4.jpg"
+                                <img src="img/photo/slider_photo_block/slide-1/photo-4.jpg"
                                      class="zoom img-fluid" alt="">
                             </a>
                         </div>
                         <div class="col-6 col-lg-3 p-0">
-                            <a href="img/photo/photo-5.jpg"
+                            <a href="img/photo/slider_photo_block/slide-1/photo-5.jpg"
                                class="fancybox" rel="ligthbox">
-                                <img src="img/photo/photo-5.jpg"
+                                <img src="img/photo/slider_photo_block/slide-1/photo-5.jpg"
                                      class="zoom img-fluid" alt="">
                             </a>
                         </div>
                         <div class="col-6 col-lg-3 p-0">
-                            <a href="img/photo/photo-6.jpg"
+                            <a href="img/photo/slider_photo_block/slide-1/photo-6.jpg"
                                class="fancybox" rel="ligthbox">
-                                <img src="img/photo/photo-6.jpg"
+                                <img src="img/photo/slider_photo_block/slide-1/photo-6.jpg"
                                      class="zoom img-fluid" alt="">
                             </a>
                         </div>
                         <div class="col-6 col-lg-3 p-0">
-                            <a href="img/photo/photo-7.jpg"
+                            <a href="img/photo/slider_photo_block/slide-1/photo-7.jpg"
                                class="fancybox" rel="ligthbox">
-                                <img src="img/photo/photo-7.jpg"
+                                <img src="img/photo/slider_photo_block/slide-1/photo-7.jpg"
                                      class="zoom img-fluid" alt="">
                             </a>
                         </div>
                         <div class="col-6 col-lg-3 p-0">
-                            <a href="img/photo/photo-8.jpg"
+                            <a href="img/photo/slider_photo_block/slide-1/photo-8.jpg"
                                class="fancybox" rel="ligthbox">
-                                <img src="img/photo/photo-8.jpg"
+                                <img src="img/photo/slider_photo_block/slide-1/photo-8.jpg"
                                      class="zoom img-fluid" alt="">
                             </a>
                         </div>
@@ -654,60 +654,60 @@
                 <div class="carousel-item">
                     <div class="row m-0">
                         <div class="col-6 col-lg-3 p-0">
-                            <a href="img/photo/photo-1.jpg"
+                            <a href="img/photo/slider_photo_block/slide-2/photo-1.jpg"
                                class="fancybox" rel="ligthbox">
-                                <img src="img/photo/photo-1.jpg"
+                                <img src="img/photo/slider_photo_block/slide-2/photo-1.jpg"
                                      class="zoom img-fluid" alt="">
                             </a>
                         </div>
 
                         <div class="col-6 col-lg-3 p-0">
-                            <a href="img/photo/photo-2.jpg"
+                            <a href="img/photo/slider_photo_block/slide-2/photo-2.jpg"
                                class="fancybox" rel="ligthbox">
-                                <img src="img/photo/photo-2.jpg"
+                                <img src="img/photo/slider_photo_block/slide-2/photo-2.jpg"
                                      class="zoom img-fluid" alt="">
                             </a>
                         </div>
 
                         <div class="col-6 col-lg-3 p-0">
-                            <a href="img/photo/photo-3.jpg"
+                            <a href="img/photo/slider_photo_block/slide-2/photo-3.jpg"
                                class="fancybox" rel="ligthbox">
-                                <img src="img/photo/photo-3.jpg"
+                                <img src="img/photo/slider_photo_block/slide-2/photo-3.jpg"
                                      class="zoom img-fluid" alt="">
                             </a>
                         </div>
                         <div class="col-6 col-lg-3 p-0">
-                            <a href="img/photo/photo-4.jpg"
+                            <a href="img/photo/slider_photo_block/slide-2/photo-4.jpg"
                                class="fancybox" rel="ligthbox">
-                                <img src="img/photo/photo-4.jpg"
+                                <img src="img/photo/slider_photo_block/slide-2/photo-4.jpg"
                                      class="zoom img-fluid" alt="">
                             </a>
                         </div>
                         <div class="col-6 col-lg-3 p-0">
-                            <a href="img/photo/photo-5.jpg"
+                            <a href="img/photo/slider_photo_block/slide-2/photo-5.jpg"
                                class="fancybox" rel="ligthbox">
-                                <img src="img/photo/photo-5.jpg"
+                                <img src="img/photo/slider_photo_block/slide-2/photo-5.jpg"
                                      class="zoom img-fluid" alt="">
                             </a>
                         </div>
                         <div class="col-6 col-lg-3 p-0">
-                            <a href="img/photo/photo-6.jpg"
+                            <a href="img/photo/slider_photo_block/slide-2/photo-6.jpg"
                                class="fancybox" rel="ligthbox">
-                                <img src="img/photo/photo-6.jpg"
+                                <img src="img/photo/slider_photo_block/slide-2/photo-6.jpg"
                                      class="zoom img-fluid" alt="">
                             </a>
                         </div>
                         <div class="col-6 col-lg-3 p-0">
-                            <a href="img/photo/photo-7.jpg"
+                            <a href="img/photo/slider_photo_block/slide-2/photo-7.jpg"
                                class="fancybox" rel="ligthbox">
-                                <img src="img/photo/photo-7.jpg"
+                                <img src="img/photo/slider_photo_block/slide-2/photo-7.jpg"
                                      class="zoom img-fluid" alt="">
                             </a>
                         </div>
                         <div class="col-6 col-lg-3 p-0">
-                            <a href="img/photo/photo-8.jpg"
+                            <a href="img/photo/slider_photo_block/slide-2/photo-8.jpg"
                                class="fancybox" rel="ligthbox">
-                                <img src="img/photo/photo-8.jpg"
+                                <img src="img/photo/slider_photo_block/slide-2/photo-8.jpg"
                                      class="zoom img-fluid" alt="">
                             </a>
                         </div>
@@ -717,60 +717,60 @@
                 <div class="carousel-item">
                     <div class="row m-0">
                         <div class="col-6 col-lg-3 p-0">
-                            <a href="img/photo/photo-1.jpg"
+                            <a href="img/photo/slider_photo_block/slide-3/photo-1.jpg"
                                class="fancybox" rel="ligthbox">
-                                <img src="img/photo/photo-1.jpg"
+                                <img src="img/photo/slider_photo_block/slide-3/photo-1.jpg"
                                      class="zoom img-fluid" alt="">
                             </a>
                         </div>
 
                         <div class="col-6 col-lg-3 p-0">
-                            <a href="img/photo/photo-2.jpg"
+                            <a href="img/photo/slider_photo_block/slide-3/photo-2.jpg"
                                class="fancybox" rel="ligthbox">
-                                <img src="img/photo/photo-2.jpg"
+                                <img src="img/photo/slider_photo_block/slide-3/photo-2.jpg"
                                      class="zoom img-fluid" alt="">
                             </a>
                         </div>
 
                         <div class="col-6 col-lg-3 p-0">
-                            <a href="img/photo/photo-3.jpg"
+                            <a href="img/photo/slider_photo_block/slide-3/photo-3.jpg"
                                class="fancybox" rel="ligthbox">
-                                <img src="img/photo/photo-3.jpg"
+                                <img src="img/photo/slider_photo_block/slide-3/photo-3.jpg"
                                      class="zoom img-fluid" alt="">
                             </a>
                         </div>
                         <div class="col-6 col-lg-3 p-0">
-                            <a href="img/photo/photo-4.jpg"
+                            <a href="img/photo/slider_photo_block/slide-3/photo-4.jpg"
                                class="fancybox" rel="ligthbox">
-                                <img src="img/photo/photo-4.jpg"
+                                <img src="img/photo/slider_photo_block/slide-3/photo-4.jpg"
                                      class="zoom img-fluid" alt="">
                             </a>
                         </div>
                         <div class="col-6 col-lg-3 p-0">
-                            <a href="img/photo/photo-5.jpg"
+                            <a href="img/photo/slider_photo_block/slide-3/photo-5.jpg"
                                class="fancybox" rel="ligthbox">
-                                <img src="img/photo/photo-5.jpg"
+                                <img src="img/photo/slider_photo_block/slide-3/photo-5.jpg"
                                      class="zoom img-fluid" alt="">
                             </a>
                         </div>
                         <div class="col-6 col-lg-3 p-0">
-                            <a href="img/photo/photo-6.jpg"
+                            <a href="img/photo/slider_photo_block/slide-3/photo-6.jpg"
                                class="fancybox" rel="ligthbox">
-                                <img src="img/photo/photo-6.jpg"
+                                <img src="img/photo/slider_photo_block/slide-3/photo-6.jpg"
                                      class="zoom img-fluid" alt="">
                             </a>
                         </div>
                         <div class="col-6 col-lg-3 p-0">
-                            <a href="img/photo/photo-7.jpg"
+                            <a href="img/photo/slider_photo_block/slide-3/photo-7.jpg"
                                class="fancybox" rel="ligthbox">
-                                <img src="img/photo/photo-7.jpg"
+                                <img src="img/photo/slider_photo_block/slide-3/photo-7.jpg"
                                      class="zoom img-fluid" alt="">
                             </a>
                         </div>
                         <div class="col-6 col-lg-3 p-0">
-                            <a href="img/photo/photo-8.jpg"
+                            <a href="img/photo/slider_photo_block/slide-3/photo-8.jpg"
                                class="fancybox" rel="ligthbox">
-                                <img src="img/photo/photo-8.jpg"
+                                <img src="img/photo/slider_photo_block/slide-3/photo-8.jpg"
                                      class="zoom img-fluid" alt="">
                             </a>
                         </div>
@@ -831,12 +831,12 @@
 
                         <div class="carousel-item active" data-ride="false" data-touch="false">
                             <div class="video">
-                                <a class="video__link" href="https://youtu.be/r8JGWIWdGm8">
+                                <a class="video__link" href="https://youtu.be/r8JGWIWdGm8"> <!-- Здесь заменить -->
                                     <picture>
-                                        <source srcset="https://i.ytimg.com/vi_webp/r8JGWIWdGm8/maxresdefault.webp"
+                                        <source srcset="https://i.ytimg.com/vi_webp/r8JGWIWdGm8/maxresdefault.webp" <!-- Здесь заменить -->
                                                 type="image/webp">
                                         <img class="video__media"
-                                             src="https://i.ytimg.com/vi/r8JGWIWdGm8/maxresdefault.jpg" alt="">
+                                             src="https://i.ytimg.com/vi/r8JGWIWdGm8/maxresdefault.jpg" alt=""> <!-- Здесь заменить -->
                                     </picture>
                                 </a>
                                 <button class="video__button" type="button" aria-label="Запустить видео">
@@ -851,12 +851,12 @@
 
                         <div class="carousel-item" data-ride="false" data-touch="false">
                             <div class="video">
-                                <a class="video__link" href="https://youtu.be/pWYbL_j_MEo">
+                                <a class="video__link" href="https://youtu.be/pWYbL_j_MEo"> <!-- Здесь заменить -->
                                     <picture>
-                                        <source srcset="https://i.ytimg.com/vi_webp/pWYbL_j_MEo/maxresdefault.webp"
+                                        <source srcset="https://i.ytimg.com/vi_webp/pWYbL_j_MEo/maxresdefault.webp" <!-- Здесь заменить -->
                                                 type="image/webp">
                                         <img class="video__media"
-                                             src="https://i.ytimg.com/vi/pWYbL_j_MEo/maxresdefault.jpg" alt="">
+                                             src="https://i.ytimg.com/vi/pWYbL_j_MEo/maxresdefault.jpg" alt=""> <!-- Здесь заменить -->
                                     </picture>
                                 </a>
                                 <button class="video__button" type="button" aria-label="Запустить видео">
@@ -872,12 +872,12 @@
 
                         <div class="carousel-item" data-ride="false" data-touch="false">
                             <div class="video">
-                                <a class="video__link" href="https://youtu.be/zCm6NsqJLWE">
+                                <a class="video__link" href="https://youtu.be/zCm6NsqJLWE"> <!-- Здесь заменить -->
                                     <picture>
-                                        <source srcset="https://i.ytimg.com/vi_webp/zCm6NsqJLWE/maxresdefault.webp"
+                                        <source srcset="https://i.ytimg.com/vi_webp/zCm6NsqJLWE/maxresdefault.webp" <!-- Здесь заменить -->
                                                 type="image/webp">
                                         <img class="video__media"
-                                             src="https://i.ytimg.com/vi/zCm6NsqJLWE/maxresdefault.jpg" alt="">
+                                             src="https://i.ytimg.com/vi/zCm6NsqJLWE/maxresdefault.jpg" alt=""> <!-- Здесь заменить -->
                                     </picture>
                                 </a>
                                 <button class="video__button" type="button" aria-label="Запустить видео">
@@ -1178,7 +1178,7 @@
 
         <div class="row mt-5 m-0">
             <div class="col col-md-4 px-1 py-0 px-md-4">
-                <p>Дизайн сайта: <img src="/img/icon/zorka.png" alt="" class="img-fluid"></p>
+                <p>Дизайн сайта: <img src="/img/logo/logo_zorka.png" alt="" class="img-fluid"></p>
             </div>
             <div class="col col-md-4 text-md-center">
                 <a href="#first-block" class="logo-link">
