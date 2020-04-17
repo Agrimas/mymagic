@@ -24,13 +24,26 @@ function compressionMenu() {
 // Функция сжатия меню END
 
 
-
 $(document).ready(function () {
 
     // При изначальной ширине START
 
     if ($(window).width() > 992) {
+
+
         document.getElementById("header").style.height = "100px";
+
+
+        console.log($(window).scrollTop());
+
+
+        if ($(window).scrollTop() > 1) {
+            document.getElementById("second-row").style.display = 'none';
+            document.getElementById("header").style.height = '50px';
+            $('#menu_phone').fadeIn('slow');
+        }
+
+
         compressionMenu();
     }
 
@@ -43,17 +56,23 @@ $(document).ready(function () {
 
     // При ширине после переворота START
 
+
     window.addEventListener("resize", function () {
 
         if ($(window).width() < 992) {
             $(window).off('scroll');
             document.getElementById("header").style.height = "auto";
             document.getElementById("second-row").style.display = "none";
+            document.getElementById("menu_phone").style.display = "none";
         }
 
         if ($(window).width() > 992) {
-            document.getElementById("header").style.height = "100px";
-            document.getElementById("second-row").style.display = "flex";
+            if ($(window).scrollTop() <= 1){
+                document.getElementById("header").style.height = "100px";
+                document.getElementById("second-row").style.display = "flex";
+            }else {
+                document.getElementById("header").style.height = "50px";
+            }
             compressionMenu();
         }
 

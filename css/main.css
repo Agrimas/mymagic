@@ -32,6 +32,7 @@ h2 {
 
 h3 {
     font-size: 20px;
+    text-shadow: 0 2px 11.64px rgba(0, 0, 0, 1);
 }
 
 button:active, button:focus, a:active, a:focus {
@@ -69,9 +70,6 @@ input::placeholder {
 
 /*General classes START */
 
-.navbar-light .navbar-nav .nav-link:hover {
-    color: #d7463f;
-}
 
 .black-title {
     color: black;
@@ -98,7 +96,7 @@ a.social {
     align-items: center;
 }
 
-.navbar-light .navbar-nav .nav-link.social:hover, .navbar-light .navbar-nav .nav-link.social:active {
+a.social:hover{
     color: #564fd3;
 }
 
@@ -125,15 +123,30 @@ a.social {
     transition: 0.3s;
 }
 
-.navbar-light .navbar-toggler {
-    color: white;
+.sale-button {
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    font-family: 'Lato Black', sans-serif;
+    font-size: 20px;
+    background-color: #d7463f;
     border: none;
+    border-radius: 33px;
+}
+
+.sale-button:hover {
+    background-color: #564fd3;
 }
 
 /*General classes START */
 
 
 /*Header*/
+
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
 
 .navbar-toggler.button {
     background-color: #ffffff;
@@ -157,7 +170,7 @@ a.social {
 
 .header .number {
     font-family: 'Lato Black', sans-serif;
-    font-size: 20px;
+    font-size: 14px;
     text-shadow: 0 2px 11.64px rgba(0, 0, 0, 0.7);
 }
 
@@ -171,7 +184,7 @@ a.social {
     width: 1px;
 }
 
-.header a.order-call {
+#order-call {
     font-family: 'Lato Black', sans-serif;
     font-size: 10px;
     border: 3px white solid;
@@ -179,8 +192,13 @@ a.social {
     padding: 10px 17px;
 }
 
-.header a.order-call:hover {
+#order-call:hover {
     border-color: #d7463f;
+    color: #d7463f;
+}
+
+.first-row a:hover{
+    color: #d7463f;
 }
 
 .logo {
@@ -191,13 +209,15 @@ a.social {
     height: 39px;
 }
 
-.navbar-light .navbar-nav .nav-link {
-    color: #ffffff;
-}
-
 #menu_phone {
     display: none;
+    font-size: 12px;
 }
+
+#menu_phone .fa-phone-alt{
+    font-size: 20px;
+}
+
 
 /*Header END*/
 
@@ -239,6 +259,9 @@ a.social {
     line-height: 26px
 }
 
+.first-block .sale-button{
+    padding: 10px 20px;
+}
 
 /*First-block END*/
 
@@ -339,6 +362,15 @@ svg:hover #slider-button {
     width: 130px;
     height: auto;
     border: 2px transparent solid;
+    font-size: 13px;
+}
+
+#indicator_meetings{
+    font-size: 12px;
+}
+
+.title_meetings_tematic{
+    font-size: 14px;
 }
 
 .block-about-profession .carousel-indicators .active {
@@ -364,6 +396,7 @@ svg:hover #slider-button {
 
 .list-why-me li {
     list-style: none;
+    text-shadow: 0 6px 6.44px rgba(0, 0, 0, 1);
 }
 
 .list-why-me .positive li {
@@ -510,12 +543,10 @@ svg:hover #slider-button {
     background-position: 75%;
 }
 
-.block-footer .container-fluid {
-    background-image: url("/img/icon/logo-grad.svg");
-    background-repeat: no-repeat;
-    background-position: 90% 90%;
-    background-size: 20%;
+.block-footer form>*{
+    width: 250px;
 }
+
 
 .block-footer a.social {
     border: 1px white solid;
@@ -556,7 +587,6 @@ svg:hover #ico-to-top {
         font-size: 60px;
     }
 
-
     /*first-block START*/
     .first-block {
         display: block;
@@ -593,24 +623,6 @@ svg:hover #ico-to-top {
         line-height: 50px;
     }
 
-    .sale-button {
-        position: absolute;
-        top: 75%;
-        left: 10%;
-    }
-
-    .sale-button button {
-        font-family: 'Lato Black', sans-serif;
-        font-size: 20px;
-        background-color: #d7463f;
-        border: none;
-        border-radius: 33px;
-        padding: 20px 40px;
-    }
-
-    .sale-button button:hover {
-        background-color: #564fd3;
-    }
 
     .slider-first-block {
         position: absolute;
@@ -658,6 +670,8 @@ svg:hover #ico-to-top {
     }
 
     /*first-block END*/
+
+
     /*block-about START*/
     .block-about li {
         font-size: 23.95px;
@@ -671,19 +685,22 @@ svg:hover #ico-to-top {
 
 
     /*block-about-profession START*/
-    .block-about-profession .carousel-indicators li {
+
+    .block-about-profession .carousel-indicators li, #indicator_meetings, .title_meetings_tematic {
         width: 160px;
         height: 120px;
+        font-size: 1em;
     }
+
 
     /*block-about-profession END*/
 
 
     /*block-why-me START*/
+
     .list-why-me {
         border-radius: 30px;
     }
-
 
     .list-why-me ul {
         padding-left: 40px;
@@ -708,10 +725,6 @@ svg:hover #ico-to-top {
 
     .block-sale .sale-button {
         position: static;
-    }
-
-    .block-sale .sale-button button {
-        padding: 10px 20px;
     }
 
     /*block-sale END*/
@@ -826,12 +839,33 @@ svg:hover #ico-to-top {
         background-position: center;
     }
 
+    .block-footer .container-fluid {
+        background-image: url("/img/icon/logo-grad.svg");
+        background-repeat: no-repeat;
+        background-position: 90% 90%;
+        background-size: 20%;
+    }
+
     /*block-footer END*/
 
 }
 
 /* Большие девайсы (LG десктопы, >= 992px)*/
 @media (min-width: 992px) {
+
+    /*First block START*/
+
+    .first-block .sale-button {
+        padding: 30px 70px;
+    }
+
+    /*First block END*/
+
+
+
+    .header .number {
+        font-size: 20px;
+    }
 
 
     .number {
@@ -860,7 +894,7 @@ svg:hover #ico-to-top {
 
     /*first-block START*/
 
-    .sale-button {
+    .first-block .sale-button {
         left: 10%;
     }
 
@@ -874,28 +908,22 @@ svg:hover #ico-to-top {
     }
 
     /*block-about-me END*/
-
-
-    /*block-sale START*/
-
-    .block-sale .sale-button button {
-        padding: 30px 70px;
-    }
-
-    /*block-sale END*/
 }
 
 
 /* Экстрабольшие девайсы (XL большие десктопы, >= 1200px)*/
 @media (min-width: 1200px) {
 
-    /*first-block START*/
+    /*header START*/
 
-    .sale-button button {
-        padding: 30px 70px;
+    #menu_phone {
+        font-size: 16px;
     }
 
-    /*first-block END*/
+    #menu_phone .fa-phone-alt{
+        font-size: 22px;
+    }
+    /*header END*/
 
 
     #anton-ermolenko-block-about-me {
