@@ -1,12 +1,12 @@
 <?php
 
-/* https://api.telegram.org/XXXXXXXXXXXXXXXXXXXXXXX/getUpdates,
-где, XXXXXXXXXXXXXXXXXXXXXXX - токен вашего бота, полученный ранее */
+
+//https://api.telegram.org/botxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx/getUpdates
 
 
-$token = "XXXXXXXXXXXXXXXXXXXXXXX";
+$token = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
 
-$chat_id = "XXXXXXXXXXXXXXXXXXXXXXX";
+$chat_id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
 
 foreach ($_POST as $key => $value) {
     if ($value) {

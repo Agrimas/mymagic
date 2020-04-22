@@ -76,7 +76,7 @@ input::placeholder {
     text-shadow: none;
 }
 
-.fa-phone-alt {
+.fa-phone {
     color: #d7463f;
     font-size: 36px;
     text-shadow: 0 2px 11.64px rgba(0, 0, 0, 0.7);
@@ -96,7 +96,7 @@ a.social {
     align-items: center;
 }
 
-a.social:hover{
+a.social:hover {
     color: #564fd3;
 }
 
@@ -138,12 +138,16 @@ a.social:hover{
     background-color: #564fd3;
 }
 
+.zoom {
+    object-fit: cover;
+}
+
 /*General classes START */
 
 
 /*Header*/
 
-.navbar-toggler-icon{
+.navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
@@ -161,7 +165,7 @@ a.social:hover{
     font-size: 15.82px;
 }
 
-.header .fa-phone-alt {
+.header .fa-phone {
     color: #ec5344;
     font-size: 25px;
     text-shadow: 0 2px 11.64px rgba(0, 0, 0, 0.7);
@@ -197,7 +201,7 @@ a.social:hover{
     color: #d7463f;
 }
 
-.first-row a:hover{
+.first-row a:hover {
     color: #d7463f;
 }
 
@@ -214,7 +218,7 @@ a.social:hover{
     font-size: 12px;
 }
 
-#menu_phone .fa-phone-alt{
+#menu_phone .fa-phone {
     font-size: 20px;
 }
 
@@ -235,31 +239,35 @@ a.social:hover{
     background-size: cover;
 }
 
-.first-block h1 {
-    font-size: 22px;
-}
-
 .first-block-title {
     line-height: 40px;
     background: rgba(0, 0, 0, 0) linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 45%, rgb(0, 0, 0) 50%, rgb(0, 0, 0) 55%, rgb(0, 0, 0) 55%, rgba(0, 0, 0, 0) 100%);
 }
 
-#first-block-title__item1 {
+h1 {
+    font-size: 22px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h1 span {
     font-size: 30px;
 }
 
-#first-block-title__item2 {
+#celebration {
     font-size: 40px;
     color: #564fd3;
     font-family: 'Lato Black', sans-serif;
 }
 
-#first-block-title__item3 {
+.first-block-title p {
     font-size: 16px;
-    line-height: 26px
+    line-height: 26px;
+    text-transform: uppercase;
+    margin: 0;
 }
 
-.first-block .sale-button{
+.first-block .sale-button {
     padding: 10px 20px;
 }
 
@@ -341,42 +349,44 @@ svg:hover #slider-button {
     fill: #cf94da;
 }
 
-.slide-title {
+#slider-block-about-profession img {
+    max-width: 100%;
+}
+
+#slider-block-about-profession .carousel-item {
+    text-align: center;
+}
+
+#slider-block-about-profession p, #slider-block-about-profession .carousel-indicators li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     background-color: rgba(0, 0, 0, 0.6);
     font-family: "Lato Light", sans-serif;
-    text-align: center;
     border-radius: 10px;
+}
+
+#slider-block-about-profession p {
     font-size: 22px;
     line-height: 25px;
     border: 2px white solid;
+    height: 80px;
+    margin-top: 1em;
 }
 
-.block-about-profession .carousel-indicators li {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.6);
-    font-family: "Lato Light", sans-serif;
-    border-radius: 10px;
-    opacity: 0.6;
+#slider-block-about-profession .carousel-indicators li {
+    border: 2px transparent solid;
     width: 130px;
     height: auto;
-    border: 2px transparent solid;
     font-size: 13px;
 }
 
-#indicator_meetings{
-    font-size: 12px;
-}
-
-.title_meetings_tematic{
-    font-size: 14px;
-}
-
-.block-about-profession .carousel-indicators .active {
-    border: 2px white solid;
+#slider-block-about-profession .carousel-indicators .active {
+    border-color: white;
     opacity: 1;
 }
+
 
 /*block-about-profession END*/
 
@@ -412,20 +422,19 @@ svg:hover #slider-button {
 
 /*block-photo START*/
 
-.block-photo {
+#block-photo {
     background-image: url("/img/photo/bg-photo-block-photo.jpg");
     background-size: cover;
     background-position: center;
 }
 
-
-.block-photo .zoom {
+#carouselBlockPhoto img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.block-photo img:hover {
+#carouselBlockPhoto img:hover {
     background-image: linear-gradient(-57deg, rgb(86, 79, 211) 0%, rgb(161, 81, 140) 55%, rgb(236, 83, 68) 100%);
     opacity: 0.651;
     transition: 0.6s;
@@ -567,11 +576,11 @@ svg:hover #ico-to-top {
     color: #564fd3;
 }
 
-.block-footer .number{
+.block-footer .number {
     font-size: 18px;
 }
 
-.block-footer .fa-phone-alt{
+.block-footer .fa-phone {
     font-size: 26px;
 }
 
@@ -634,26 +643,27 @@ svg:hover #ico-to-top {
     #slider-first-block .carousel-inner {
         border: 4px white solid;
         border-radius: 10px;
-
     }
 
-    .vert .carousel-item-next.carousel-item-left,
-    .vert .carousel-item-prev.carousel-item-right {
+    #slider-first-block .carousel-item-next.carousel-item-left,
+    #slider-first-block .carousel-item-prev.carousel-item-right {
         -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
     }
 
-    .vert .carousel-item-next,
-    .vert .active.carousel-item-right {
+    #slider-first-block .carousel-item-next,
+    #slider-first-block .active.carousel-item-right {
         -webkit-transform: translate3d(0, 100%, 0);
         transform: translate3d(0, 100%, 0);
     }
 
-    .vert .carousel-item-prev,
-    .vert .active.carousel-item-left {
+    #slider-first-block .carousel-item-prev,
+    #slider-first-block .active.carousel-item-left {
         -webkit-transform: translate3d(0, -100%, 0);
         transform: translate3d(0, -100%, 0);
     }
+
+
 
     #slider-first-block .carousel-indicators li {
         width: 1em;
@@ -670,8 +680,6 @@ svg:hover #ico-to-top {
     }
 
     /*first-block END*/
-
-
     /*block-about START*/
     .block-about li {
         font-size: 23.95px;
@@ -682,25 +690,20 @@ svg:hover #ico-to-top {
     }
 
     /*block-about END*/
-
-
     /*block-about-profession START*/
-
-    .block-about-profession .carousel-indicators li {
+    #slider-block-about-profession .carousel-indicators li {
         width: 160px;
         height: 120px;
-        font-size: 1em;
+        font-size: 16px;
     }
 
-    #indicator_meetings, .title_meetings_tematic{
-        font-size: 1em;
+    #slider-block-about-profession img {
+        max-width: 80%;
     }
+
 
     /*block-about-profession END*/
-
-
     /*block-why-me START*/
-
     .list-why-me {
         border-radius: 30px;
     }
@@ -710,10 +713,7 @@ svg:hover #ico-to-top {
     }
 
     /*block-why-me END*/
-
-
     /*block-sale START*/
-
     .block-sale {
         background-image: url("/img/photo/bg-photo-block-sale.jpg");
         background-size: cover;
@@ -731,20 +731,14 @@ svg:hover #ico-to-top {
     }
 
     /*block-sale END*/
-
-
     /*block-photo START*/
-
-    .border-slider {
+    #carouselBlockPhoto .carousel-inner {
         border: 2px white solid;
         border-radius: 10px;
     }
 
     /*block-photo END*/
-
-
     /*block-how-I-work START*/
-
     .block-how-I-work {
         background-image: url("/img/photo/bg-photo-block-how-I-work.jpg");
         background-size: cover;
@@ -765,7 +759,6 @@ svg:hover #ico-to-top {
         grid-template-columns: 2fr 1fr 2fr 1fr 2fr;
         grid-template-rows: auto;
         grid-template-areas: 'ico-how-i-work-1 arrow-1 ico-how-i-work-2 arrow-2 ico-how-i-work-3' 'ico-how-i-work-5 arrow-4 ico-how-i-work-4 arrow-3 ico-how-i-work-3';
-        /*grid-gap: 10px;*/
         align-items: center;
     }
 
@@ -810,10 +803,7 @@ svg:hover #ico-to-top {
     }
 
     /*block-how-I-work END*/
-
-
     /*block-review START*/
-
     .block-review .form {
         background: #5650D3;
         background: -webkit-linear-gradient(top left, #5650D3, #EC5344);
@@ -826,16 +816,9 @@ svg:hover #ico-to-top {
     }
 
     /*block-review END*/
-
-
     /*block-footer START*/
-
-    .block-footer .number{
+    .block-footer .number {
         font-size: 28px;
-    }
-
-    .block-footer .fa-phone-alt{
-        font-size: 36px;
     }
 
     .block-footer {
@@ -857,15 +840,11 @@ svg:hover #ico-to-top {
 @media (min-width: 992px) {
 
     /*First block START*/
-
     .first-block .sale-button {
         padding: 30px 70px;
     }
 
     /*First block END*/
-
-
-
     .header .number {
         font-size: 20px;
     }
@@ -893,19 +872,13 @@ svg:hover #ico-to-top {
     }
 
     /*header END*/
-
-
     /*first-block START*/
-
     .first-block .sale-button {
         left: 10%;
     }
 
     /*first-block END*/
-
-
     /*block-about-me START*/
-
     #anton-ermolenko-block-about-me {
         width: 100%;
     }
@@ -918,23 +891,24 @@ svg:hover #ico-to-top {
 @media (min-width: 1200px) {
 
     /*header START*/
-
     #menu_phone {
         font-size: 16px;
     }
 
-    #menu_phone .fa-phone-alt{
+    #menu_phone .fa-phone {
         font-size: 22px;
     }
+
     /*header END*/
-
-
     #anton-ermolenko-block-about-me {
         width: 75%;
     }
 
     #slider-block-about-profession .carousel-indicators li {
         width: 175px;
+        font-size: 1em;
+        padding-left: .25em;
+        padding-right: .25em;
     }
 }
 

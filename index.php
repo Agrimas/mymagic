@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no ">
 
     <!-- Fontawesome-free-->
-    <link rel="stylesheet" href="fontawesome-free-5.12.0-web/css/all.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -34,7 +34,7 @@
     </script>
     <!--vk END-->
 
-    <title>MyStudy.by</title>
+    <title>MyMagic.by</title>
 
 </head>
 <body>
@@ -63,7 +63,7 @@
 
             <li class="nav-item py-2 pr-1" id="menu_phone">
                 <a class="phone d-block" href="tel:+375447405583">
-                    <i class="fas fa-phone-alt m-0"></i> +375 44 7405583
+                    <i class="fas fa-phone m-0"></i> +375 44 7405583
                 </a>
             </li>
             <li class="nav-item">
@@ -93,7 +93,7 @@
         <ul class="navbar-nav second-row col justify-content-end align-items-center p-0" id="second-row">
             <li class="nav-item">
                 <a class="phone py-md-0 px-0 px-lg-1 ml-lg-3" href="tel:+375447405583">
-                    <i class="fas fa-phone-alt m-0"></i>
+                    <i class="fas fa-phone m-0"></i>
                 </a>
             </li>
             <li class="nav-item">
@@ -130,6 +130,7 @@
                 <li class="nav-item">
                     <a class="social rounded-circle mx-0 mx-lg-1"
                        href="https://t.me/justmymagic/" target="_blank">
+                        <!--     Заменить ссылку https://t.me/justmymagic/-->
                         <i class="fab fa-telegram-plane"></i> <!--Заменить fa-telegram-plane на fa-youtube-->
                     </a>
                 </li>
@@ -153,9 +154,9 @@
     <div class="px-md-3 px-xl-5">
 
         <div class="first-block-title col-lg-8 text-center py-md-2 py-lg-4 py-xl-5">
-            <h1 class="text-uppercase m-0">выступление иллюзиониста <br> <span
-                        id="first-block-title__item1">на вашем</span> <span
-                        id="first-block-title__item2">празднике</span>
+            <h1>выступление иллюзиониста <br>
+                <span>на вашем</span>
+                <span id="celebration">празднике</span>
             </h1>
             <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -164,7 +165,7 @@
                 <image x="0px" y="0px" width="137px" height="19px"
                        xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIkAAAATCAQAAAAO0OZnAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfkAR4QEBn+KOPJAAAEtklEQVRYw83XfWzV1RkH8M/v3tvbQm9foGgZiGJ5nahjbAKbCsStig5R4wZoNqcLJGYv2ZJlL8lCAsnALA4xiwSjUydqxgTDlozErRqVsSEGApourCywQpGivCi9Bdre3t/ZH/e28pIsWdbe7jl/nJec8zzf833OefI8UTAk0mCxOh2q1dvnOe1gnIdMckyXjDYvOzIU0KIhoeRTVjnht95X7lr3Oe7nPjLGT1X4nRY5V1sibbmTQ4AulL4lw5rwTKgOQhQEYUr4dfhxSIflYU24qn/X5WFrWB0SpceXKAHraeNMMl5NcV5vutU6RGpNkdBik3q3KfeKQ5ImqsSHNpirunimVoOpxikbfLipQbcwwhKNenVptcUexEVXBGmLPabTPtdr1KwFl7nbb5zBYecU/vUNlqhHUpPNOgYX8GC/kmGW+ao/W+Epw63SiA81e8JUdWYYLUa3LsPEetHjWnONcYWF/iqLhR5X4yk/86olHlA+uJCTKwZX/0yzPWGL4w5rUu2H/uWA/eabrd4Mv7cfE9zgoDFanXBObJGpZqm0zscWWOklKx102ruOmKndsVJQUmaWe43WJjeg+ueIbMQIObFdRvu+vZq9KaFHk+2IfN0oz2g0yttocVSFYzZoM9daL1grL6lWl1afl7dvQDFWuVOj2HExn8SSjNvNVOkzXnEFtjk3IOay5mmXdJMn7cIjaq20yl88279nmVs84qg/+o5TnscOO8CXLPcHvwRfsFSTKnPsHiAqKs3R6wP3u1lWRkvhOXySl1yJWb4rbauzdntrQMzWeNatutVZZFNx7Sem2WqvdmkN5rjVi3a5Q5vRGr1hmwPyxprhDm/7VfHUw9Y7qdJmy3QNALLILa5Ta6HT1tor7ksMU5jkerH3HbTJP/3AaT2+5RpZGaliAM4XWyw4P7sLF/UFY5GESEIsFmRk8GXVytDplCqPandI2lgnrHHAXTpN8w/Pe9B92uRdbZSdOj1gOPK+iDrwNWUisXAJmqjYJ85bLaBJSvbfJdYrq85Mr0nZ4zF/V6/BLOzWGoW5ljmjV+SY7Q6Z5n43arZDjYykJEKRkF75C0DEl1BTAJEQSUpIyqNKWo9ukSDI69RlpIxYzkmve8N8C/zCUhkrTHe7kcpEsj5WoQpJAcOkdMuKRIJYvkjKpZRE/aPCOClVpCQqurfDWTeZaLuN9hvvRpcJ0sqsi8JG79gmlpa2wAzvmWCyH9mpRrKovEBDfNHVL55dCC0q+ivnrLwyw6X6NeSKTujVrRsNvmmCci/bLKiQlhKkZIqxLpLQ66ycVL+egqb/hODCWaIfVcExp82z2nuOus7fvCqnW9JtJkfhGzY7h6SlrrFPwnRNtuj9n37qfyufNs9hbzpTQptpi9xsj5QpdtsgRrV7hXQQhGHh22FduDIIi8OjoWoIKp/0ENQzI8Pj4Z4gTAjrw0OhIghCRUIPmOiz1ut0t/HekS3pCylIz3mRqVTykZ0m+ooTnjTbWNDVl9DXiDR70HPmOTAEhAyNBK3me8E93lWutrDYR8kR5R6WVWt8Sarj/xdJaTBCzvfkfFBY6kvoO5xyp8/JetqfShxah1JO4XKTVXq6r0z4NxRhkXMhHEeXAAAAAElFTkSuQmCC"/>
             </svg>
-            <p class="text-uppercase m-0" id="first-block-title__item3">по всей беларуси и за
+            <p>по всей беларуси и за
                 рубежом</p>
         </div>
 
@@ -180,30 +181,42 @@
             <button class="d-none d-md-block sale-button text-uppercase">получить скидку</button>
         </a>
 
+
+
         <div class="slider-first-block d-none d-md-block">
-            <div id="slider-first-block" class="carousel vert slide" data-ride="carousel" data-interval="3000">
+
+            <div id="slider-first-block" class="carousel slide" data-ride="carousel" data-interval="3000">
+
                 <div class="row flex-nowrap">
+
                     <div class="carousel-inner col-11 p-2 p-lg-3">
+
                         <div class="carousel-item active">
                             <img class="img-fluid" src="img/photo/slider_first_block/photo-1.jpg"
                                  alt="First slide">
                         </div>
+
                         <div class="carousel-item">
                             <img class="img-fluid" src="img/photo/slider_first_block/photo-2.jpg"
                                  alt="Second slide">
                         </div>
+
+
                         <div class="carousel-item">
                             <img class="img-fluid" src="img/photo/slider_first_block/photo-3.jpg"
                                  alt="Third slide">
                         </div>
+
                     </div>
-                    <div class="col-1 d-flex justify-content-center align-items-center">
+
+                    <div class="col d-flex align-items-center">
                         <ol class="carousel-indicators p-0 m-0">
                             <li data-target="#slider-first-block" data-slide-to="0" class="active"></li>
                             <li data-target="#slider-first-block" data-slide-to="1"></li>
                             <li data-target="#slider-first-block" data-slide-to="2"></li>
                         </ol>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -266,7 +279,7 @@
                 <div class="row">
                     <div class="col">
                         <a class="phone" href="tel:+375447405583">
-                            <i class="fas fa-phone-alt mr-3"></i><span class="number">+375 (44) 740 55 83</span>
+                            <i class="fas fa-phone mr-3"></i><span class="number">+375 (44) 740 55 83</span>
                         </a>
                     </div>
                 </div>
@@ -281,8 +294,8 @@
                     <div class="col col-lg-7">
                         <form action="" method="post" id="ajax_form_1">
                             <input name="phone_number" class="phone_input my-2 px-4 py-3" type="text"
-                                   placeholder="Ваш телефон">
-                            <button class="text-uppercase my-2 px-4 py-3" id="btn_tel_1" type="submit">Отправить
+                                   placeholder="Ваш телефон" required>
+                            <button class="text-uppercase my-2 px-4 py-3" type="submit">Отправить
                                 заявку
                             </button>
                         </form>
@@ -306,180 +319,174 @@
                     </div>
                 </div>
 
-                <div class="row m-0">
-                    <div id="slider-block-about-profession" class="carousel slide" data-ride="false"
-                         data-interval="false">
-                        <div id="slider-block-about-profession"
-                             class="row justify-content-center mb-4 carousel slide d-flex"
-                             data-ride="carousel">
+                <div id="slider-block-about-profession"
+                     class="row justify-content-center mb-4 carousel slide"
+                     data-ride="carousel">
 
-                            <div class="col-2 d-none d-md-flex justify-content-end align-items-center">
-                                <a href="#slider-block-about-profession" role="button"
-                                   data-slide="prev">
-                                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
-                                         width="100px" height=100px" viewBox="0 0 100.000000 100.000000"
-                                         preserveAspectRatio="xMidYMid meet">
+                    <div class="col-2 d-none d-md-flex justify-content-end align-items-center">
+                        <a href="#slider-block-about-profession" role="button"
+                           data-slide="prev">
+                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                                 width="100px" height=100px" viewBox="0 0 100.000000 100.000000"
+                                 preserveAspectRatio="xMidYMid meet">
 
-                                        <g transform="translate(0.000000,100.000000) scale(0.100000,-0.100000)"
-                                           fill="#d7463f" stroke="none">
-                                            <path id="slider-button" d="M411 989 c-199 -33 -369 -210 -401 -417 -42 -266 148 -520 418 -562
+                                <g transform="translate(0.000000,100.000000) scale(0.100000,-0.100000)"
+                                   fill="#d7463f" stroke="none">
+                                    <path id="slider-button" d="M411 989 c-199 -33 -369 -210 -401 -417 -42 -266 148 -520 418 -562
                             266 -42 520 148 562 418 41 262 -147 519 -410 561 -74 12 -94 12 -169 0z m262
                             -38 c133 -52 246 -175 288 -312 28 -91 23 -225 -10 -312 -52 -133 -175 -246
                             -312 -288 -91 -28 -225 -23 -312 10 -133 52 -246 175 -288 312 -28 91 -23 225
                             10 312 50 128 172 244 304 287 85 28 236 23 320 -9z
                             M437 632 l-127 -127 130 -130 130 -130 27 28 28 27 -103 102 -102
                             103 102 102 102 102 -24 26 c-13 14 -26 25 -29 25 -4 0 -64 -57 -134 -128z"
-                                            />
-                                        </g>
-                                    </svg>
-                                </a>
+                                    />
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+
+
+                    <div class="col-md-8">
+                        <div class="carousel-inner" data-ride="false" data-touch="false">
+
+                            <div class="carousel-item active" data-ride="false"
+                                 data-touch="false">
+
+                                <img src="img/photo/slider_about_profession/photo-1.jpg"
+                                     alt="Первый слайд">
+
+                                <p class="active p-0 px-md-3 ">Свадьба (программа 20-25 минут)</p>
+
+                            </div>
+
+                            <div class="carousel-item" data-ride="false"
+                                 data-touch="false">
+
+                                <img src="img/photo/slider_about_profession/photo-1.jpg"
+                                     alt="Первый слайд">
+
+                                <p class="p-0 px-md-3">Корпоратив (программа 20-25 минут)</p>
+
+                            </div>
+
+                            <div class="carousel-item" data-ride="false"
+                                 data-touch="false">
+
+                                <img src="img/photo/slider_about_profession/photo-3.jpg"
+                                     alt="Первый слайд">
+
+                                <p class="p-0 px-md-3">День Рождения (программа 20-25 минут)</p>
+
+
+                            </div>
+
+                            <div class="carousel-item" data-ride="false"
+                                 data-touch="false">
+
+                                <img src="img/photo/slider_about_profession/photo-4.jpg"
+                                     alt="Первый слайд">
+
+                                <p class="p-0 px-md-3">Детский праздник (программа 20-25 минут)</p>
                             </div>
 
 
-                            <div class="col-md-8">
-                                <div class="carousel-inner" data-ride="false" data-touch="false">
-                                    <div class="carousel-item active" data-ride="false" data-touch="false">
-                                        <div class="row d-flex justify-content-center m-0">
-                                            <div class="col col-lg-10 col-xl-8">
-                                                <img class="d-block w-100" src="img/photo/slider_about_profession/photo-1.jpg"
-                                                     alt="Первый слайд">
-                                            </div>
-                                            <div class="slide-title active col-12 d-md-block mt-3 mt-lg-4 p-0 py-3 px-md-3"">
-                                                <p class="m-auto col">Свадьба (программа 20-25 минут)</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item" data-ride="false" data-touch="false">
-                                        <div class="row d-flex justify-content-center m-0">
-                                            <div class="col col-lg-10 col-xl-8">
-                                                <img class="d-block w-100" src="img/photo/slider_about_profession/photo-2.jpg"
-                                                     alt="Первый слайд">
-                                            </div>
-                                            <div class="slide-title active col-12 d-md-block mt-3 mt-lg-4 p-0 py-3 px-md-3">
-                                                <p class="m-auto col">Корпоратив (программа 20-25 минут)</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item" data-ride="false" data-touch="false">
-                                        <div class="row d-flex justify-content-center m-0">
-                                            <div class="col col-lg-10 col-xl-8">
-                                                <img class="d-block w-100" src="img/photo/slider_about_profession/photo-3.jpg"
-                                                     alt="Первый слайд">
-                                            </div>
-                                            <div class="slide-title active col-12 d-md-block mt-3 mt-lg-4 p-0 py-3 px-md-3"">
-                                                <p class="m-auto col">День Рождения (программа 20-25 минут)</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item" data-ride="false" data-touch="false">
-                                        <div class="row d-flex justify-content-center m-0">
-                                            <div class="col col-lg-10 col-xl-8">
-                                                <img class="d-block w-100" src="img/photo/slider_about_profession/photo-4.jpg"
-                                                     alt="Первый слайд">
-                                            </div>
-                                            <div class="slide-title active col-12 d-md-block mt-3 mt-lg-4 p-0 py-3 px-md-3"">
-                                                <p class="m-auto col">Детский праздник (программа 20-25 минут)</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item" data-ride="false" data-touch="false">
-                                        <div class="row d-flex justify-content-center m-0">
-                                            <div class="col col-lg-10 col-xl-8">
-                                                <img class="d-block w-100" src="img/photo/slider_about_profession/photo-5.jpg"
-                                                     alt="Первый слайд">
-                                            </div>
-                                            <div class="slide-title active col-12 d-md-block mt-3 mt-lg-4 p-0 py-3 px-md-3">
-                                                <p class="m-auto col title_meetings_tematic">Встреча гостей, интерактив с гостями, микромагия
-                                                    (программа 20-25 минут)</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item" data-ride="false" data-touch="false">
-                                        <div class="row d-flex justify-content-center m-0">
-                                            <div class="col col-lg-10 col-xl-8">
-                                                <img class="d-block w-100" src="img/photo/slider_about_profession/photo-6.jpg"
-                                                     alt="Первый слайд">
-                                            </div>
-                                            <div class="slide-title active col-12 d-md-block mt-3 mt-lg-4 p-0 py-3 px-md-3"">
-                                                <p class="m-auto col title_meetings_tematic">Тематические праздники (любая продолжительность)</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="carousel-item" data-ride="false"
+                                 data-touch="false">
+
+                                <img src="img/photo/slider_about_profession/photo-5.jpg"
+                                     alt="Первый слайд">
+
+
+                                <p class="p-0 px-md-3">Встреча гостей, интерактив с гостями, микромагия (программа 20-25
+                                    минут)</p>
+
                             </div>
 
+                            <div class="carousel-item" data-ride="false"
+                                 data-touch="false">
 
-                            <div class="col-2 d-none d-md-flex align-items-center">
-                                <a class="" href="#slider-block-about-profession" role="button"
-                                   data-slide="next">
-                                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
-                                         width="100px" height=100px" viewBox="0 0 100.000000 100.000000"
-                                         preserveAspectRatio="xMidYMid meet">
+                                <img src="img/photo/slider_about_profession/photo-6.jpg"
+                                     alt="Первый слайд">
 
-                                        <g transform="translate(0.000000,100.000000) scale(0.100000,-0.100000)"
-                                           fill="#d7463f" stroke="none">
-                                            <path id="slider-button" d="M411 989 c-199 -33 -369 -210 -401 -417 -42 -266 148 -520 418 -562
+                                <p class="p-0 px-md-3">Тематические праздники
+                                    (любая
+                                    продолжительность)</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-2 d-none d-md-flex align-items-center">
+                        <a class="" href="#slider-block-about-profession" role="button"
+                           data-slide="next">
+                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                                 width="100px" height=100px" viewBox="0 0 100.000000 100.000000"
+                                 preserveAspectRatio="xMidYMid meet">
+
+                                <g transform="translate(0.000000,100.000000) scale(0.100000,-0.100000)"
+                                   fill="#d7463f" stroke="none">
+                                    <path id="slider-button" d="M411 989 c-199 -33 -369 -210 -401 -417 -42 -266 148 -520 418 -562
                             266 -42 520 148 562 418 41 262 -147 519 -410 561 -74 12 -94 12 -169 0z m262
                             -38 c133 -52 246 -175 288 -312 28 -91 23 -225 -10 -312 -52 -133 -175 -246
                             -312 -288 -91 -28 -225 -23 -312 10 -133 52 -246 175 -288 312 -28 91 -23 225
                             10 312 50 128 172 244 304 287 85 28 236 23 320 -9z
                             M400 725 l-24 -26 102 -102 102 -102 -102 -103 -103 -102 28 -27 27
                             -28 130 130 130 130 -127 127 c-70 71 -130 128 -134 128 -3 0 -16 -11 -29 -25z"
-                                            />
-                                        </g>
-                                    </svg>
-                                </a>
-                            </div>
+                                    />
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
 
-
-                            <div class="container-fluid">
-                                <div class="row mt-3 mt-lg-5 justify-content-center">
-                                    <div class="col col-xl-12">
-                                        <div class="row justify-content-center">
-                                            <h3 style="font-size: 30px">Варианты программы</h3>
-                                        </div>
-                                        <ol class="carousel-indicators d-flex flex-wrap flex-lg-nowrap justify-content-md-around m-0"
-                                            data-ride="false" data-touch="false">
-                                            <li data-target="#slider-block-about-profession" data-slide-to="0"
-                                                data-ride="false"
-                                                data-touch="false" class="active">
-                                                Свадьба (программа 20-25 минут)
-                                            </li>
-                                            <li data-target="#slider-block-about-profession" data-slide-to="1"
-                                                data-ride="false"
-                                                data-touch="false">
-                                                Корпоратив (программа 20-25 минут)
-                                            </li>
-                                            <li data-target="#slider-block-about-profession" data-slide-to="2"
-                                                data-ride="false"
-                                                data-touch="false">
-                                                День Рождения (программа 20-25 минут)
-                                            </li>
-                                            <li data-target="#slider-block-about-profession" data-slide-to="3"
-                                                data-ride="false"
-                                                data-touch="false">
-                                                Детский праздник (программа 20-25 минут)
-                                            </li>
-                                            <li data-target="#slider-block-about-profession" data-slide-to="4"
-                                                data-ride="false"
-                                                data-touch="false" id="indicator_meetings">
-                                                Встреча гостей, интерактив с гостями, микромагия (программа 20-25 минут)
-                                            </li>
-                                            <li data-target="#slider-block-about-profession" data-slide-to="5"
-                                                data-ride="false"
-                                                data-touch="false">
-                                                Тематические праздники (любая продолжительность)
-                                            </li>
-                                        </ol>
-                                    </div>
+                    <div class="container-fluid">
+                        <div class="row justify-content-center">
+                            <div class="col col-xl-12">
+                                <div class="row justify-content-center">
+                                    <h3 style="font-size: 30px">Варианты программы</h3>
                                 </div>
+                                <ol class="carousel-indicators d-flex flex-wrap flex-lg-nowrap justify-content-md-around m-0"
+                                    data-ride="false" data-touch="false">
+                                    <li data-target="#slider-block-about-profession" data-slide-to="0"
+                                        data-ride="false"
+                                        data-touch="false" class="active">
+                                        Свадьба (программа 20-25 минут)
+                                    </li>
+                                    <li data-target="#slider-block-about-profession" data-slide-to="1"
+                                        data-ride="false"
+                                        data-touch="false">
+                                        Корпоратив (программа 20-25 минут)
+                                    </li>
+                                    <li data-target="#slider-block-about-profession" data-slide-to="2"
+                                        data-ride="false"
+                                        data-touch="false">
+                                        День Рождения (программа 20-25 минут)
+                                    </li>
+                                    <li data-target="#slider-block-about-profession" data-slide-to="3"
+                                        data-ride="false"
+                                        data-touch="false">
+                                        Детский праздник (программа 20-25 минут)
+                                    </li>
+                                    <li data-target="#slider-block-about-profession" data-slide-to="4"
+                                        data-ride="false"
+                                        data-touch="false">
+                                        Встреча гостей, интерактив с гостями, микромагия (программа 20-25 минут)
+                                    </li>
+                                    <li data-target="#slider-block-about-profession" data-slide-to="5"
+                                        data-ride="false"
+                                        data-touch="false">
+                                        Тематические праздники (любая продолжительность)
+                                    </li>
+                                </ol>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
+
+    </div>
+    </div>
     </div>
 
 </section>
@@ -560,8 +567,8 @@
                     <form action="" method="post" id="ajax_form_3">
                         <input type="hidden" name="form_sale" value="Скидка"/>
                         <input name="phone_number" class="phone_input my-2 p-2 p-lg-3" type="text"
-                               placeholder="Ваш телефон">
-                        <button class="text-uppercase sale-button p-2 p-lg-3" id="btn_tel_3" type="submit">получить
+                               placeholder="Ваш телефон" required>
+                        <button class="text-uppercase sale-button p-2 p-lg-3" type="submit">получить
                             скидку
                         </button>
                     </form>
@@ -585,7 +592,7 @@
         </div>
 
         <div id="carouselBlockPhoto" class="carousel slide " data-ride="false" data-interval="false">
-            <div class="carousel-inner border-slider p-md-2 my-3 my-xl-4">
+            <div class="carousel-inner p-md-2 my-3 my-xl-4">
                 <div class="carousel-item active ">
                     <div class="row m-0">
                         <!--Слайд 1 START-->
@@ -593,15 +600,15 @@
                             <a href="img/photo/slider_photo_block/slide-1/photo-1.jpg"
                                class="fancybox" rel="ligthbox">
                                 <img src="img/photo/slider_photo_block/slide-1/photo-1.jpg"
-                                     class="zoom img-fluid" alt="Описание">
+                                     class="block_photo_item img-fluid" alt="Описание">
                             </a>
                         </div>
 
                         <div class="col-6 col-lg-3 p-0">
-                            <<a href="img/photo/slider_photo_block/slide-1/photo-2.jpg"
+                            <a href="img/photo/slider_photo_block/slide-1/photo-2.jpg"
                                class="fancybox" rel="ligthbox">
                                 <img src="img/photo/slider_photo_block/slide-1/photo-2.jpg"
-                                     class="zoom img-fluid" alt="">
+                                     class="block_photo_itemimg-fluid" alt="">
                             </a>
                         </div>
 
@@ -609,42 +616,42 @@
                             <a href="img/photo/slider_photo_block/slide-1/photo-3.jpg"
                                class="fancybox" rel="ligthbox">
                                 <img src="img/photo/slider_photo_block/slide-1/photo-3.jpg"
-                                     class="zoom img-fluid" alt="">
+                                     class="block_photo_item img-fluid" alt="">
                             </a>
                         </div>
                         <div class="col-6 col-lg-3 p-0">
                             <a href="img/photo/slider_photo_block/slide-1/photo-4.jpg"
                                class="fancybox" rel="ligthbox">
                                 <img src="img/photo/slider_photo_block/slide-1/photo-4.jpg"
-                                     class="zoom img-fluid" alt="">
+                                     class="block_photo_item img-fluid" alt="">
                             </a>
                         </div>
                         <div class="col-6 col-lg-3 p-0">
                             <a href="img/photo/slider_photo_block/slide-1/photo-5.jpg"
                                class="fancybox" rel="ligthbox">
                                 <img src="img/photo/slider_photo_block/slide-1/photo-5.jpg"
-                                     class="zoom img-fluid" alt="">
+                                     class="block_photo_item img-fluid" alt="">
                             </a>
                         </div>
                         <div class="col-6 col-lg-3 p-0">
                             <a href="img/photo/slider_photo_block/slide-1/photo-6.jpg"
                                class="fancybox" rel="ligthbox">
                                 <img src="img/photo/slider_photo_block/slide-1/photo-6.jpg"
-                                     class="zoom img-fluid" alt="">
+                                     class="block_photo_item img-fluid" alt="">
                             </a>
                         </div>
                         <div class="col-6 col-lg-3 p-0">
                             <a href="img/photo/slider_photo_block/slide-1/photo-7.jpg"
                                class="fancybox" rel="ligthbox">
                                 <img src="img/photo/slider_photo_block/slide-1/photo-7.jpg"
-                                     class="zoom img-fluid" alt="">
+                                     class="block_photo_item img-fluid" alt="">
                             </a>
                         </div>
                         <div class="col-6 col-lg-3 p-0">
                             <a href="img/photo/slider_photo_block/slide-1/photo-8.jpg"
                                class="fancybox" rel="ligthbox">
                                 <img src="img/photo/slider_photo_block/slide-1/photo-8.jpg"
-                                     class="zoom img-fluid" alt="">
+                                     class="block_photo_item img-fluid" alt="">
                             </a>
                         </div>
                     </div>
@@ -833,10 +840,12 @@
                             <div class="video">
                                 <a class="video__link" href="https://youtu.be/r8JGWIWdGm8"> <!-- Здесь заменить -->
                                     <picture>
-                                        <source srcset="https://i.ytimg.com/vi_webp/r8JGWIWdGm8/maxresdefault.webp" <!-- Здесь заменить -->
-                                                type="image/webp">
+                                        <source srcset="https://i.ytimg.com/vi_webp/r8JGWIWdGm8/maxresdefault.webp"
+                                        <!-- Здесь заменить -->
+                                        type="image/webp">
                                         <img class="video__media"
-                                             src="https://i.ytimg.com/vi/r8JGWIWdGm8/maxresdefault.jpg" alt=""> <!-- Здесь заменить -->
+                                             src="https://i.ytimg.com/vi/r8JGWIWdGm8/maxresdefault.jpg" alt="">
+                                        <!-- Здесь заменить -->
                                     </picture>
                                 </a>
                                 <button class="video__button" type="button" aria-label="Запустить видео">
@@ -853,10 +862,12 @@
                             <div class="video">
                                 <a class="video__link" href="https://youtu.be/pWYbL_j_MEo"> <!-- Здесь заменить -->
                                     <picture>
-                                        <source srcset="https://i.ytimg.com/vi_webp/pWYbL_j_MEo/maxresdefault.webp" <!-- Здесь заменить -->
-                                                type="image/webp">
+                                        <source srcset="https://i.ytimg.com/vi_webp/pWYbL_j_MEo/maxresdefault.webp"
+                                        <!-- Здесь заменить -->
+                                        type="image/webp">
                                         <img class="video__media"
-                                             src="https://i.ytimg.com/vi/pWYbL_j_MEo/maxresdefault.jpg" alt=""> <!-- Здесь заменить -->
+                                             src="https://i.ytimg.com/vi/pWYbL_j_MEo/maxresdefault.jpg" alt="">
+                                        <!-- Здесь заменить -->
                                     </picture>
                                 </a>
                                 <button class="video__button" type="button" aria-label="Запустить видео">
@@ -874,10 +885,12 @@
                             <div class="video">
                                 <a class="video__link" href="https://youtu.be/zCm6NsqJLWE"> <!-- Здесь заменить -->
                                     <picture>
-                                        <source srcset="https://i.ytimg.com/vi_webp/zCm6NsqJLWE/maxresdefault.webp" <!-- Здесь заменить -->
-                                                type="image/webp">
+                                        <source srcset="https://i.ytimg.com/vi_webp/zCm6NsqJLWE/maxresdefault.webp"
+                                        <!-- Здесь заменить -->
+                                        type="image/webp">
                                         <img class="video__media"
-                                             src="https://i.ytimg.com/vi/zCm6NsqJLWE/maxresdefault.jpg" alt=""> <!-- Здесь заменить -->
+                                             src="https://i.ytimg.com/vi/zCm6NsqJLWE/maxresdefault.jpg" alt="">
+                                        <!-- Здесь заменить -->
                                     </picture>
                                 </a>
                                 <button class="video__button" type="button" aria-label="Запустить видео">
@@ -1114,10 +1127,10 @@
 
 
                         <form action="" method="post" id="ajax_form_2">
-                            <input name="name" class="my-2 px-4 py-3" placeholder="Ваше имя">
+                            <input name="name" class="my-2 px-4 py-3" placeholder="Ваше имя" required>
                             <input name="phone_number" class="phone_input my-2 px-4 py-3 " type="text"
-                                   placeholder="Ваш телефон">
-                            <button class="text-uppercase mt-4 mb-2 px-4 py-3" id="btn_tel_2" type="submit">
+                                   placeholder="Ваш телефон" required>
+                            <button class="text-uppercase mt-4 mb-2 px-4 py-3" type="submit">
                                 Отправить заявку
                             </button>
                         </form>
@@ -1132,7 +1145,7 @@
 
 
                 <a class="phone text-center" href="tel:+375447405583">
-                    <i class="fas fa-phone-alt mr-3"></i><span class="number">+375 (44) 740 55 83</span>
+                    <i class="fas fa-phone mr-3"></i><span class="number">+375 (44) 740 55 83</span>
                 </a>
 
 
@@ -1159,6 +1172,7 @@
                     <li class="nav-item mx-1">
                         <a class="social rounded-circle"
                            href="https://t.me/justmymagic/" target="_blank">
+                            <!--     Заменить ссылку https://t.me/justmymagic/-->
                             <i class="fab fa-telegram-plane"></i>
                             <!--Заменить fa-telegram-plane на fa-youtube-->
                         </a>
