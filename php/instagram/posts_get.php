@@ -61,24 +61,12 @@ function getPostVideo($posts){
     return $postsVideo;
 }
 
-
-
 $posts = getPostsByTag(getAllPosts(), ['mymagic_by']);
-
-
-$videos = getPostVideo($posts); //#mymagic_by
 
 $photosForGallery = getPostImage($posts); //#mymagic_by
 
 $photosForSlider = getPostImage(getPostsByTag($posts, ['emotions'])); //#mymagic_by & #emotions
 
+$videos = getPostVideo($posts); //#mymagic_by
 
-
-
-
-
-
-
-
-
-///media/?size=t
+var_dump($posts);

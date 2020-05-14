@@ -1,8 +1,6 @@
 <?php
-require "vendor/autoload.php";
-$dotenv = Dotenv\Dotenv::createMutable(__DIR__);
-$dotenv->load();
-include "php/instagram/instagram.php";
+include 'db.php';
+include "php/Photo.php";
 ?>
 <!doctype html>
 <html lang="en">
@@ -197,7 +195,7 @@ include "php/instagram/instagram.php";
                     <div class="carousel-inner col-11 p-2 p-lg-3">
                         <?php $first = true; foreach($photosForSlider as $photo){?>
                         <div class="carousel-item <?if ($first===true){echo 'active';}$first=false;?>">
-                            <img class="img-fluid" src="<?=$photo->media_url?>"
+                            <img src="<?=$photo->media_url?>"
                                  alt="First slide">
                         </div>
                         <?php }?>
