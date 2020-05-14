@@ -1,12 +1,11 @@
 <?php
+require "../vendor/autoload.php";
+$dotenv = Dotenv\Dotenv::createMutable(realpath(__DIR__ . '/..'));
+$dotenv->load();
 
+$token = $_SERVER['TELEGRAM_TOKEN'];
 
-//https://api.telegram.org/botxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx/getUpdates
-
-
-$token = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
-
-$chat_id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
+$chat_id = $_SERVER['TELEGRAM_CHAT_ID'];
 
 foreach ($_POST as $key => $value) {
     if ($value) {
@@ -15,12 +14,9 @@ foreach ($_POST as $key => $value) {
     }
 }
 
-
-$sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$txt}", "r");
+$sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text=$txt", "r");
 
 if ($sendToTelegram) {
-
     echo json_encode($arr);
-
 }
 
