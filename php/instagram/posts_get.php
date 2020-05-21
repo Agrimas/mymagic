@@ -41,32 +41,6 @@ function getPostsByTag($posts, $tags = [])
     return $postsWithTag;
 }
 
-function getPostImage($posts){
-    $postsImage = [];
-    foreach ($posts as $post){
-        if ($post->media_type == 'IMAGE' OR $post->media_type = 'CAROUSEL_ALBUM'){
-            $postsImage[] = $post;
-        }
-    }
-    return $postsImage;
-}
-
-function getPostVideo($posts){
-    $postsVideo = [];
-    foreach ($posts as $post){
-        if ($post->media_type == 'VIDEO'){
-            $postsVideo[] = $post;
-        }
-    }
-    return $postsVideo;
-}
-
 $posts = getPostsByTag(getAllPosts(), ['mymagic_by']);
 
-$photosForGallery = getPostImage($posts); //#mymagic_by
 
-$photosForSlider = getPostImage(getPostsByTag($posts, ['emotions'])); //#mymagic_by & #emotions
-
-$videos = getPostVideo($posts); //#mymagic_by
-
-var_dump($posts);

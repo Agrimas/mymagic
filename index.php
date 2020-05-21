@@ -1,5 +1,4 @@
 <?php
-include 'db.php';
 include "php/Photo.php";
 ?>
 <!doctype html>
@@ -195,8 +194,8 @@ include "php/Photo.php";
                     <div class="carousel-inner col-11 p-2 p-lg-3">
                         <?php $first = true; foreach($photosForSlider as $photo){?>
                         <div class="carousel-item <?if ($first===true){echo 'active';}$first=false;?>">
-                            <img src="<?=$photo->media_url?>"
-                                 alt="First slide">
+                            <img src="<?=$photo['media_url']?>"
+                                 alt="<?=$photo['alt']?>">
                         </div>
                         <?php }?>
                     </div>
@@ -592,9 +591,9 @@ include "php/Photo.php";
                         <!--Слайд 1 START-->
                         <?php foreach($photosForGallery as $photo){?>
                         <div class="p-0">
-                            <a href="<?=$photo->media_url?>"
+                            <a href="<?=$photo['media_url']?>"
                                class="fancybox" rel="ligthbox">
-                                <img src="<?=$photo->permalink . 'media/?size=m'?>"
+                                <img src="<?=$photo['permalink'] . 'media/?size=m'?>"
                                      class="block_photo_item img-fluid" alt="Описание">
                             </a>
                         </div>

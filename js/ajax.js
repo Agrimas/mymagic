@@ -8,7 +8,7 @@ $(document).ready(function () {
         var btnId = $(this).attr('id');
         var numberForm = btnId.charAt(btnId.length - 1);
 
-        sendAjaxForm('result_form', 'ajax_form_' + numberForm, 'php/telegram/telegram.php');
+        sendAjaxForm('result_form', 'ajax_form_' + numberForm, 'php/telegram.php');
 
         e.preventDefault();
 

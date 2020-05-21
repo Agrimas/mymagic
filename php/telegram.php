@@ -1,7 +1,5 @@
 <?php
-require "../vendor/autoload.php";
-$dotenv = Dotenv\Dotenv::createMutable(realpath(__DIR__ . '/MyMagic.loc'));
-$dotenv->load();
+include '../db.php';
 
 $token = $_SERVER['TELEGRAM_TOKEN'];
 
