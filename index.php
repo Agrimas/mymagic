@@ -15,6 +15,14 @@ include "php/Photo.php";
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+    <!--Slick-->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <!--fancybox-->
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+
+
     <!-- My CSS -->
     <link rel="stylesheet" href="css/main.css">
 
@@ -24,18 +32,11 @@ include "php/Photo.php";
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-    <!--fancybox-->
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
-          media="screen">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-
-    <!--vk START-->
+    <!--Vk-->
     <script type="text/javascript" src="https://vk.com/js/api/openapi.js?167"></script>
-
     <script type="text/javascript">
         VK.init({apiId: 7354207, onlyWidgets: true});
     </script>
-    <!--vk END-->
 
     <title>MyMagic.by</title>
 
@@ -184,7 +185,6 @@ include "php/Photo.php";
         </a>
 
 
-
         <div class="slider-first-block d-none d-md-block">
 
             <div id="slider-first-block" class="carousel slide" data-ride="carousel" data-interval="3000">
@@ -192,19 +192,28 @@ include "php/Photo.php";
                 <div class="row flex-nowrap">
 
                     <div class="carousel-inner col-11 p-2 p-lg-3">
-                        <?php $first = true; foreach($photosForSlider as $photo){?>
-                        <div class="carousel-item <?if ($first===true){echo 'active';}$first=false;?>">
-                            <img src="<?=$photo['media_url']?>"
-                                 alt="<?=$photo['alt']?>">
-                        </div>
-                        <?php }?>
+                        <?php $first = true;
+                        foreach ($photosForSlider as $photo) { ?>
+                            <div class="carousel-item <? if ($first === true) {
+                                echo 'active';
+                            }
+                            $first = false; ?>">
+                                <img src="<?= $photo['media_url'] ?>"
+                                     alt="<?= $photo['alt'] ?>">
+                            </div>
+                        <?php } ?>
                     </div>
 
                     <div class="col d-flex align-items-center">
                         <ol class="carousel-indicators p-0 m-0">
-                            <?php $first = true; for($x = 0; $x < count($photosForSlider); $x++){?>
-                            <li data-target="#slider-first-block" data-slide-to="<?=$x?>" <?if ($first===true){echo 'class="active"';}$first=false;?>></li>
-                            <?php }?>
+                            <?php $first = true;
+                            for ($x = 0; $x < count($photosForSlider); $x++) { ?>
+                                <li data-target="#slider-first-block"
+                                    data-slide-to="<?= $x ?>" <? if ($first === true) {
+                                    echo 'class="active"';
+                                }
+                                $first = false; ?>></li>
+                            <?php } ?>
                         </ol>
                     </div>
 
@@ -573,45 +582,37 @@ include "php/Photo.php";
     </div>
 </section>
 <section class="block-photo" id="block-photo">
-
     <div class="container-fluid p-md-3 p-lg-5">
-
         <div class="row my-lg-3">
             <div class="col text-center my-3">
                 <h2>Я на фото</h2>
             </div>
         </div>
 
-        <div id="carouselBlockPhoto" class="carousel slide " data-ride="false" data-interval="false">
-            <div class="carousel-inner p-1">
-
-                <?php for ($slide = 1; $slide <= 3; $slide++){?>
-                <div class="carousel-item <?=$slide == 1?'active':''?>">
-                    <div class="row m-0">
-                        <!--Слайд 1 START-->
-                        <?php foreach($photosForGallery as $photo){?>
-                        <div class="p-0">
-                            <a href="<?=$photo['media_url']?>"
-                               class="fancybox" rel="ligthbox">
-                                <img src="<?=$photo['permalink'] . 'media/?size=m'?>"
-                                     class="block_photo_item img-fluid" alt="Описание">
+        <div class="row justify-content-center">
+            <div class="col col-md-10 main-slider">
+                <?php
+                foreach ($photosForGallery as $photo) {
+                    ?>
+                    <div class="col p-0">
+                        <div class="wrap">
+                            <a href="<?= $photo['media_url'] ?>" data-fancybox data-caption="<?= $photo['alt'] ?>">>
+                                <img alt="" class="image"
+                                     src="<?= $photo['media_url'] ?>">
+                                <div class="mask"></div>
+                                <a class="social rounded-circle m-3 d-block"
+                                   href="<?= $photo['permalink'] ?>" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
                             </a>
                         </div>
-                        <?php }?>
                     </div>
-                </div>
-                <?php }?>
-                <!--Слайд 1 END-->
-
-            </div>
-            <div class="row justify-content-center">
-                <ol class="carousel-indicators magic_indicators d-flex">
-                    <li data-target="#carouselBlockPhoto" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselBlockPhoto" data-slide-to="1"></li>
-                    <li data-target="#carouselBlockPhoto" data-slide-to="2"></li>
-                </ol>
+                    <?php
+                }
+                ?>
             </div>
         </div>
+
     </div>
 </section>
 <section class="block-video" id="block-video">
@@ -903,37 +904,36 @@ include "php/Photo.php";
 
         </div>
 </section>
+<section class="block-review" id="block-review">
 
-<!--<section class="block-review" id="block-review">-->
-<!---->
-<!--    <div class="container py-3 py-md-5">-->
-<!---->
-<!--        <div class="row m-0">-->
-<!--            <div class="col d-flex justify-content-center">-->
-<!--                <svg-->
-<!--                        xmlns="http://www.w3.org/2000/svg"-->
-<!--                        xmlns:xlink="http://www.w3.org/1999/xlink"-->
-<!--                        width="220px" height="37px">-->
-<!--                    <image x="0px" y="0px" width="220px" height="37px"-->
-<!--                           xlink:href="data:img/png;base64,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"/>-->
-<!--                </svg>-->
-<!--            </div>-->
-<!--        </div>-->
-<!---->
-<!--        <div class="row">-->
-<!--            <div class="col d-flex justify-content-center">-->
-<!--                <h2 class="black-title text-center">Отзывы клиентов</h2>-->
-<!--            </div>-->
-<!--        </div>-->
-<!---->
-<!--        <div class="form row my-2 my-md-5 p-md-3">-->
-<!--            <div id="vk_comments"></div>-->
-<!--            <script type="text/javascript">-->
-<!--                VK.Widgets.Comments("vk_comments", {limit: 10, attach: "*"});-->
-<!--            </script>-->
-<!--        </div>-->
-<!---->
-<!--</section>-->
+    <!--    <div class="container py-3 py-md-5">-->
+    <!---->
+    <!--        <div class="row m-0">-->
+    <!--            <div class="col d-flex justify-content-center">-->
+    <!--                <svg-->
+    <!--                        xmlns="http://www.w3.org/2000/svg"-->
+    <!--                        xmlns:xlink="http://www.w3.org/1999/xlink"-->
+    <!--                        width="220px" height="37px">-->
+    <!--                    <image x="0px" y="0px" width="220px" height="37px"-->
+    <!--                           xlink:href="data:img/png;base64,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"/>-->
+    <!--                </svg>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!---->
+    <!--        <div class="row">-->
+    <!--            <div class="col d-flex justify-content-center">-->
+    <!--                <h2 class="black-title text-center">Отзывы клиентов</h2>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!---->
+    <!--        <div class="form row my-2 my-md-5 p-md-3">-->
+    <!--            <div id="vk_comments"></div>-->
+    <!--            <script type="text/javascript">-->
+    <!--                VK.Widgets.Comments("vk_comments", {limit: 10, attach: "*"});-->
+    <!--            </script>-->
+    <!--        </div>-->
+
+</section>
 <section class="block-footer" id="block-footer">
     <div class="container-fluid p-0 m-0 py-3 py-md-5">
         <div class="row m-0">
@@ -1036,18 +1036,6 @@ include "php/Photo.php";
     </div>
 </section>
 
-
-<!--Увеличение фото START-->
-<script>
-    $(document).ready(function () {
-        $(".fancybox").fancybox({
-            openEffect: "none",
-            closeEffect: "none"
-        });
-    });
-</script>
-<!--Увеличение фото END-->
-
 <!--Bootstrap js START-->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
@@ -1057,8 +1045,8 @@ include "php/Photo.php";
         crossorigin="anonymous"></script>
 <!--Bootstrap js END-->
 
+<!--Maskedinput-->
 <script src="js/jquery.maskedinput.min.js"></script>
-
 
 <!--My javascript START-->
 <script src="js/compression_menu.js"></script>
@@ -1066,5 +1054,53 @@ include "php/Photo.php";
 <script src="js/ajax.js"></script>
 <script src="js/navigation_scrolling.js"></script>
 <!--My javascript END-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js"></script>
+<script>
+    // Список кнопок
+    $.fancybox.defaults.buttons = [
+        'inst',
+        'close'];
+
+    // Создание иконки
+    $.fancybox.defaults.btnTpl.inst = '<button data-fancybox-inst class="fancybox-button fancybox-button--inst" title="Instagram">' +
+        '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">' +
+        '<path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>' +
+        '</svg>' +
+        '</button>';
+
+    // Действие при клике по кнопке
+    $('body').on('click', '[data-fancybox-inst]', function () {
+        window.open("https://www.instagram.com/justmymagic/");
+    });
+</script>
+<!-- SlickSlider -->
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.main-slider').slick({
+            rows: 2,
+            slidesPerRow: 4,
+            arrows: false,
+            dots: true,
+            dotsClass: 'dots-style',
+            responsive: [
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesPerRow: 3
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesPerRow: 2,
+                        dots: false,
+                    }
+                }
+            ]
+        });
+
+    });
+</script>
 </body>
 </html>
