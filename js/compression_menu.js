@@ -28,7 +28,7 @@ $(document).ready(function () {
 
     // При изначальной ширине START
 
-    if ($(window).width() > 992) {
+    if ($(window).width() >= 992) {
 
 
         document.getElementById("header").style.height = "100px";
@@ -47,7 +47,7 @@ $(document).ready(function () {
         compressionMenu();
     }
 
-    if ($(window).width() < 992) {
+    if ($(window).width() <= 992) {
         document.getElementById("second-row").style.display = "none";
     }
 
@@ -59,14 +59,14 @@ $(document).ready(function () {
 
     window.addEventListener("resize", function () {
 
-        if ($(window).width() < 992) {
+        if ($(window).width() <= 992) {
             $(window).off('scroll');
             document.getElementById("header").style.height = "auto";
             document.getElementById("second-row").style.display = "none";
             document.getElementById("menu_phone").style.display = "none";
         }
 
-        if ($(window).width() > 992) {
+        if ($(window).width() >= 992) {
             if ($(window).scrollTop() <= 1){
                 document.getElementById("header").style.height = "100px";
                 document.getElementById("second-row").style.display = "flex";

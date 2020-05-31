@@ -1,4 +1,5 @@
 <?php
+include '../../autoload.php';
 include 'conection_api.php';
 
 //Перезапись env файла
@@ -11,9 +12,7 @@ function rewriteToken($token, $newToken)
         file_get_contents($path)));
 }
 
-    $result = queryForInstagramApi(LINK_REFRESH_TOKEN);
-    $newToken = $result->access_token;
+$result = queryForInstagramApi(LINK_REFRESH_TOKEN);
+$newToken = $result->access_token;
 
-    rewriteToken($token, $newToken);
-
-
+rewriteToken($token, $newToken);

@@ -1,8 +1,11 @@
 <?php
+ini_set('display_errors', 0);
+ini_set('display_startup_errors', 0);
+error_reporting(0);
 include "php/Photo.php";
 ?>
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -72,7 +75,7 @@ include "php/Photo.php";
             <li class="nav-item">
                 <a class="nav-link px-1 px-xl-2" href="#block-about">Кто я?</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item d-none d-lg-block">
                 <a class="nav-link px-1 px-xl-2" href="#block-about-profession">Чем я занимаюсь?</a>
             </li>
             <li class="nav-item">
@@ -155,7 +158,6 @@ include "php/Photo.php";
 
 
     <div class="px-md-3 px-xl-5">
-
         <div class="first-block-title col-lg-8 text-center py-md-2 py-lg-4 py-xl-5">
             <h1>выступление иллюзиониста <br>
                 <span>на вашем</span>
@@ -185,13 +187,13 @@ include "php/Photo.php";
         </a>
 
 
-        <div class="slider-first-block d-none d-md-block">
+        <div class="slider-first-block d-none d-md-block col-5 col-xl-3">
 
             <div id="slider-first-block" class="carousel slide" data-ride="carousel" data-interval="3000">
 
                 <div class="row flex-nowrap">
 
-                    <div class="carousel-inner col-11 p-2 p-lg-3">
+                    <div class="carousel-inner p-2 p-lg-3">
                         <?php $first = true;
                         foreach ($photosForSlider as $photo) { ?>
                             <div class="carousel-item <? if ($first === true) {
@@ -239,11 +241,11 @@ include "php/Photo.php";
                     <li class="pr-4 pr-md-5">Представитель Международного Сообщества Иллюзионистов (ISM)</li>
                 </ul>
             </div>
-            <div class="row justify-content-center d-none d-md-flex">
-                <div class="col-6 mb-lg-3">
-                    <img class="img-fluid" src="img/photo/certificate.jpg" alt="">
-                </div>
-            </div>
+<!--            <div class="row justify-content-center d-none d-md-flex">-->
+<!--                <div class="col-6 mb-lg-3">-->
+<!--                    <img class="img-fluid" src="img/photo/certificate.jpg" alt="">-->
+<!--                </div>-->
+<!--            </div>-->
         </div>
         <div class="col-lg-6 justify-content-center align-self-end d-none d-md-flex">
             <img src="/img/photo/anton-ermolenko-block-about-me.png" alt=""
@@ -362,7 +364,7 @@ include "php/Photo.php";
                             <div class="carousel-item" data-ride="false"
                                  data-touch="false">
 
-                                <img src="img/photo/slider_about_profession/photo-1.jpg"
+                                <img src="img/photo/slider_about_profession/photo-2.jpg"
                                      alt="Первый слайд">
 
                                 <p class="p-0 px-md-3">Корпоратив (программа 20-25 минут)</p>
@@ -590,15 +592,15 @@ include "php/Photo.php";
         </div>
 
         <div class="row justify-content-center">
-            <div class="col col-md-10 main-slider">
+            <div class="col col-md-8 main-slider">
                 <?php
                 foreach ($photosForGallery as $photo) {
                     ?>
                     <div class="col p-0">
                         <div class="wrap">
-                            <a href="<?= $photo['media_url'] ?>" data-fancybox data-caption="<?= $photo['alt'] ?>">>
-                                <img alt="" class="image"
-                                     src="<?= $photo['media_url'] ?>">
+                            <a href="<?= $photo['media_url'] ?>" data-fancybox data-caption="<?= $photo['caption'] ?>">>
+                                <img alt="<?= $photo['alt'] ?>" class="image"
+                                     src="<?= $photo['thumbnail'] ?>">
                                 <div class="mask"></div>
                                 <a class="social rounded-circle m-3 d-block"
                                    href="<?= $photo['permalink'] ?>" target="_blank">
@@ -1098,6 +1100,15 @@ include "php/Photo.php";
                     }
                 }
             ]
+        });
+
+        $(".vertical-slider").slick({
+            vertical: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            verticalSwiping: true,
+            infinite: true,
+            dots: false,
         });
 
     });

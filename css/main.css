@@ -314,11 +314,12 @@ a.social:hover {
 .first-block-title {
     line-height: 40px;
     background: rgba(0, 0, 0, 0) linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 45%, rgb(0, 0, 0) 50%, rgb(0, 0, 0) 55%, rgb(0, 0, 0) 55%, rgba(0, 0, 0, 0) 100%);
+    position: absolute;
+
 }
 
 @media (min-width: 768px) {
     .first-block-title {
-        position: absolute;
         top: 20%;
     }
 }
@@ -396,7 +397,6 @@ a.social:hover {
         position: absolute;
         bottom: 10%;
         right: 5%;
-        width: 35%;
     }
 
     #slider-first-block .carousel-inner {
@@ -681,7 +681,7 @@ svg:hover #slider-button {
     line-height: 0;
 }
 
-.block-photo .wrap {
+ .wrap {
     position: relative;
     text-align: center;
     background-color: #eee;
@@ -695,7 +695,7 @@ svg:hover #slider-button {
     padding-top: 100%;
 }
 
-.block-photo .image {
+ .image {
     width: 100%;
     height: 100%;
     overflow: hidden;
