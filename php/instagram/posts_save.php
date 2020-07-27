@@ -12,7 +12,7 @@ foreach ($posts as $post) {
     }
 
 
-    $caption = str_replace(['_', '=','\'','"'], '', remove_emoji($post->caption));
+    $caption = str_replace(['_', '=', '\'', '"'], '', remove_emoji($post->caption));
 
 
     $caption = substr($caption, 0, strpos($caption, '#'));
@@ -21,13 +21,6 @@ foreach ($posts as $post) {
     preg_match_all('/#\S+ */', $post->caption, $hashtags);
 
     $alt = str_replace(['#', 'mymagic_by'], '', implode($hashtags[0]));
-
-    $data = [
-        'id' => $post->id,
-        'caption' => $caption,
-        'alt' => $alt,
-        'emotions' => $emotions,
-    ];
 
     $sth = $pdo->prepare("SELECT id FROM photos WHERE id = $post->id");
     $sth->execute();
@@ -48,19 +41,25 @@ foreach ($posts as $post) {
 
     $thumbnail = $redirectURL;
 
+    $data = [
+        'id' => $post->id,
+        'caption' => $caption,
+        'alt' => $alt,
+        'emotions' => $emotions,
+        'media_url' => $post->media_url,
+        'permalink' => $post->permalink,
+        'thumbnail' => $thumbnail,
+        'media_type' => $post->media_type
+    ];
+
     if ($sth->fetch()) {
-        $sql = "UPDATE photos SET caption = :caption, alt = :alt, emotions = :emotions WHERE id = :id";
+        $sql = "UPDATE photos SET id = :id, caption = :caption, alt = :alt, emotions = :emotions, media_url = :media_url, permalink = :permalink, thumbnail = :thumbnail, media_type = :media_type WHERE id = :id";
         $stmt = $pdo->prepare($sql);
         $stmt->execute($data);
     } else {
-        $data += [
-            'media_url' => $post->media_url,
-            'permalink' => $post->permalink,
-            'thumbnail' => $thumbnail,
-            'media_type' => $post->media_type
-        ];
-        $sql = "INSERT INTO photos(id, media_url, thumbnail, permalink, alt, caption, emotions, media_type) VALUES(:id, :media_url, :thumbnail, :permalink, :alt, :caption, :emotions, :media_type)";
+        $sql = "INSERT INTO photos (id, caption, alt, emotions, media_url, permalink, thumbnail, media_type) VALUES(:id, :caption, :alt, :emotions, :media_url, :permalink, :thumbnail, :media_type)";
         $stmt = $pdo->prepare($sql);
         $stmt->execute($data);
+        echo 1;
     }
 }
