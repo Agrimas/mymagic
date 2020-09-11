@@ -618,17 +618,15 @@ include "php/Photo.php";
 
         <div class="row my-xl-3">
             <div class="col text-center my-3">
-                <h2>Я на видео</h2>
+                <h2 id="touch">Я на видео</h2>
             </div>
         </div>
 
-        <div id="slider-block-video" class="carousel slide" data-ride="false" data-interval="false">
-            <div id="slider-block-video" class="row justify-content-center my-3 my-xl-4 carousel slide d-flex"
-                 data-ride="carousel">
-
+        <div id="slider_block_video" class="carousel slide">
+            <div class="row justify-content-center my-3 my-xl-4 carousel slide d-flex">
 
                 <div class="col-2 d-none d-md-flex justify-content-center align-items-center">
-                    <a class="" href="#slider-block-video" role="button"
+                    <a class="" href="#slider_block_video" role="button"
                        data-slide="prev">
                         <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                              width="100.000000px" height="100.000000px" viewBox="0 0 100.000000 100.000000"
@@ -651,19 +649,32 @@ include "php/Photo.php";
 
 
                 <div class="col col-md-8 col-lg-6 p-0 px-md-3">
-                    <div class="carousel-inner border-slider p-2" data-ride="false" data-touch="false">
+                    <div class="carousel-inner border-slider p-2">
 
-
-                        <div class="carousel-item active" data-ride="false" data-touch="false">
+                        <div class="carousel-item active" >
                             <div class="video">
-                                <a class="video__link" href="https://vimeo.com/455755611"> <!-- Здесь  поменять -->
+                                <a class="video__link" href="https://vimeo.com/455755611"> <!-- Здесь заменить 455755611 на id видео-->
+                                    <!-- Здесь заменить 455755611 на id видео-->
+                                    <iframe src="https://player.vimeo.com/video/455755611" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                                </a>
+                                <button class="video__button" type="button" aria-label="Запустить видео">
+                                    <svg width="68" height="48" viewBox="0 0 68 48">
+                                        <path class="video__button-shape"
+                                              d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"></path>
+                                        <path class="video__button-icon" d="M 45,24 27,14 27,34"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!--YouTube Видео тут-->
+                        <div class="carousel-item">
+                            <div class="video youtube">
+                                <a class="video__link" href="https://youtu.be/pWYbL_j_MEo"> <!-- Здесь заменить pWYbL_j_MEo на id видео-->
                                     <picture>
-                                        <source srcset="https://player.vimeo.com/video/455755611"
-                                        <!-- Здесь заменить -->
-                                        type="image/webp">
-                                        <img class="video__media"
-                                             src="https://i.ytimg.com/vi/r8JGWIWdGm8/maxresdefault.jpg" alt="">
-                                        <!-- Здесь заменить -->
+                                        <source srcset="https://i.ytimg.com/vi_webp/pWYbL_j_MEo/maxresdefault.webp" type="image/webp"> <!-- Здесь заменить pWYbL_j_MEo на id видео-->
+                                        <img class="video__media video__media__youtube"
+                                             src="https://i.ytimg.com/vi/pWYbL_j_MEo/maxresdefault.jpg" alt=""> <!-- Здесь заменить pWYbL_j_MEo на id видео-->
                                     </picture>
                                 </a>
                                 <button class="video__button" type="button" aria-label="Запустить видео">
@@ -676,39 +687,14 @@ include "php/Photo.php";
                             </div>
                         </div>
 
-                        <div class="carousel-item" data-ride="false" data-touch="false">
-                            <div class="video">
-                                <a class="video__link" href="https://youtu.be/pWYbL_j_MEo"> <!-- Здесь заменить -->
-                                    <picture>
-                                        <source srcset="https://i.ytimg.com/vi_webp/pWYbL_j_MEo/maxresdefault.webp"
-                                        <!-- Здесь заменить -->
-                                        type="image/webp">
-                                        <img class="video__media"
-                                             src="https://i.ytimg.com/vi/pWYbL_j_MEo/maxresdefault.jpg" alt="">
-                                        <!-- Здесь заменить -->
-                                    </picture>
-                                </a>
-                                <button class="video__button" type="button" aria-label="Запустить видео">
-                                    <svg width="68" height="48" viewBox="0 0 68 48">
-                                        <path class="video__button-shape"
-                                              d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"></path>
-                                        <path class="video__button-icon" d="M 45,24 27,14 27,34"></path>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
 
-
-                        <div class="carousel-item" data-ride="false" data-touch="false">
-                            <div class="video">
-                                <a class="video__link" href="https://youtu.be/zCm6NsqJLWE"> <!-- Здесь заменить -->
+                        <div class="carousel-item">
+                            <div class="video youtube">
+                                <a class="video__link" href="https://youtu.be/zCm6NsqJLWE">
                                     <picture>
-                                        <source srcset="https://i.ytimg.com/vi_webp/zCm6NsqJLWE/maxresdefault.webp"
-                                        <!-- Здесь заменить -->
-                                        type="image/webp">
+                                        <source srcset="https://i.ytimg.com/vi_webp/zCm6NsqJLWE/maxresdefault.webp" type="image/webp">
                                         <img class="video__media"
                                              src="https://i.ytimg.com/vi/zCm6NsqJLWE/maxresdefault.jpg" alt="">
-                                        <!-- Здесь заменить -->
                                     </picture>
                                 </a>
                                 <button class="video__button" type="button" aria-label="Запустить видео">
@@ -726,7 +712,7 @@ include "php/Photo.php";
                 </div>
 
                 <div class="col-2 d-none d-md-flex justify-content-center align-items-center">
-                    <a class="" href="#slider-block-video" role="button"
+                    <a class="" href="#slider_block_video" role="button"
                        data-slide="next">
                         <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                              width="100.000000px" height="100.000000px" viewBox="0 0 100.000000 100.000000"
@@ -751,9 +737,9 @@ include "php/Photo.php";
 
             <div class="row justify-content-center">
                 <ol class="carousel-indicators magic_indicators d-flex">
-                    <li data-target="#slider-block-video" data-slide-to="0" class="active"></li>
-                    <li data-target="#slider-block-video" data-slide-to="1"></li>
-                    <li data-target="#slider-block-video" data-slide-to="2"></li>
+                    <li data-target="#slider_block_video" data-slide-to="0" class="active"></li>
+                    <li data-target="#slider_block_video" data-slide-to="1"></li>
+                    <li data-target="#slider_block_video" data-slide-to="2"></li>
                 </ol>
             </div>
 

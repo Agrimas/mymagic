@@ -1,5 +1,11 @@
+$('#slider_block_video').carousel({
+    ride: 'carousel',
+});
+
+
+
 function findVideos() {
-    let videos = document.querySelectorAll('.video');
+    let videos = document.querySelectorAll('.youtube');
 
     for (let i = 0; i < videos.length; i++) {
         setupVideo(videos[i]);
@@ -13,6 +19,7 @@ function setupVideo(video) {
     let id = parseMediaURL(media);
 
     video.addEventListener('click', () => {
+        $('#slider_block_video').carousel('pause');
         let iframe = createIframe(id);
 
         link.remove();
