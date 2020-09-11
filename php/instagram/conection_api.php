@@ -1,5 +1,4 @@
 <?php
-
 $token = $_SERVER['INSTAGRAM_TOKEN'];
 define("LINK_GET_MEDIA",'https://graph.instagram.com/me/media?fields=caption,media_type,media_url,permalink&access_token=' . $token,true);
 define("LINK_REFRESH_TOKEN",'https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=' . $token,true);

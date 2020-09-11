@@ -136,8 +136,7 @@ include "php/Photo.php";
                 <li class="nav-item">
                     <a class="social rounded-circle mx-0 mx-lg-1"
                        href="https://t.me/justmymagic/" target="_blank">
-                        <!--     Заменить ссылку https://t.me/justmymagic/-->
-                        <i class="fab fa-telegram-plane"></i> <!--Заменить fa-telegram-plane на fa-youtube-->
+                        <i class="fab fa-telegram-plane"></i>
                     </a>
                 </li>
                 <li class="nav-item">
@@ -176,14 +175,14 @@ include "php/Photo.php";
 
         <div class="bg-sale-title col-6 col-lg-5 d-flex justify-content-center ml-lg-5 ml-xl-0 d-none d-md-block">
             <div class="sale-title col-10 col-xl-8 justify-content-center py-md-2 py-lg-3 d-none d-md-flex">
-                <p class="m-0">Закажите выступление <br> сейчас и получите <br> <span
-                            style="font-family: 'Lato Black', sans-serif">скидку 30%</span>
+                <p class="m-0">При заказе сценического выступления <br> получите интерактив с гостями <br> <span
+                            style="font-family: 'Lato Black', sans-serif">со скидкой 50%</span> 
                 </p>
             </div>
         </div>
 
         <a href="#block-sale" class="nav-link">
-            <button class="d-none d-md-block sale-button text-uppercase">получить скидку</button>
+            <button class="d-none d-md-block sale-button text-uppercase">Заказать со скидкой</button>
         </a>
 
 
@@ -236,7 +235,7 @@ include "php/Photo.php";
             </p>
             <div class="block-about-list col my-4 p-1 px-md-3 px-xl-4 py-md-4 py-xl-5">
                 <ul class="m-0 p-0 text-right ">
-                    <li class="mb-3 pr-4 pr-md-5">Профессионально занимаюсь фокусами более 8 лет</li>
+                    <li class="mb-3 pr-4 pr-md-5">Профессионально занимаюсь фокусами более 13 лет</li>
                     <li class="mb-3 pr-4 pr-md-5">Представитель Российской Ассоциации Иллюзионистов (РАИ)</li>
                     <li class="pr-4 pr-md-5">Представитель Международного Сообщества Иллюзионистов (ISM)</li>
                 </ul>
@@ -297,8 +296,7 @@ include "php/Photo.php";
                         <form action="" method="post" id="ajax_form_1">
                             <input name="phone_number" class="phone_input my-2 px-4 py-3" type="text"
                                    placeholder="Ваш телефон" required>
-                            <button class="text-uppercase my-2 px-4 py-3" type="submit">Отправить
-                                заявку
+                            <button class="text-uppercase my-2 px-4 py-3" type="submit">Перезвонить
                             </button>
                         </form>
                     </div>
@@ -388,7 +386,7 @@ include "php/Photo.php";
                                 <img src="img/photo/slider_about_profession/photo-4.jpg"
                                      alt="Первый слайд">
 
-                                <p class="p-0 px-md-3">Детский праздник (программа 20-25 минут)</p>
+                                <p class="p-0 px-md-3">Детский праздник (программа 30 минут)</p>
                             </div>
 
 
@@ -399,8 +397,7 @@ include "php/Photo.php";
                                      alt="Первый слайд">
 
 
-                                <p class="p-0 px-md-3">Встреча гостей, интерактив с гостями, микромагия (программа 20-25
-                                    минут)</p>
+                                <p class="p-0 px-md-3">Встреча гостей, интерактив с гостями, микромагия (30-120 минут)</p>
 
                             </div>
 
@@ -410,9 +407,8 @@ include "php/Photo.php";
                                 <img src="img/photo/slider_about_profession/photo-6.jpg"
                                      alt="Первый слайд">
 
-                                <p class="p-0 px-md-3">Тематические праздники
-                                    (любая
-                                    продолжительность)</p>
+                                <p class="p-0 px-md-3">Тематические праздники в индивидуальнос образе
+                                </p>
 
                             </div>
                         </div>
@@ -467,17 +463,17 @@ include "php/Photo.php";
                                     <li data-target="#slider-block-about-profession" data-slide-to="3"
                                         data-ride="false"
                                         data-touch="false">
-                                        Детский праздник (программа 20-25 минут)
+                                        Детский праздник (программа 30 минут)
                                     </li>
                                     <li data-target="#slider-block-about-profession" data-slide-to="4"
                                         data-ride="false"
                                         data-touch="false">
-                                        Встреча гостей, интерактив с гостями, микромагия (программа 20-25 минут)
+                                        Встреча гостей, интерактив с гостями, микромагия (30-120 минут)
                                     </li>
                                     <li data-target="#slider-block-about-profession" data-slide-to="5"
                                         data-ride="false"
                                         data-touch="false">
-                                        Тематические праздники (любая продолжительность)
+                                        Тематические праздники в индивидуальном образе
                                     </li>
                                 </ol>
                             </div>
@@ -519,13 +515,13 @@ include "php/Photo.php";
                             <h2 class="text-center">Почему я?</h2>
                         </div>
                         <ul class="positive">
-                            <li class="pl-5 my-3">Профессионально занимаюсь фокусами более 8 лет</li>
-                            <li class="pl-5 my-3">Оригинальная программа</li>
+                            <li class="pl-5 my-3">Профессионально занимаюсь фокусами более 13 лет</li>
+                            <li class="pl-5 my-3">Оригинальная и местами очень смешная программа </li>
                             <li class="pl-5 my-3">Шикарный костюм и презентабельный внешний вид</li>
                             <li class="pl-5 my-3">Вы еще долго будите обсуждать выступление, теряясь в догадках как же
                                 делаются фокусы
                             </li>
-                            <li class="pl-5 my-3">В программе участвуют сами зрители</li>
+                            <li class="pl-5 my-3">В программе особые фокусы с участием зрителей</li>
                         </ul>
                     </div>
 
@@ -535,10 +531,10 @@ include "php/Photo.php";
                         </div>
                         <ul class="negative">
                             <li class="pl-5 my-3">Вам может попасться начинающий или неопытный фокусник</li>
-                            <li class="pl-5 my-3">Зрители будут скучать</li>
-                            <li class="pl-5 my-3">Костюм фокусника может не соответствовать мероприятию</li>
+                            <li class="pl-5 my-3">Зрителям будет не интересно и они заскучают</li>
+                            <li class="pl-5 my-3">Внешний вид фокусника может не соответствовать мероприятию</li>
                             <li class="pl-5 my-3">На видео и фото фокусник смотрится красиво, а
-                                реальное выступление неинтересное
+                                реальное выступление будет неинтересным
                             </li>
                             <li class="pl-5 my-3">Фокусник не профессионально показывает фокусы, секреты которых вы
                                 легко поймете
@@ -557,8 +553,8 @@ include "php/Photo.php";
         <div class="col-5 d-flex flex-column justify-content-center">
             <div class="bg-sale-title d-flex justify-content-center mb-lg-5">
                 <div class="sale-title py-md-2 py-lg-3 pl-3 pl-lg-0">
-                    <p class="mb-0">Закажите выступление <br> сейчас и получите <br> <span id="sale-title__item"
-                        >скидку 30%</span>
+                    <p class="mb-0">При заказе сценического выступления <br> получите интерактив с гостями<br> <span id="sale-title__item"
+                        >со скидкой 50%</span>
                     </p>
                 </div>
             </div>
@@ -570,8 +566,7 @@ include "php/Photo.php";
                         <input type="hidden" name="form_sale" value="Скидка"/>
                         <input name="phone_number" class="phone_input my-2 p-2 p-lg-3" type="text"
                                placeholder="Ваш телефон" required>
-                        <button class="text-uppercase sale-button p-2 p-lg-3" type="submit">получить
-                            скидку
+                        <button class="text-uppercase sale-button p-2 p-lg-3" type="submit">Заказать со скидкой
                         </button>
                     </form>
                 </div>
@@ -661,9 +656,9 @@ include "php/Photo.php";
 
                         <div class="carousel-item active" data-ride="false" data-touch="false">
                             <div class="video">
-                                <a class="video__link" href="https://youtu.be/r8JGWIWdGm8"> <!-- Здесь заменить -->
+                                <a class="video__link" href="https://vimeo.com/455755611"> <!-- Здесь  поменять -->
                                     <picture>
-                                        <source srcset="https://i.ytimg.com/vi_webp/r8JGWIWdGm8/maxresdefault.webp"
+                                        <source srcset="https://player.vimeo.com/video/455755611"
                                         <!-- Здесь заменить -->
                                         type="image/webp">
                                         <img class="video__media"
@@ -946,7 +941,7 @@ include "php/Photo.php";
 
                     <div class="col-xl-10 text-center">
 
-                        <h3>Оставьте свою заявку <img src="img/icon/magic.svg" alt="" width="30px" height="30px"></h3>
+                        <h3>Остались вопросы <img src="img/icon/magic.svg" alt="" width="30px" height="30px"></h3>
 
 
                         <form action="" method="post" id="ajax_form_2">
@@ -954,7 +949,7 @@ include "php/Photo.php";
                             <input name="phone_number" class="phone_input my-2 px-4 py-3 " type="text"
                                    placeholder="Ваш телефон" required>
                             <button class="text-uppercase mt-4 mb-2 px-4 py-3" type="submit">
-                                Отправить заявку
+                                Перезвонить
                             </button>
                         </form>
                     </div>
