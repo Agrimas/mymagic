@@ -2,10 +2,10 @@
 
 .idea/
 
+local_files/
+
 img/
 
 .env
-
-mymagic.txt
 
 MyMagic.loc.zip

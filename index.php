@@ -176,7 +176,7 @@ include "php/Photo.php";
         <div class="bg-sale-title col-6 col-lg-5 d-flex justify-content-center ml-lg-5 ml-xl-0 d-none d-md-block">
             <div class="sale-title col-10 col-xl-8 justify-content-center py-md-2 py-lg-3 d-none d-md-flex">
                 <p class="m-0">При заказе сценического выступления <br> получите интерактив с гостями <br> <span
-                            style="font-family: 'Lato Black', sans-serif">со скидкой 50%</span> 
+                            style="font-family: 'Lato Black', sans-serif">со скидкой 50%</span>
                 </p>
             </div>
         </div>
@@ -193,14 +193,16 @@ include "php/Photo.php";
                 <div class="row flex-nowrap">
 
                     <div class="carousel-inner p-2 p-lg-3">
-                        <?php $first = true;
-                        foreach ($photosForSlider as $photo) { ?>
+                        <?php
+                         $first = true;
+                        for ($x = 1; $x <= 3; $x++){
+                            ?>
                             <div class="carousel-item <? if ($first === true) {
                                 echo 'active';
                             }
                             $first = false; ?>">
-                                <img src="<?= $photo['media_url'] ?>"
-                                     alt="<?= $photo['alt'] ?>">
+                                <img src="img/photo/slider_first_block/image_<?=$x?>.jpg"
+                                     alt="">
                             </div>
                         <?php } ?>
                     </div>
@@ -208,7 +210,7 @@ include "php/Photo.php";
                     <div class="col d-flex align-items-center">
                         <ol class="carousel-indicators p-0 m-0">
                             <?php $first = true;
-                            for ($x = 0; $x < count($photosForSlider); $x++) { ?>
+                            for ($x = 0; $x < 3; $x++) { ?>
                                 <li data-target="#slider-first-block"
                                     data-slide-to="<?= $x ?>" <? if ($first === true) {
                                     echo 'class="active"';
@@ -589,18 +591,14 @@ include "php/Photo.php";
         <div class="row justify-content-center">
             <div class="col col-md-8 main-slider">
                 <?php
-                foreach ($photosForGallery as $photo) {
+                for ($x = 24; $x >= 1; $x--) {
                     ?>
                     <div class="col p-0">
                         <div class="wrap">
-                            <a href="<?= $photo['media_url'] ?>" data-fancybox data-caption="<?= $photo['caption'] ?>">>
-                                <img alt="<?= $photo['alt'] ?>" class="image"
-                                     src="<?= $photo['media_url'] ?>">
+                            <a href="img/photo/slider_block_photo/image_<?=$x?>.jpg" data-fancybox>
+                                <img alt="" class="image"
+                                     src="img/photo/slider_block_photo/image_<?=$x?>.jpg">
                                 <div class="mask"></div>
-                                <a class="social rounded-circle m-3 d-block"
-                                   href="<?= $photo['permalink'] ?>" target="_blank">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
                             </a>
                         </div>
                     </div>
