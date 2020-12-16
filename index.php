@@ -595,7 +595,7 @@ include "php/Photo.php";
                         <div class="wrap">
                             <a href="<?= $photo['media_url'] ?>" data-fancybox data-caption="<?= $photo['caption'] ?>">>
                                 <img alt="<?= $photo['alt'] ?>" class="image"
-                                     src="<?= $photo['thumbnail'] ?>">
+                                     src="<?= $photo['media_url'] ?>">
                                 <div class="mask"></div>
                                 <a class="social rounded-circle m-3 d-block"
                                    href="<?= $photo['permalink'] ?>" target="_blank">
