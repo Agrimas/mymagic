@@ -33,10 +33,6 @@ $(document).ready(function () {
 
         document.getElementById("header").style.height = "100px";
 
-
-        console.log($(window).scrollTop());
-
-
         if ($(window).scrollTop() > 1) {
             document.getElementById("second-row").style.display = 'none';
             document.getElementById("header").style.height = '50px';

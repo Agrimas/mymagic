@@ -1,9 +1,11 @@
 <?php
-include '../db.php';
+include '../autoload.php';
 
 $token = $_SERVER['TELEGRAM_TOKEN'];
 
 $chat_id = $_SERVER['TELEGRAM_CHAT_ID'];
+
+$txt = '';
 
 foreach ($_POST as $key => $value) {
     if ($value) {

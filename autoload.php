@@ -1,4 +1,4 @@
 <?php
-require "vendor/autoload.php";
+require 'vendor/autoload.php';
 $dotenv = Dotenv\Dotenv::createMutable(__DIR__);
 $dotenv->load();

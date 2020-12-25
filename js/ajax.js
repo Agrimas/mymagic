@@ -5,22 +5,18 @@ $(document).ready(function () {
 
     $("#ajax_form_1, #ajax_form_2, #ajax_form_3").submit(function (e) {
 
-        var btnId = $(this).attr('id');
-        var numberForm = btnId.charAt(btnId.length - 1);
-
-        sendAjaxForm('result_form', 'ajax_form_' + numberForm, 'php/telegram.php');
-
+        let btnId = $(this).attr('id');
+        let numberForm = btnId.charAt(btnId.length - 1);
+        sendAjaxForm('ajax_form_' + numberForm, 'php/telegram.php');
         e.preventDefault();
-
         return false;
 
     });
 
-
 });
 
 
-function sendAjaxForm(result_form, ajax_form, url) {
+function sendAjaxForm(ajax_form, url) {   
     $.ajax({
         url: url, //url страницы (telegram.php)
         type: "POST", //метод отправки
@@ -28,20 +24,22 @@ function sendAjaxForm(result_form, ajax_form, url) {
         data: $("#" + ajax_form).serialize(),  // Сеарилизуем объект
 
 
-        success: function (response) { //Данные отправлены успешно
-
+        success: function (response) { //Данные отправлены успешно          
             result = $.parseJSON(response);
+            console.log(result);
 
-            var name = '';
-            if (result.name != null) {
-                name = ", " + result.name
+            let name = '';
+            if (result.name) {
+                name = ', ' + result.name;
             }
 
-            swal("Спасибо" + name, "Я Вам перезвоню!");
+            swal(`Спасибо${name}`, "Я Вам перезвоню!");
 
         },
+
         error: function (response) { // Данные не отправлены
-            $('#result_form').html('Ошибка. Данные не отправлены.');
+            swal('Ошибка. Данные не отправлены.');
+            $().html('Ошибка. Данные не отправлены.');
         }
     });
 }
