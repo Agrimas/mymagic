@@ -1,0 +1,26 @@
+/*block-sale START*/
+
+@media (min-width: 768px) {
+	.block-sale {
+		background-image: url("/img/photo/bg-photo-block-sale.jpg");
+		background-size: cover;
+		background-position: center;
+
+		.container {
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+	}
+
+	.block-sale .bg-sale-title {
+		position: static;
+		background-blend-mode: darken;
+		background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0) 100%);
+	}
+
+	.block-sale .sale-button {
+		position: static;
+	}
+}
+
+/*block-sale END*/

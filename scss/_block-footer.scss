@@ -1,0 +1,62 @@
+/*block-footer START*/
+
+.block-footer {
+	background-image: url("/img/photo/bg-photo-footer.jpg");
+	background-size: cover;
+	background-position: 75%;
+}
+
+@media (min-width: 768px) {
+	.block-footer {
+		background-position: center;
+	}
+}
+
+.block-footer form > * {
+	width: 250px;
+}
+
+.block-footer a.social {
+	border: 1px white solid;
+}
+
+.block-footer a.social:hover,
+a.social:active {
+	color: #564fd3;
+	border-color: #564fd3;
+}
+
+svg:hover #ico-to-top {
+	fill: #cf94da;
+}
+
+.block-footer p {
+	font-family: "Lato Thin";
+	font-size: 14px;
+	color: #564fd3;
+}
+
+.block-footer .number {
+	font-size: 18px;
+}
+
+@media (min-width: 768px) {
+	.block-footer .number {
+		font-size: 28px;
+	}
+}
+
+.block-footer .fa-phone {
+	font-size: 26px;
+}
+
+@media (min-width: 768px) {
+	.block-footer .container {
+		background-image: url("/img/logo/logo_footer_my_magic.svg");
+		background-repeat: no-repeat;
+		background-position: 90% 90%;
+		background-size: 20%;
+	}
+}
+
+/*block-footer END*/

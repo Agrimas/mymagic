@@ -1,0 +1,133 @@
+/*block-photo START*/
+
+#block-photo {
+	background-image: url("/img/photo/bg-photo-block-photo.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.main-slider {
+	line-height: 0;
+}
+
+.wrap {
+	position: relative;
+	text-align: center;
+	background-color: #eee;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	width: 100%;
+	height: 100px;
+	padding-top: 100%;
+}
+
+.image {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	vertical-align: middle;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+.block-photo .mask {
+	position: absolute;
+	content: "";
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 8;
+	transition: all 0.5s ease-out;
+	opacity: 0;
+	background-image: linear-gradient(-57deg, rgb(86, 79, 211) 0%, rgb(161, 81, 140) 55%, rgb(236, 83, 68) 100%);
+	width: 100%;
+	height: 100%;
+}
+
+.block-photo .wrap:hover .mask {
+	opacity: 0.651;
+	transition: all 0.5s ease-out;
+}
+
+.block-photo a.social {
+	width: auto;
+	height: auto;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+	display: block;
+	text-decoration: none;
+	opacity: 0;
+	pointer-events: none;
+	transition: all 0.5s ease-out;
+	background-color: #2c293b;
+	color: #564fd3;
+	border: 1px white solid;
+}
+
+a.social.title {
+	display: inline-block;
+	width: auto;
+	height: auto;
+	padding: 0;
+	z-index: 1;
+	background: none;
+	color: black;
+}
+
+a.social.title .fa-instagram {
+	padding: 0;
+	font-size: 27px;
+}
+
+.wrap:hover a.social {
+	opacity: 1;
+	pointer-events: all;
+	z-index: 99;
+}
+
+.fa-instagram {
+	padding: 8.5px 10px;
+	font-size: 20px;
+}
+
+.slick-slide {
+	padding: 5px;
+	border: 2px white solid;
+	border-radius: 10px;
+	font-size: 0;
+}
+
+.dots-style {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	margin: 10px auto;
+}
+
+.dots-style button {
+	background: white;
+	border: none;
+	border-radius: 50%;
+	font-size: 0;
+	height: 15px;
+	width: 15px;
+	margin: 5px;
+	outline: none;
+}
+
+.dots-style li[class="slick-active"] button {
+	background: #564fd3;
+}
+
+/*block-photo END*/

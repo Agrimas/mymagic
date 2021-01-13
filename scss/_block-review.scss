@@ -1,0 +1,16 @@
+/*block-review START*/
+
+@media (min-width: 768px) {
+	.block-review .form {
+		background: #5650d3;
+		background: -webkit-linear-gradient(top left, #5650d3, #ec5344);
+		background: -moz-linear-gradient(top left, #5650d3, #ec5344);
+		background: linear-gradient(to bottom right, #5650d3, #ec5344);
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		border-radius: 11px;
+	}
+}
+
+/*block-review END*/

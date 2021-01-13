@@ -1,0 +1,19 @@
+/*block-clients START*/
+
+.block-clients {
+	background-image: url("/img/photo/bg-photo-block-cliens.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.block-clients img {
+	max-height: 100px;
+}
+
+.clients {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*block-clients END*/

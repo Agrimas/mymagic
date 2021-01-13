@@ -1,0 +1,126 @@
+/*First-block START*/
+
+.first-block {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	background: url("/img/photo/bg-photo-first-block.jpg") top / cover no-repeat fixed;
+	.container {
+		min-height: 100vh;
+		.row {
+			margin-top: 100px;
+		}
+	}
+	.sale-button {
+		padding: 10px 20px;
+	}
+
+	p {
+		font-size: 16px;
+		line-height: 26px;
+		margin: 0;
+		font-family: $Lato;
+	}
+	span {
+		font-size: 30px;
+	}
+}
+.bg-left {
+	background: rgb(0, 0, 0);
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 75%);
+}
+
+.bg-right {
+	background: rgb(0, 0, 0);
+	background: linear-gradient(90deg, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 0) 100%);
+}
+
+// Заголовок
+
+.first-block-title {
+	margin-top: 3em;
+	.text {
+		z-index: 1;
+		line-height: 40px;
+		background: rgb(0, 0, 0);
+		strong {
+			font-size: 40px;
+			color: #564fd3;
+			font-family: "Lato Black", sans-serif;
+		}
+	}
+}
+
+//Заголовок скидки
+.sale-title {
+	.text {
+		background: rgb(0, 0, 0);
+	}
+}
+
+// Карусель
+#slider-first-block .carousel-item img {
+	object-fit: cover;
+	object-position: top;
+	width: 100%;
+}
+
+@media (min-width: 768px) {
+	#slider-first-block .carousel-item img {
+		height: 200px;
+	}
+}
+
+@media (min-width: 992px) {
+	#slider-first-block .carousel-item img {
+		height: 250px;
+	}
+}
+
+@media (min-width: 1200px) {
+	#slider-first-block .carousel-item img {
+		height: 300px;
+	}
+}
+
+@media (min-width: 768px) {
+	#slider-first-block .carousel-inner {
+		border: 4px white solid;
+		border-radius: 10px;
+	}
+
+	#slider-first-block .carousel-item-next.carousel-item-left,
+	#slider-first-block .carousel-item-prev.carousel-item-right {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+
+	#slider-first-block .carousel-item-next,
+	#slider-first-block .active.carousel-item-right {
+		-webkit-transform: translate3d(0, 100%, 0);
+		transform: translate3d(0, 100%, 0);
+	}
+
+	#slider-first-block .carousel-item-prev,
+	#slider-first-block .active.carousel-item-left {
+		-webkit-transform: translate3d(0, -100%, 0);
+		transform: translate3d(0, -100%, 0);
+	}
+
+	#slider-first-block .carousel-indicators li {
+		width: 1em;
+		border-radius: 50%;
+		height: 1em;
+		margin: 15px 0;
+		opacity: 1;
+		background-color: white;
+	}
+
+	#slider-first-block .carousel-indicators li:hover,
+	#slider-first-block .carousel-indicators .active {
+		background-color: #564fd3;
+		transition: 0.3s;
+	}
+}
+
+/*First-block END*/

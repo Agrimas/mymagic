@@ -1,0 +1,45 @@
+/*block-why-me START*/
+
+.list-why-me {
+	background-image: url("/img/photo/bg-photo-block-why-me.jpg");
+	background-size: cover;
+	background-position: center;
+	font-size: 18px;
+}
+
+@media (min-width: 768px) {
+	.list-why-me {
+		border-radius: 30px;
+	}
+}
+
+.list-why-me ul {
+	padding: 0;
+}
+
+@media (min-width: 768px) {
+	.list-why-me ul {
+		padding-left: 40px;
+	}
+}
+
+.list-why-me li {
+	list-style: none;
+	text-shadow: 0 6px 6.44px rgba(0, 0, 0, 1);
+}
+
+.list-why-me .positive li {
+	background: url("/img/icon/point-blue.svg") no-repeat left center;
+}
+
+.list-why-me .negative li {
+	background: url("/img/icon/point-red.svg") no-repeat left center;
+}
+
+@media (min-width: 768px) {
+	.list-why-me {
+		border-radius: 30px;
+	}
+}
+
+/*block-why-me END*/

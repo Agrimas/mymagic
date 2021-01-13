@@ -1,0 +1,73 @@
+/*block-about START*/
+
+.block-about {
+	background-image: url("/img/photo/bg-photo-block-about-me.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+
+	.container {
+		background-image: url("/img/photo/anton-ermolenko-block-about-me.png");
+		background-repeat: no-repeat;
+		background-position: right;
+		background-size: contain;
+	}
+}
+
+.block-about h2 {
+	font-size: 70px;
+}
+
+#illusionist {
+	font-family: "Lato Medium", sans-serif;
+	font-size: 26px;
+	text-shadow: 0 6px 6.44px rgba(0, 0, 0, 1);
+}
+
+.block-about span {
+	font-family: "Lato Black", sans-serif;
+	text-shadow: 0 6px 6.44px rgba(0, 0, 0, 1);
+}
+
+@media (min-width: 768px) {
+	.block-about span {
+		font-size: 38px;
+	}
+}
+
+.block-about-list {
+	border: 2px solid white;
+	border-radius: 10px;
+	box-shadow: 4px 4px 5px 6px rgba(0, 0, 0, 0.6);
+}
+
+.block-about li {
+	font-size: 18px;
+	text-shadow: 0 6px 6.44px rgba(0, 0, 0, 1);
+	list-style: none;
+	background: url("/img/icon/point-white.svg") no-repeat right center;
+}
+
+@media (min-width: 768px) {
+	.block-about li {
+		font-size: 23.95px;
+	}
+}
+
+#anton-ermolenko-block-about-me {
+	width: 50%;
+}
+
+@media (min-width: 992px) {
+	#anton-ermolenko-block-about-me {
+		width: 100%;
+	}
+}
+
+@media (min-width: 1200px) {
+	#anton-ermolenko-block-about-me {
+		width: 75%;
+	}
+}
+
+/*block-about END*/
