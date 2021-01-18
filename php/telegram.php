@@ -1,9 +1,9 @@
 <?php
-include '../autoload.php';
+include dirname(dirname(__FILE__)) . '/mail.php';
 
-$token = $_SERVER['TELEGRAM_TOKEN'];
+$token = TELEGRAM_TOKEN;
 
-$chat_id = $_SERVER['TELEGRAM_CHAT_ID'];
+$chat_id = TELEGRAM_CHAT_ID;
 
 $txt = '';
 
@@ -19,4 +19,3 @@ $sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_i
 if ($sendToTelegram) {
     echo json_encode($arr);
 }
-

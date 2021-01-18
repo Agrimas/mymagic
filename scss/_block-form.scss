@@ -1,16 +1,19 @@
 /*block-form START*/
 
-.block-form .form {
-	background-image: url("/img/photo/bg-photo-block-forma.jpg");
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
-	border-radius: 11px;
+.block-form {
+	h2 {
+		@include subTitle(black, none);
+	}
+	.form {
+		background-image: url("/img/photo/bg-photo-block-forma.jpg");
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		border-radius: 11px;
+	}
+	.form p {
+		font-family: "Lato Semibold", sans-serif;
+		font-size: 30px;
+	}
 }
-
-.block-form .form p {
-	font-family: "Lato Semibold", sans-serif;
-	font-size: 30px;
-}
-
 /*block-form END*/

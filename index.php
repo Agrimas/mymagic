@@ -1,7 +1,7 @@
 <?php
-ini_set('display_errors', 0);
-ini_set('display_startup_errors', 0);
-error_reporting(0);
+// ini_set('display_errors', 0);
+// ini_set('display_startup_errors', 0);
+// error_reporting(0);
 ?>
 <!doctype html>
 <html lang="ru">
@@ -138,42 +138,55 @@ error_reporting(0);
 	</header>
 	<section class="first-block" id="first-block">
 		<div class="container">
-			<div class="row">
+			<div class="row h-100 flex-column flex-nowrap bg-primary">
+				<div class="col bg-warning">
 
-				<div class="col-8 mt-5 d-flex first-block-title">
-					<div class="col-3 bg-left"></div>
-					<div class="col-6 py-3 px-0 text-center text">
-						<h1>выступление иллюзиониста <br>
-							<span>на вашем</span>
-							<strong>празднике</strong>
-						</h1>
-						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="137px" height="19px">
-							<image x="0px" y="0px" width="137px" height="19px" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIkAAAATCAQAAAAO0OZnAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfkAR4QEBn+KOPJAAAEtklEQVRYw83XfWzV1RkH8M/v3tvbQm9foGgZiGJ5nahjbAKbCsStig5R4wZoNqcLJGYv2ZJlL8lCAsnALA4xiwSjUydqxgTDlozErRqVsSEGApourCywQpGivCi9Bdre3t/ZH/e28pIsWdbe7jl/nJec8zzf833OefI8UTAk0mCxOh2q1dvnOe1gnIdMckyXjDYvOzIU0KIhoeRTVjnht95X7lr3Oe7nPjLGT1X4nRY5V1sibbmTQ4AulL4lw5rwTKgOQhQEYUr4dfhxSIflYU24qn/X5WFrWB0SpceXKAHraeNMMl5NcV5vutU6RGpNkdBik3q3KfeKQ5ImqsSHNpirunimVoOpxikbfLipQbcwwhKNenVptcUexEVXBGmLPabTPtdr1KwFl7nbb5zBYecU/vUNlqhHUpPNOgYX8GC/kmGW+ao/W+Epw63SiA81e8JUdWYYLUa3LsPEetHjWnONcYWF/iqLhR5X4yk/86olHlA+uJCTKwZX/0yzPWGL4w5rUu2H/uWA/eabrd4Mv7cfE9zgoDFanXBObJGpZqm0zscWWOklKx102ruOmKndsVJQUmaWe43WJjeg+ueIbMQIObFdRvu+vZq9KaFHk+2IfN0oz2g0yttocVSFYzZoM9daL1grL6lWl1afl7dvQDFWuVOj2HExn8SSjNvNVOkzXnEFtjk3IOay5mmXdJMn7cIjaq20yl88279nmVs84qg/+o5TnscOO8CXLPcHvwRfsFSTKnPsHiAqKs3R6wP3u1lWRkvhOXySl1yJWb4rbauzdntrQMzWeNatutVZZFNx7Sem2WqvdmkN5rjVi3a5Q5vRGr1hmwPyxprhDm/7VfHUw9Y7qdJmy3QNALLILa5Ta6HT1tor7ksMU5jkerH3HbTJP/3AaT2+5RpZGaliAM4XWyw4P7sLF/UFY5GESEIsFmRk8GXVytDplCqPandI2lgnrHHAXTpN8w/Pe9B92uRdbZSdOj1gOPK+iDrwNWUisXAJmqjYJ85bLaBJSvbfJdYrq85Mr0nZ4zF/V6/BLOzWGoW5ljmjV+SY7Q6Z5n43arZDjYykJEKRkF75C0DEl1BTAJEQSUpIyqNKWo9ukSDI69RlpIxYzkmve8N8C/zCUhkrTHe7kcpEsj5WoQpJAcOkdMuKRIJYvkjKpZRE/aPCOClVpCQqurfDWTeZaLuN9hvvRpcJ0sqsi8JG79gmlpa2wAzvmWCyH9mpRrKovEBDfNHVL55dCC0q+ivnrLwyw6X6NeSKTujVrRsNvmmCci/bLKiQlhKkZIqxLpLQ66ycVL+egqb/hODCWaIfVcExp82z2nuOus7fvCqnW9JtJkfhGzY7h6SlrrFPwnRNtuj9n37qfyufNs9hbzpTQptpi9xsj5QpdtsgRrV7hXQQhGHh22FduDIIi8OjoWoIKp/0ENQzI8Pj4Z4gTAjrw0OhIghCRUIPmOiz1ut0t/HekS3pCylIz3mRqVTykZ0m+ooTnjTbWNDVl9DXiDR70HPmOTAEhAyNBK3me8E93lWutrDYR8kR5R6WVWt8Sarj/xdJaTBCzvfkfFBY6kvoO5xyp8/JetqfShxah1JO4XKTVXq6r0z4NxRhkXMhHEeXAAAAAElFTkSuQmCC" />
-						</svg>
-						<p class="text-uppercase">по всей беларуси и за рубежом</p>
+					<div class="row mt-5">
+						<div class="col-8 d-flex bg-title">
+							<div class="col-2 px-0"></div>
+							<div class="col-8 py-5 px-0">
+								<h1>выступление иллюзиониста <br>
+									<span>на вашем</span>
+									<strong>празднике</strong> <br>
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="137px" height="19px">
+										<image x="0px" y="0px" width="137px" height="19px" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIkAAAATCAQAAAAO0OZnAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfkAR4QEBn+KOPJAAAEtklEQVRYw83XfWzV1RkH8M/v3tvbQm9foGgZiGJ5nahjbAKbCsStig5R4wZoNqcLJGYv2ZJlL8lCAsnALA4xiwSjUydqxgTDlozErRqVsSEGApourCywQpGivCi9Bdre3t/ZH/e28pIsWdbe7jl/nJec8zzf833OefI8UTAk0mCxOh2q1dvnOe1gnIdMckyXjDYvOzIU0KIhoeRTVjnht95X7lr3Oe7nPjLGT1X4nRY5V1sibbmTQ4AulL4lw5rwTKgOQhQEYUr4dfhxSIflYU24qn/X5WFrWB0SpceXKAHraeNMMl5NcV5vutU6RGpNkdBik3q3KfeKQ5ImqsSHNpirunimVoOpxikbfLipQbcwwhKNenVptcUexEVXBGmLPabTPtdr1KwFl7nbb5zBYecU/vUNlqhHUpPNOgYX8GC/kmGW+ao/W+Epw63SiA81e8JUdWYYLUa3LsPEetHjWnONcYWF/iqLhR5X4yk/86olHlA+uJCTKwZX/0yzPWGL4w5rUu2H/uWA/eabrd4Mv7cfE9zgoDFanXBObJGpZqm0zscWWOklKx102ruOmKndsVJQUmaWe43WJjeg+ueIbMQIObFdRvu+vZq9KaFHk+2IfN0oz2g0yttocVSFYzZoM9daL1grL6lWl1afl7dvQDFWuVOj2HExn8SSjNvNVOkzXnEFtjk3IOay5mmXdJMn7cIjaq20yl88279nmVs84qg/+o5TnscOO8CXLPcHvwRfsFSTKnPsHiAqKs3R6wP3u1lWRkvhOXySl1yJWb4rbauzdntrQMzWeNatutVZZFNx7Sem2WqvdmkN5rjVi3a5Q5vRGr1hmwPyxprhDm/7VfHUw9Y7qdJmy3QNALLILa5Ta6HT1tor7ksMU5jkerH3HbTJP/3AaT2+5RpZGaliAM4XWyw4P7sLF/UFY5GESEIsFmRk8GXVytDplCqPandI2lgnrHHAXTpN8w/Pe9B92uRdbZSdOj1gOPK+iDrwNWUisXAJmqjYJ85bLaBJSvbfJdYrq85Mr0nZ4zF/V6/BLOzWGoW5ljmjV+SY7Q6Z5n43arZDjYykJEKRkF75C0DEl1BTAJEQSUpIyqNKWo9ukSDI69RlpIxYzkmve8N8C/zCUhkrTHe7kcpEsj5WoQpJAcOkdMuKRIJYvkjKpZRE/aPCOClVpCQqurfDWTeZaLuN9hvvRpcJ0sqsi8JG79gmlpa2wAzvmWCyH9mpRrKovEBDfNHVL55dCC0q+ivnrLwyw6X6NeSKTujVrRsNvmmCci/bLKiQlhKkZIqxLpLQ66ycVL+egqb/hODCWaIfVcExp82z2nuOus7fvCqnW9JtJkfhGzY7h6SlrrFPwnRNtuj9n37qfyufNs9hbzpTQptpi9xsj5QpdtsgRrV7hXQQhGHh22FduDIIi8OjoWoIKp/0ENQzI8Pj4Z4gTAjrw0OhIghCRUIPmOiz1ut0t/HekS3pCylIz3mRqVTykZ0m+ooTnjTbWNDVl9DXiDR70HPmOTAEhAyNBK3me8E93lWutrDYR8kR5R6WVWt8Sarj/xdJaTBCzvfkfFBY6kvoO5xyp8/JetqfShxah1JO4XKTVXq6r0z4NxRhkXMhHEeXAAAAAElFTkSuQmCC" />
+									</svg><br>
+									<span>по всей беларуси и за рубежом</span>
+								</h1>
+							</div>
+							<div class="col-2 px-0"></div>
+						</div>
 					</div>
-					<div class="col-3 bg-right"></div>
 				</div>
 
-				<div class="col-6 my-5">
+				<div class="col-6 bg-danger">
 
-					<div class="row my-4 sale-title">
-						<div class="col-2 bg-left"></div>
-						<div class="col-8 px-0 py-3 text-left text">
+					<div class="row mt-5 bg-title">
+						<div class="col-2"></div>
+						<div class="col-8 py-3">
 							<h3>При заказе сценического выступления <br>
 								получите интерактив с гостями <br>
 								<span>со скидкой 50%</span>
 							</h3>
 						</div>
-						<div class="col-2 bg-right"></div>
+						<div class="col-2"></div>
 					</div>
 
-					<a href="#block-sale" class=" sale-button text-uppercase">
-						Заказать со скидкой
-					</a>
+					<div class="row justify-content-center mt-5">
+						<a href="#block-sale" class="sale-button text-uppercase">
+							Заказать со скидкой
+						</a>
+					</div>
 
 				</div>
-				<!-- <div class="col-6 align-items-center">
+
+			</div>
+		</div>
+
+		</div>
+
+		</div>
+		<!-- <div class="col-6 align-items-center">
 					<div class="slider-first-block">
 						<div id="slider-first-block" class="carousel slide" data-ride="carousel" data-interval="3000">
 							<div class="row flex-nowrap">
@@ -208,7 +221,8 @@ error_reporting(0);
 						</div>
 					</div>
 				</div> -->
-			</div>
+		</div>
+		</div>
 		</div>
 	</section>
 	<section class="block-about" id="block-about">
@@ -256,7 +270,7 @@ error_reporting(0);
 
 			<div class="row">
 				<div class="col d-flex justify-content-center">
-					<h2 class="black-title">Возникли вопросы?</h2>
+					<h2>Возникли вопросы?</h2>
 				</div>
 			</div>
 
@@ -441,13 +455,13 @@ error_reporting(0);
 
 			<div class="row d-none d-md-flex">
 				<div class="col-6 d-flex flex-column align-items-center">
-					<h2 class="black-title">Почему я?</h2>
+					<h2>Почему я?</h2>
 					<div class="mb-3">
 						<img src="img/icon/ico-good.svg" alt="">
 					</div>
 				</div>
 				<div class="col-6  d-flex flex-column align-items-center">
-					<h2 class="black-title">А не другие</h2>
+					<h2>А не другие</h2>
 					<div class="mb-3">
 						<img src="img/icon/ico-bad.svg" alt="">
 					</div>
@@ -497,21 +511,20 @@ error_reporting(0);
 		</div>
 	</section>
 	<section class="block-sale d-none d-md-block" id="block-sale">
-
 		<div class="container">
 			<div class="row">
 				<div class="col-5 d-flex flex-column justify-content-center">
 
 
-					<div class="row my-4 sale-title">
-						<div class="col-2 bg-left"></div>
-						<div class="col-8 px-0 py-3  text-left text">
+					<div class="row my-4 bg-title">
+						<div class="col-2"></div>
+						<div class="col-8 py-3">
 							<h3>При заказе сценического выступления <br>
 								получите интерактив с гостями <br>
 								<span>со скидкой 50%</span>
 							</h3>
 						</div>
-						<div class="col-2 bg-right"></div>
+						<div class="col-2"></div>
 					</div>
 
 
@@ -563,7 +576,6 @@ error_reporting(0);
 		</div>
 	</section>
 	<section class="block-video" id="block-video">
-
 		<div class="container">
 
 			<div class="row">
@@ -927,13 +939,13 @@ error_reporting(0);
 	<!-- Popper.js END -->
 
 	<!--Maskedinput-->
-	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="/js/jquery.maskedinput.min.js"></script>
 
 	<!--My javascript START-->
-	<script src="js/compression_menu.js"></script>
-	<script src="js/video.js"></script>
-	<script src="js/ajax.js"></script>
-	<script src="js/navigation_scrolling.js"></script>
+	<script src="/js/compression_menu.js"></script>
+	<script src="/js/video.js"></script>
+	<script src="/js/ajax.js"></script>
+	<script src="/js/navigation_scrolling.js"></script>
 	<!--My javascript END-->
 
 	<!-- FancyBox START -->

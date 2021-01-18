@@ -1,4 +1,9 @@
 /*block-why-me START*/
+.block-why-me {
+	h2 {
+		@include subTitle(black, none);
+	}
+}
 
 .list-why-me {
 	background-image: url("/img/photo/bg-photo-block-why-me.jpg");

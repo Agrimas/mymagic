@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /*Шрифты*/
 @import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap");
+html,
 body {
   font-family: "Lato", sans-serif;
   height: 100%;
@@ -9,37 +10,45 @@ body {
 
 .container {
   max-width: 1170px;
+  padding: 75px 50px;
 }
 
-.container {
-  padding-top: 75px;
-  padding-bottom: 75px;
-}
-
-h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
+  font-size: 22px;
+  color: white;
   font-family: "Lato Black", sans-serif;
   color: white;
+  text-shadow: 0 2px 11.64px black;
+  font-size: 60px;
 }
 
 h1 {
   font-size: 22px;
+  color: white;
+  font-family: "Lato Black", sans-serif;
+  text-align: center;
   text-transform: uppercase;
-  margin: 0;
+  z-index: 1;
 }
 
-h2 {
-  font-size: 50px;
-  text-shadow: 0 2px 11.64px black;
+h1 span {
+  font-size: 30px;
 }
 
-@media (min-width: 768px) {
-  h2 {
-    font-size: 60px;
-  }
+h1 span:last-child {
+  font-size: 16px;
+  line-height: 26px;
+  font-family: "Lato", sans-serif;
+}
+
+h1 strong {
+  font-size: 40px;
+  color: #564fd3;
+  font-family: "Lato Black", sans-serif;
 }
 
 h3 {
@@ -50,23 +59,17 @@ h3 {
 p,
 button,
 li,
-span {
+span,
+a,
+a:hover,
+a:active {
   color: white;
 }
 
-a {
-  color: white;
-  text-decoration: none;
-}
-
+a,
 a:hover,
 a:active {
   text-decoration: none;
-}
-
-a::-moz-focus-inner,
-button::-moz-focus-inner {
-  border: 0;
 }
 
 button:active,
@@ -184,6 +187,15 @@ a.social:hover {
   transition: 0.3s;
 }
 
+.zoom {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.sale-button {
+  padding: 10px 20px;
+}
+
 .sale-button {
   font-family: "Lato Black", sans-serif;
   font-size: 20px;
@@ -194,11 +206,6 @@ a.social:hover {
 
 .sale-button:hover {
   background-color: #564fd3;
-}
-
-.zoom {
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 /*Header*/
@@ -320,8 +327,9 @@ a.social:hover {
 }
 
 /*header END*/
-/*First-block START*/
 .first-block {
+  height: 100%;
+  max-height: 100vh;
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -334,58 +342,23 @@ a.social:hover {
 }
 
 .first-block .container {
-  min-height: 100vh;
+  height: 100%;
+  min-height: 100%;
+  padding-top: 100px;
 }
 
-.first-block .container .row {
-  margin-top: 100px;
+.first-block .bg-title div {
+  background: rgba(0, 0, 0, 0.7);
 }
 
-.first-block .sale-button {
-  padding: 10px 20px;
+.first-block .bg-title div:first-child {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(75%, rgba(0, 0, 0, 0.7)));
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 75%);
 }
 
-.first-block p {
-  font-size: 16px;
-  line-height: 26px;
-  margin: 0;
-  font-family: "Lato", sans-serif;
-}
-
-.first-block span {
-  font-size: 30px;
-}
-
-.bg-left {
-  background: black;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(75%, black));
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, black 75%);
-}
-
-.bg-right {
-  background: black;
-  background: -webkit-gradient(linear, left top, right top, color-stop(25%, black), to(rgba(0, 0, 0, 0)));
-  background: linear-gradient(90deg, black 25%, rgba(0, 0, 0, 0) 100%);
-}
-
-.first-block-title {
-  margin-top: 3em;
-}
-
-.first-block-title .text {
-  z-index: 1;
-  line-height: 40px;
-  background: black;
-}
-
-.first-block-title .text strong {
-  font-size: 40px;
-  color: #564fd3;
-  font-family: "Lato Black", sans-serif;
-}
-
-.sale-title .text {
-  background: black;
+.first-block .bg-title div:last-child {
+  background: -webkit-gradient(linear, left top, right top, color-stop(25%, rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 25%, rgba(0, 0, 0, 0) 100%);
 }
 
 #slider-first-block .carousel-item img {
@@ -450,7 +423,6 @@ a.social:hover {
   }
 }
 
-/*First-block END*/
 /*block-about START*/
 .block-about {
   background-image: url("/img/photo/bg-photo-block-about-me.jpg");
@@ -525,6 +497,15 @@ a.social:hover {
 
 /*block-about END*/
 /*block-form START*/
+.block-form h2 {
+  font-size: 22px;
+  color: white;
+  font-family: "Lato Black", sans-serif;
+  color: black;
+  text-shadow: none;
+  font-size: 60px;
+}
+
 .block-form .form {
   background-image: url("/img/photo/bg-photo-block-forma.jpg");
   background-repeat: no-repeat;
@@ -625,6 +606,15 @@ svg:hover #slider-button {
 
 /*block-about-profession END*/
 /*block-why-me START*/
+.block-why-me h2 {
+  font-size: 22px;
+  color: white;
+  font-family: "Lato Black", sans-serif;
+  color: black;
+  text-shadow: none;
+  font-size: 60px;
+}
+
 .list-why-me {
   background-image: url("/img/photo/bg-photo-block-why-me.jpg");
   background-size: cover;
@@ -674,6 +664,17 @@ svg:hover #slider-button {
     background-image: url("/img/photo/bg-photo-block-sale.jpg");
     background-size: cover;
     background-position: center;
+  }
+  .block-sale .bg-title div {
+    background: rgba(0, 0, 0, 0.4);
+  }
+  .block-sale .bg-title div:first-child {
+    background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(75%, rgba(0, 0, 0, 0.4)));
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 75%);
+  }
+  .block-sale .bg-title div:last-child {
+    background: -webkit-gradient(linear, left top, right top, color-stop(25%, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0)));
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.4) 25%, rgba(0, 0, 0, 0) 100%);
   }
   .block-sale .container {
     padding-top: 0;

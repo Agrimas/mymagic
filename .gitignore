@@ -1,7 +1,5 @@
 ﻿img/
 
-.env
-
 node_modules/
 
-vendor/
+mail.php
