@@ -1,0 +1,50 @@
+html,
+body {
+	font-family: $regularFont;
+	font-size: $fzRegular;
+	height: 100%;
+	background-color: white;
+	color: white;
+}
+
+.container {
+	max-width: 1270px;
+	@media (min-width: 768px) {
+		& {
+			padding: 75px 50px;
+		}
+	}
+}
+
+// Заголовки и абзацы
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $blackFont;
+	font-size: 60px;
+	color: white;
+	$text-shadow: 0 2px 11.64px rgba(0, 0, 0, 1);
+}
+
+p {
+	font-size: $fzRegular;
+	padding: 0;
+	margin: 0;
+}
+span,
+strong {
+	font-family: $blackFont;
+}
+
+// Ссылки
+a,
+a:hover,
+a:active,
+a:focus {
+	color: white;
+	text-decoration: none;
+	outline: none;
+}

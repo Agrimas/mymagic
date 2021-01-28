@@ -1,0 +1,110 @@
+.navbar {
+	background: linear-gradient(100grad, rgba(86, 79, 211, 0.7), rgba(221, 84, 70, 0.7));
+	& * {
+		transition: 0.3s;
+	}
+	@media (min-width: 768px) {
+		& {
+			height: 100px;
+		}
+	}
+}
+
+// Логотип
+.navbar-brand {
+	padding: 0;
+	margin-right: 0.5rem;
+	img {
+		display: block;
+		height: 50px;
+	}
+	@media (min-width: 768px) {
+		& {
+			height: 55% !important;
+		}
+		img {
+			height: 100%;
+		}
+	}
+	@media (min-width: 992px) {
+		& {
+			height: 100% !important;
+		}
+	}
+}
+
+//	Кнопка разворачивания меню
+.navbar-toggler-icon {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+button.navbar-toggler {
+	background-color: white;
+}
+
+//	Кнопка заказать
+.btn-navbar {
+	font-family: $blackFont;
+	font-size: $fzLight - 4;
+	background-color: transparent;
+	color: white;
+	text-transform: uppercase;
+	padding: 5px 10px;
+	border: 4px solid white;
+	border-radius: 50px;
+	&:hover {
+		color: $orangey-red;
+		border-color: $orangey-red;
+	}
+}
+
+// Навигация
+.navbar-expand-md .navbar-nav .nav-link {
+	@media (min-width: 768px) {
+		& {
+			padding: 0px;
+		}
+	}
+
+	&:hover {
+		color: $orangey-red;
+	}
+}
+.navbar-collapse {
+	@media (min-width: 768px) {
+		& {
+			height: 100%;
+		}
+	}
+	.nav-item {
+		font-size: $fzLight;
+		text-shadow: 0 2px 11.64px rgb(0, 0, 0);
+		@media (min-width: 768px) {
+			& {
+				padding-left: 0.1rem;
+				padding-right: 0.1rem;
+			}
+		}
+		@media (min-width: 1270px) {
+			& {
+				font-size: $fzRegular;
+				padding-left: 0.5rem;
+				padding-right: 0.5rem;
+			}
+		}
+		.number {
+			font-size: $regularFont;
+		}
+	}
+	@media (min-width: 992px) {
+		#first-row-navbar .nav-item {
+			padding-left: 0.5rem;
+			padding-right: 0.5rem;
+		}
+	}
+}
+
+.vertical-rule {
+	border-right: 1px solid #925172;
+	height: 39.8px;
+	width: 1px;
+}

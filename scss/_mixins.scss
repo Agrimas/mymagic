@@ -1,25 +1,5 @@
 @mixin bg-title($color) {
-	div {
-		background: $color;
+	& {
+		background:  rgba(0, 0, 0, 0.8);
 	}
-	div:first-child {
-		background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, $color 75%);
-	}
-
-	div:last-child {
-		background: linear-gradient(90deg, $color 25%, rgba(0, 0, 0, 0) 100%);
-	}
-}
-
-@mixin title {
-	font-size: 22px;
-	color: white;
-	font-family: $LatoBlack;
-}
-
-@mixin subTitle($color: white, $text-shadow: 0 2px 11.64px rgba(0, 0, 0, 1)) {
-	@include title;
-	color: $color;
-	text-shadow: $text-shadow;
-	font-size: 60px;
 }

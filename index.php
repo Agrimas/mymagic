@@ -37,193 +37,152 @@
 </head>
 
 <body>
-	<header class="header navbar navbar-expand-lg fixed-top p-0 px-lg-4 py-lg-1 m-0" id="header">
-
-		<div class="navbar-brand col h-100 p-0">
-			<a href="#first-block" class="logo-link">
-				<img src="img/logo/logo_my_magic.svg" alt="Логотип" height="100%" class="logo" id="logo">
-
-				<img src="img/logo/logo_title_my_magic.png" alt="Заголовок логотипа" class="logo-title" id="logo-title">
+	<nav class="navbar navbar-expand-md fixed-top" id="header">
+		<div class="navbar-brand">
+			<a href="#first-block">
+				<img src="/img/logo/logo_my_magic.svg" alt="Логотип Антона Ермоленко">
 			</a>
-			<a class="number d-block d-lg-none pl-3 p-0 navbar-toggler" href="tel:+375447405583">+375 44
-				7405583</a>
+			<a class="d-block d-md-none navbar-toggler mt-1 p-0 number" href="tel:+375447405583">+375 44 7405583</a>
 		</div>
 
-
-		<button class="navbar-toggler button mx-3 m-lg-0" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 
-		<div class="col d-lg-flex flex-column p-0 m-0 collapse navbar-collapse" id="navbarTogglerDemo03">
-			<ul class="first-row navbar-nav col justify-content-end  p-0 m-0">
-
-				<li class="nav-item py-2 pr-1" id="menu_phone">
-					<a class="phone d-block" href="tel:+375447405583">
+		<div class="collapse navbar-collapse flex-column justify-content-between align-items-end" id="navbarSupportedContent">
+			<ul class="navbar-nav" id="first-row-navbar">
+				<li class="nav-item" id="menu_phone">
+					<a class="phone d-none" href="tel:+375447405583">
 						<i class="fas fa-phone m-0"></i> +375 44 7405583
 					</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link px-1 px-xl-2" href="#block-about">Кто я?</a>
+					<a class="nav-link" href="#block-about">Кто я?</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link px-1 px-xl-2" href="#block-about-profession">Чем я занимаюсь?</a>
+					<a class="nav-link" href="#block-about-profession">Чем я занимаюсь?</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link px-1 px-xl-2" href="#block-why-me">Почему я?</a>
+					<a class="nav-link" href="#block-why-me">Почему я?</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link px-1 px-xl-2" href="#block-photo">Фото</a>
+					<a class="nav-link" href="#block-photo">Фото</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link px-1 px-xl-2" href="#block-video">Видео</a>
-				</li>
-				<li class="nav-item d-none d-lg-block">
-					<a class="nav-link px-1 px-xl-2" href="#block-how-I-work">Как я работаю?</a>
+					<a class="nav-link" href="#block-video">Видео</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link px-1 px-xl-2" href="#block-clients">Мои клиенты</a>
+					<a class="nav-link" href="#block-clients">Мои клиенты</a>
 				</li>
 			</ul>
-
-
-			<ul class="navbar-nav second-row col justify-content-end align-items-center p-0" id="second-row">
+			<ul class="navbar-nav d-none d-md-flex align-items-center" id="second-row-navbar">
 				<li class="nav-item">
-					<a class="phone py-md-0 px-0 px-lg-1 ml-lg-3" href="tel:+375447405583">
-						<i class="fas fa-phone m-0"></i>
+					<a class="nav-link number" href="tel:+375447405583"><i class="fas fa-phone text-danger pr-1"></i> +375 44 7405583</a>
+				</li>
+				<li class="nav-item">
+					<div class="vertical-rule"></div>
+				</li>
+				<li class="nav-item">
+					<button type="button" class="btn-navbar">заказать звонок</button>
+				</li>
+				<li class="nav-item">
+					<a class="social-icon" href="https://www.instagram.com/justmymagic/" target="_blank">
+						<i class="fab fa-instagram"></i>
 					</a>
 				</li>
 				<li class="nav-item">
-					<a class="number py-md-0 px-1 px-lg-2 mr-lg-2 mr-xl-3" href="tel:+375447405583">+375 44
-						7405583</a>
+					<a class="social-icon" href="https://vk.com/focusnik_illusionist_minsk/" target="_blank">
+						<i class="fab fa-vk"></i>
+					</a>
 				</li>
 				<li class="nav-item">
-					<div class="border-ver mx-lg-2 mx-xl-3"></div>
+					<a class="social-icon" href="https://www.facebook.com/justmymagic/" target="_blank">
+						<i class="fab fa-facebook-f"></i>
+					</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link text-uppercase mx-md-1 mx-lg-2 mx-xl-3" href="#block-form" id="order-call">заказать
-						звонок</a>
+					<a class="social-icon" href="https://t.me/justmymagic/" target="_blank">
+						<i class="fab fa-telegram-plane"></i>
+					</a>
 				</li>
-
-				<ul class="nav justify-content-md-end flex-nowrap p-0 m-0">
-					<li class="nav-item">
-						<a class="social rounded-circle mr-0 mr-lg-1" href="https://www.instagram.com/justmymagic/" target="_blank">
-							<i class="fab fa-instagram"></i>
-						</a>
-					</li>
-					<li class="nav-item">
-						<a class="social rounded-circle mx-0 mx-lg-1" href="https://vk.com/focusnik_illusionist_minsk/" target="_blank">
-							<i class="fab fa-vk"></i>
-						</a>
-					</li>
-					<li class="nav-item">
-						<a class="social rounded-circle mx-0 mx-lg-1" href="https://www.facebook.com/justmymagic/" target="_blank">
-							<i class="fab fa-facebook-f"></i>
-						</a>
-					</li>
-					<li class="nav-item">
-						<a class="social rounded-circle mx-0 mx-lg-1" href="https://t.me/justmymagic/" target="_blank">
-							<i class="fab fa-telegram-plane"></i>
-						</a>
-					</li>
-					<li class="nav-item">
-						<a class="social rounded-circle ml-0 ml-lg-1" href="https://ok.ru/profile/359503298009/" target="_blank">
-							<i class="fab fa-odnoklassniki"></i>
-						</a>
-					</li>
-				</ul>
+				<li class="nav-item">
+					<a class="social-icon" href="https://ok.ru/profile/359503298009/" target="_blank">
+						<i class="fab fa-odnoklassniki"></i>
+					</a>
+				</li>
 			</ul>
-
-
 		</div>
-	</header>
+	</nav>
 	<section class="first-block" id="first-block">
 		<div class="container">
-			<div class="row h-100 flex-column flex-nowrap bg-primary">
-				<div class="col bg-warning">
-
-					<div class="row mt-5">
-						<div class="col-8 d-flex bg-title">
-							<div class="col-2 px-0"></div>
-							<div class="col-8 py-5 px-0">
-								<h1>выступление иллюзиониста <br>
-									<span>на вашем</span>
-									<strong>празднике</strong> <br>
-									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="137px" height="19px">
-										<image x="0px" y="0px" width="137px" height="19px" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIkAAAATCAQAAAAO0OZnAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfkAR4QEBn+KOPJAAAEtklEQVRYw83XfWzV1RkH8M/v3tvbQm9foGgZiGJ5nahjbAKbCsStig5R4wZoNqcLJGYv2ZJlL8lCAsnALA4xiwSjUydqxgTDlozErRqVsSEGApourCywQpGivCi9Bdre3t/ZH/e28pIsWdbe7jl/nJec8zzf833OefI8UTAk0mCxOh2q1dvnOe1gnIdMckyXjDYvOzIU0KIhoeRTVjnht95X7lr3Oe7nPjLGT1X4nRY5V1sibbmTQ4AulL4lw5rwTKgOQhQEYUr4dfhxSIflYU24qn/X5WFrWB0SpceXKAHraeNMMl5NcV5vutU6RGpNkdBik3q3KfeKQ5ImqsSHNpirunimVoOpxikbfLipQbcwwhKNenVptcUexEVXBGmLPabTPtdr1KwFl7nbb5zBYecU/vUNlqhHUpPNOgYX8GC/kmGW+ao/W+Epw63SiA81e8JUdWYYLUa3LsPEetHjWnONcYWF/iqLhR5X4yk/86olHlA+uJCTKwZX/0yzPWGL4w5rUu2H/uWA/eabrd4Mv7cfE9zgoDFanXBObJGpZqm0zscWWOklKx102ruOmKndsVJQUmaWe43WJjeg+ueIbMQIObFdRvu+vZq9KaFHk+2IfN0oz2g0yttocVSFYzZoM9daL1grL6lWl1afl7dvQDFWuVOj2HExn8SSjNvNVOkzXnEFtjk3IOay5mmXdJMn7cIjaq20yl88279nmVs84qg/+o5TnscOO8CXLPcHvwRfsFSTKnPsHiAqKs3R6wP3u1lWRkvhOXySl1yJWb4rbauzdntrQMzWeNatutVZZFNx7Sem2WqvdmkN5rjVi3a5Q5vRGr1hmwPyxprhDm/7VfHUw9Y7qdJmy3QNALLILa5Ta6HT1tor7ksMU5jkerH3HbTJP/3AaT2+5RpZGaliAM4XWyw4P7sLF/UFY5GESEIsFmRk8GXVytDplCqPandI2lgnrHHAXTpN8w/Pe9B92uRdbZSdOj1gOPK+iDrwNWUisXAJmqjYJ85bLaBJSvbfJdYrq85Mr0nZ4zF/V6/BLOzWGoW5ljmjV+SY7Q6Z5n43arZDjYykJEKRkF75C0DEl1BTAJEQSUpIyqNKWo9ukSDI69RlpIxYzkmve8N8C/zCUhkrTHe7kcpEsj5WoQpJAcOkdMuKRIJYvkjKpZRE/aPCOClVpCQqurfDWTeZaLuN9hvvRpcJ0sqsi8JG79gmlpa2wAzvmWCyH9mpRrKovEBDfNHVL55dCC0q+ivnrLwyw6X6NeSKTujVrRsNvmmCci/bLKiQlhKkZIqxLpLQ66ycVL+egqb/hODCWaIfVcExp82z2nuOus7fvCqnW9JtJkfhGzY7h6SlrrFPwnRNtuj9n37qfyufNs9hbzpTQptpi9xsj5QpdtsgRrV7hXQQhGHh22FduDIIi8OjoWoIKp/0ENQzI8Pj4Z4gTAjrw0OhIghCRUIPmOiz1ut0t/HekS3pCylIz3mRqVTykZ0m+ooTnjTbWNDVl9DXiDR70HPmOTAEhAyNBK3me8E93lWutrDYR8kR5R6WVWt8Sarj/xdJaTBCzvfkfFBY6kvoO5xyp8/JetqfShxah1JO4XKTVXq6r0z4NxRhkXMhHEeXAAAAAElFTkSuQmCC" />
-									</svg><br>
-									<span>по всей беларуси и за рубежом</span>
-								</h1>
+			<div class="row h-100 align-items-start">
+				<div class="col-10 col-lg-8 mt-2 py-3 bg-black">
+					<h1>выступление иллюзиониста <br>
+						<span>на вашем</span>
+						<strong>празднике</strong>
+						<hr>
+						<span>по всей беларуси и за рубежом</span>
+					</h1>
+				</div>
+				<div class="col-12">
+					<div class="row h-100">
+						<div class="col-12 d-none d-md-block">
+							<div class="row bg-black">
+								<div class="col-3 col-md-2 px-0"></div>
+								<div class="col-6 col-md-8 px-0 py-2">
+									<p>При заказе сценического выступления <br>
+										получите интерактив с гостями <br>
+										<strong>со скидкой 50%</strong>
+									</p>
+								</div>
+								<div class="col-3 col-md-2 px-0"></div>
 							</div>
-							<div class="col-2 px-0"></div>
+							<div class="row d-flex justify-content-center">
+								<button type="button" class="btn btn-sale mt-2 text-center">Заказать со скидкой</button>
+							</div>
 						</div>
 					</div>
 				</div>
-
-				<div class="col-6 bg-danger">
-
-					<div class="row mt-5 bg-title">
-						<div class="col-2"></div>
-						<div class="col-8 py-3">
-							<h3>При заказе сценического выступления <br>
-								получите интерактив с гостями <br>
-								<span>со скидкой 50%</span>
-							</h3>
-						</div>
-						<div class="col-2"></div>
-					</div>
-
-					<div class="row justify-content-center mt-5">
-						<a href="#block-sale" class="sale-button text-uppercase">
-							Заказать со скидкой
-						</a>
-					</div>
-
+				<div class="d-none justify-content-md-center align-self-md-end bg-danger">
+					<h1>Hello, world2</h1>
 				</div>
-
 			</div>
 		</div>
+		<!-- 		<div class="col-6 align-items-center">
+			<div class="slider-first-block">
+				<div id="slider-first-block" class="carousel slide" data-ride="carousel" data-interval="3000">
+					<div class="row flex-nowrap">
 
-		</div>
-
-		</div>
-		<!-- <div class="col-6 align-items-center">
-					<div class="slider-first-block">
-						<div id="slider-first-block" class="carousel slide" data-ride="carousel" data-interval="3000">
-							<div class="row flex-nowrap">
-
-								<div class="carousel-inner p-2 p-lg-3">
-									<?php
-									$first = true;
-									for ($x = 1; $x <= 3; $x++) {
-									?>
-										<div class="carousel-item <?php if ($first === true) {
-																				echo 'active';
-																			}
-																			$first = false; ?>">
-											<img src="img/photo/slider_first_block/image_<?= $x ?>.jpg" alt="">
-										</div>
-									<?php } ?>
+						<div class="carousel-inner p-2 p-lg-3">
+							<?php
+							$first = true;
+							for ($x = 1; $x <= 3; $x++) {
+							?>
+								<div class="carousel-item <?php if ($first === true) {
+																		echo 'active';
+																	}
+																	$first = false; ?>">
+									<img src="img/photo/slider_first_block/image_<?= $x ?>.jpg" alt="">
 								</div>
-
-								<div class="col d-flex align-items-center">
-									<ol class="carousel-indicators p-0 m-0">
-										<?php $first = true;
-										for ($x = 0; $x < 3; $x++) { ?>
-											<li data-target="#slider-first-block" data-slide-to="<?= $x ?>" <?php if ($first === true) {
-																																		echo 'class="active"';
-																																	}
-																																	$first = false; ?>></li>
-										<?php } ?>
-									</ol>
-								</div>
-
-							</div>
+							<?php } ?>
 						</div>
+
+						<div class="col d-flex align-items-center">
+							<ol class="carousel-indicators p-0 m-0">
+								<?php $first = true;
+								for ($x = 0; $x < 3; $x++) { ?>
+									<li data-target="#slider-first-block" data-slide-to="<?= $x ?>" <?php if ($first === true) {
+																																echo 'class="active"';
+																															}
+																															$first = false; ?>></li>
+								<?php } ?>
+							</ol>
+						</div>
+
 					</div>
-				</div> -->
-		</div>
-		</div>
-		</div>
+				</div>
+			</div>
+		</div> -->
 	</section>
 	<section class="block-about" id="block-about">
 		<div class="container">
@@ -257,7 +216,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="block-form d-none d-md-block" id="block-form">
+	<section class="d-none block-form" id="block-form">
 		<div class="container">
 
 			<div class="row">
@@ -313,7 +272,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="block-about-profession" id="block-about-profession">
+	<section class="d-none block-about-profession" id="block-about-profession">
 		<div class="container">
 			<div class="row m-0 p-0 h-100 align-items-center">
 				<div class="col">
@@ -450,7 +409,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="block-why-me" id="block-why-me">
+	<section class="d-none block-why-me" id="block-why-me">
 		<div class="container">
 
 			<div class="row d-none d-md-flex">
@@ -510,7 +469,7 @@
 
 		</div>
 	</section>
-	<section class="block-sale d-none d-md-block" id="block-sale">
+	<section class="d-none block-sale" id="block-sale">
 		<div class="container">
 			<div class="row">
 				<div class="col-5 d-flex flex-column justify-content-center">
@@ -546,7 +505,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="block-photo" id="block-photo">
+	<section class="d-none block-photo" id="block-photo">
 		<div class="container">
 			<div class="row">
 				<div class="col text-center">
@@ -575,7 +534,7 @@
 
 		</div>
 	</section>
-	<section class="block-video" id="block-video">
+	<section class="d-none block-video" id="block-video">
 		<div class="container">
 
 			<div class="row">
@@ -694,7 +653,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="block-how-I-work d-none d-md-block" id="block-how-I-work">
+	<section class="d-none block-how-I-work" id="block-how-I-work">
 		<div class="container">
 
 			<div class="row">
@@ -761,7 +720,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="block-clients" id="block-clients">
+	<section class="d-none block-clients" id="block-clients">
 
 		<div class="container">
 
@@ -834,7 +793,7 @@
 
 			</div>
 	</section>
-	<section class="block-footer" id="block-footer">
+	<section class="d-none block-footer" id="block-footer">
 		<div class="container">
 			<div class="row m-0">
 

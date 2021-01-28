@@ -1,16 +1,28 @@
-/*Шрифты*/
-@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap");
+// Шрифты
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
+
+// Переменные
+@import 'variables';
+
+// Миксины
 @import 'mixins';
-@import 'general';
-@import 'header';
-@import 'first-block';
-@import 'block-about';
-@import 'block-form';
-@import 'block-about-profession';
-@import 'block-why-me';
-@import 'block-sale';
-@import 'block-photo';
-@import 'block-video';
-@import 'block-how-I-work';
-@import 'block-clients';
-@import 'block-footer';
+
+//	Основные стили
+@import 'main';
+
+//	Элементы
+@import 'elements/elements';
+
+//	Секции
+@import 'blocks/navbar';
+@import 'blocks/first-block';
+// @import 'blocks/block-about';
+// @import 'blocks/block-form';
+// @import 'blocks/block-about-profession';
+// @import 'blocks/block-why-me';
+// @import 'blocks/block-sale';
+// @import 'blocks/block-photo';
+// @import 'blocks/block-video';
+// @import 'blocks/block-how-I-work';
+// @import 'blocks/block-clients';
+// @import 'blocks/block-footer';
