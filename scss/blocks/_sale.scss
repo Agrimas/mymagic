@@ -1,0 +1,20 @@
+#block-sale {
+	background-image: url("/img/photo/bg-photo-block-sale.jpg");
+	background-size: cover;
+	background-position: center;
+
+	@media (min-width: 768px) {
+		.container {
+			background-image: url("/img/photo/anton-ermolenko-block-sale.png");
+			background-size: contain;
+			background-position: right;
+			background-repeat: no-repeat;
+		}
+	}
+
+	.sale-title {
+		background: rgba(0, 0, 0, 0.5);
+		border-radius: $borderRaduis;
+		padding: 0.5em;
+	}
+}

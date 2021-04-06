@@ -3,6 +3,8 @@ $regularFont: 'Lato', sans-serif;
 $blackFont: 'Lato Black', sans-serif;
 $formFont: 'Lato Light', sans-serif;
 
+$borderRaduis: 10px;
+
 $fzRegular: 22px;
 $fzLight: 18px;
 
@@ -25,3 +27,7 @@ $aqua-blue-two: #00c3d9;
 $lavender-pink: #e295dd;
 $blueberry: #40399e;
 $dusky-rose: #b16177;
+$blackOpacity: rgba(0,0,0,0.6);
+$textShadow: 0 6px 6.44px black;
+// Переходы
+$tDuration: 0.3s;

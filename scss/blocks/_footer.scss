@@ -1,0 +1,23 @@
+#block-footer {
+	background-image: url("/img/photo/bg-photo-footer.jpg");
+	background-size: cover;
+	background-position: 75%;
+	background-repeat: no-repeat;
+	@media (min-width: 768px) {
+		background-position: 50% 30%;
+	}
+	.container {
+		padding-top: 30px;
+	}
+	.nav-item {
+		padding-left: 0.8em;
+	}
+	.number {
+		margin-bottom: 0.5em;
+	}
+	.logo {
+		display: block;
+		margin: 0 auto;
+		max-width: 330px;
+	}
+}

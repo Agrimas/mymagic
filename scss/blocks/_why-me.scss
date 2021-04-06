@@ -1,0 +1,38 @@
+/*block-why-me START*/
+#block-why-me {
+	background-image: url("/img/photo/bg-photo-block-why-me.jpg");
+	background-size: cover;
+	background-position: center;
+
+	img {
+		display: block;
+		margin: 0.5em auto;
+		width: 100px;
+		height: 100px;
+	}
+
+	.comparison {
+		margin: 0;
+		background-color: $blackOpacity;
+		border-radius: $borderRaduis;
+	}
+
+	ul {
+		padding: 0;
+		list-style: none;
+		li {
+			padding-left: 1.5em;
+			margin: 0.5em 0;
+			text-shadow: $textShadow;
+		}
+	}
+	#advantages-list li {
+		background: url("/img/icon/point-blue.svg") no-repeat left center;
+	}
+
+	#limitations-list li {
+		background: url("/img/icon/point-red.svg") no-repeat left center;
+	}
+}
+
+/*block-why-me END*/

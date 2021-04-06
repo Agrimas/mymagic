@@ -1,0 +1,26 @@
+.block-form {
+	.block-form__form {
+		border-radius: $borderRaduis;
+		background-image: url("/img/photo/bg-photo-block-forma.jpg");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		padding: 20px 30px;
+		margin-right: -10px;
+		margin-left: -10px;
+	}
+
+	.container {
+		padding-top: 1em;
+		padding-bottom: 1em;
+	}
+
+	svg {
+		display: block;
+		margin: 0 auto;
+	}
+
+	.number{
+		text-align: left;
+	}
+}

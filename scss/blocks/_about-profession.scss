@@ -1,0 +1,75 @@
+.block-about-profession {
+	background-image: url("/img/photo/bg-photo-block-about-profession.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	svg:hover #slider-button {
+		fill: #cf94da;
+	}
+
+	.slider {
+		min-width: 0;
+	}
+	.slick-list {
+		overflow: hidden;
+		border-radius: $borderRaduis;
+	}
+	.slick-track {
+		display: flex;
+	}
+
+	.slider__item {
+		position: relative;
+		height: 400px;
+		@media (min-width: 992px) {
+			height: 500px;
+		}
+		img {
+			display: block;
+			object-fit: cover;
+			max-width: 100%;
+			margin: 0 auto;
+			border-radius: $borderRaduis;
+			min-height: 500px;
+		}
+
+		.title {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: end;
+			padding-bottom: 10%;
+		}
+
+		p {
+			position: absolute;
+			display: block;
+			text-align: center;
+			background-color: $blackOpacity;
+			padding: 5px;
+			@include border();
+		}
+	}
+
+	.slider__indicator {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		padding: 5px;
+		background-color: $blackOpacity;
+		border-radius: $borderRaduis;
+		width: 100%;
+		min-height: 100px;
+		cursor: pointer;
+	}
+
+	.slider__indicator.active {
+		@include border();
+		opacity: 1;
+	}
+}

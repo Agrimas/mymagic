@@ -1,12 +1,20 @@
 .navbar {
+	transition: $tDuration;
 	background: linear-gradient(100grad, rgba(86, 79, 211, 0.7), rgba(221, 84, 70, 0.7));
-	& * {
-		transition: 0.3s;
-	}
-	@media (min-width: 768px) {
+	padding: 0 0.5rem;
+	height: auto;
+	@media (min-width: 992px) {
 		& {
 			height: 100px;
 		}
+	}
+	@media (min-width: 1270px) {
+		& {
+			padding: 0 1rem;
+		}
+	}
+	.fa-phone::before {
+		font-size: $fzRegular;
 	}
 }
 
@@ -18,17 +26,13 @@
 		display: block;
 		height: 50px;
 	}
-	@media (min-width: 768px) {
-		& {
-			height: 55% !important;
-		}
-		img {
-			height: 100%;
-		}
-	}
 	@media (min-width: 992px) {
 		& {
 			height: 100% !important;
+			margin-right: 0;
+		}
+		img {
+			height: 100%;
 		}
 	}
 }
@@ -37,6 +41,7 @@
 .navbar-toggler-icon {
 	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
+
 button.navbar-toggler {
 	background-color: white;
 }
@@ -51,6 +56,7 @@ button.navbar-toggler {
 	padding: 5px 10px;
 	border: 4px solid white;
 	border-radius: 50px;
+	width: 100%;
 	&:hover {
 		color: $orangey-red;
 		border-color: $orangey-red;
@@ -58,10 +64,12 @@ button.navbar-toggler {
 }
 
 // Навигация
-.navbar-expand-md .navbar-nav .nav-link {
-	@media (min-width: 768px) {
+.navbar-expand-lg .navbar-nav .nav-link {
+	padding: 0.3rem 1rem;
+	transition: $tDuration;
+	@media (min-width: 992px) {
 		& {
-			padding: 0px;
+			padding: 0;
 		}
 	}
 
@@ -69,36 +77,32 @@ button.navbar-toggler {
 		color: $orangey-red;
 	}
 }
+
+.nav-link {
+	cursor: pointer;
+}
+
 .navbar-collapse {
-	@media (min-width: 768px) {
+	@media (min-width: 992px) {
 		& {
+			padding-top: 0.5rem;
+			padding-bottom: 0.5rem;
 			height: 100%;
 		}
 	}
 	.nav-item {
-		font-size: $fzLight;
+		font-size: $fzRegular;
 		text-shadow: 0 2px 11.64px rgb(0, 0, 0);
-		@media (min-width: 768px) {
+		@media (min-width: 992px) {
 			& {
-				padding-left: 0.1rem;
-				padding-right: 0.1rem;
+				font-size: $fzLight;
+				padding-right: 0.8rem;
 			}
 		}
 		@media (min-width: 1270px) {
 			& {
 				font-size: $fzRegular;
-				padding-left: 0.5rem;
-				padding-right: 0.5rem;
 			}
-		}
-		.number {
-			font-size: $regularFont;
-		}
-	}
-	@media (min-width: 992px) {
-		#first-row-navbar .nav-item {
-			padding-left: 0.5rem;
-			padding-right: 0.5rem;
 		}
 	}
 }
@@ -107,4 +111,25 @@ button.navbar-toggler {
 	border-right: 1px solid #925172;
 	height: 39.8px;
 	width: 1px;
+}
+
+.ico_phone {
+	&.fa-phone::before {
+		font-size: 30px;
+	}
+	transition: $tDuration;
+	color: #dc3545;
+	&:hover {
+		color: $warm-blue;
+	}
+}
+
+#menu_phone {
+	display: none;
+}
+
+#second-row-navbar {
+	@media (max-width: 991px) {
+		display: none;
+	}
 }
